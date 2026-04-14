@@ -4,7 +4,7 @@
     "href": "trabajos practicos/TP 01.html",
     "title": "TP 01",
     "section": "",
-    "text": "PlanteoSoluciónVersión mejorada\n\n\nEl usuario ingresa un número que representa una temperatura en °C. El programa imprime esa temperatura en F\n\n\nprint(\"ingrese la temperatura en C\") # se imprime un mensaje\nC = float(input()) # se pide un valor por teclado y se lo convierte en número\nF =(C*1.80+32)\nprint(f\"La temperatura es {F} F\")\n\n\n¿Cómo hacer para tratar con un dato erróneo? Por ejemplo, un usuario ingresa un valor no númerico. En tal caso, el programa anterior arrojaría un error. Pruebe correr el programa anterior ingresando un valor no numérico.\ndef caf():\n  c = input()\n\n  try:\n    C = float(c)\n    F =(C*1.80+32)\n    print(f\"La temperatura es {F} F\")\n\n  except:\n    print(\"ingrese un valor númerico como temperatura\")\n    caf()\n\n\n\n\n\n\n\nPlanteoPista\n\n\nRealizar un programa en el que se ingrese la base y la altura de un triángulo e informe su superficie. El programa debe imprimir una leyenda que incluya los datos de entrada y el resultado.\nIngrese la base del triángulo: 8\nIngrese la altura del triángulo: 5\nLa superficie del triángulo de base 7 y altura 5 es 17.50\n\n\nCon lo hecho en el problema anterior se puede resolver. Recordar que la potenciación es una multipliación repetida, por lo que en pyhton el operador es **.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nDesarrollar un programa en el que se ingrese un número de 5 dígitos y que como salida se muestre:\n\ncada dígito separado por un guión\nla suma de todos los dígitos\n\n\n\nUna forma de encontrar el primer dígito de un número es dividirlo por \\(10^n\\) donde n es el orden de magnitud del número y quedarse con la parte entera. Por ejemplo: Si tenemos el número 1450 y lo dividimos por 1000 el primer dígito es la parte entera del resultado de la división, usando la operación división entera // y módulo % podemos obtener los elementos necesarios para resolver este problema. Para el resto de los dígitos, usando el operador módulo en potencias de diez decrecientes, obtenemos los “restos” usamos para reiterar el proceso de obtener el primer dígito.\nprint(1450//1000)\n\nprint(1450%1000)\n\n450//100\n\n450%100\nOtra forma es tratar al número como texto y acceder a cada elmento por separado. Para los cálculos habría que convertir nuevamente el dato a número para operar.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nHacer un programa en el que se ingrese la medida de los catetos de un triángulo rectángulo y que se calcule y muestre el perímetro de dicho triángulo. Incluir math a fin de utilizar la función sqrt(expresión) que calcula la raíz cuadrada de un número.\nPara usar la función, tenemos que importarla desde el módulo math. Para ello hacemos\nimport math\no\nimport math.sqrt as sqrt\nLa diferencia es qe en el primer caso tendremos que llamarla usando el nombre completo math.sqrt(num) mientras que en el segundo caso no. Como opción, también se puede prescindir de la raíz cuadrada y elevar a \\(\\frac{1}{2}\\).\n\n\nUsar pitágoras para conocer el lado restante.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nElaborar un programa en el que se ingrese una cantidad expresada en segundos y luego la exprese en días, horas, minutos y segundos.\nEjemplo: Ingrese tiempo en segundos: 93714.\n1 dia(s), 2 hora(s), 1 minuto(s), 54 segundo(s)\n\n\nSimilar al problema de los dígitos, solo que el resto no resulta de dividir por potencias de diez, sino de 60.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nEl usuario ingresa un instante de tiempo (t) y el programa calcula e imprime la posición de un móvil arrojado a 20 m/s hacia arriba en el planeta tierra para ese instante de tiempo.\n\n\nEscribir una ecuación para la la posición en función del tiempo con los datos del problema y crear la variable t como dato de entrada.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nRealizar un programa en el que se ingresen dos números enteros positivos. Luego deberá restar el mayor del menor e indicar si dicha diferencia es un valor que está entre ambos números (es decir, es mayor que el más chico y menor que el más grande de los ingresados).\n\n\nSe almacenan los dos números a comparar, se efectúan los cálculos, se devuelve el resultado condicionalmente usando if para cada caso.\n\n\n\n\n\n\n\nPlanteoPistaOtra pista\n\n\nRealizar un programa que solicite 3 notas de parciales obtenidas por un alumno. A continuación se mostrará por pantalla un mensaje que indique la situación del alumno:\n\nSi el alumno aprobó los 3 parciales (nota 4 o más) y su promedio es mayor a 7, promociona la materia con la nota promedio.\nSi el alumno aprobó los 3 parciales pero su promedio no supera los 7 puntos, debe rendir examen final.\nSi el alumno no aprobó uno o más parciales, se solicitará que se ingrese la nota de un recuperatorio. Si éste hubiera sido aprobado, se informará el promedio general (3 parciales + el recuperatorio) y su condición de aprobado (aún cuando el promedio no supere los 4 puntos).\nSi no hubiera aprobado el recuperatorio se informará que el alumno fue aplazado.\n\n\n\nEste código no resuelve todo el problema pero presenta algunas herramientas útiles, como limitar los dígitos que se muestran al imprimir una variable o el uso de la funcion suma sobre los elementos de una lista. Lea atentamente cada línea y asegúrese de que comprende qué hace en cada caso. El problema requiere evaluar los escenarios posibles por lo que quizás le resulte útil hacer un bosquejo en papel sobre los posibles casos para luego pasarlos a código.\n\n\ndef calif(n=3):\n  \"\"\"\n  Función que hace lo que se pide\n  \"\"\"\n  notas = []\n  for i in range(n):\n    print(f\"ingrese la {i+1} nota\")\n    nota = float(input())\n    notas.append(nota)\n\n  prom = (sum(notas))/n\n  return f\"{prom:.2f}\"",
+    "text": "Para entregar esta práctica deberá subir al campus el archivo .py que han trabajado.\n\n\n\nPlanteoSoluciónVersión mejorada\n\n\nEl usuario ingresa un número que representa una temperatura en °C. El programa imprime esa temperatura en F\n\n\nprint(\"ingrese la temperatura en C\") # se imprime un mensaje\nC = float(input()) # se pide un valor por teclado y se lo convierte en número\nF =(C*1.80+32)\nprint(f\"La temperatura es {F} F\")\n\n\n¿Cómo hacer para tratar con un dato erróneo? Por ejemplo, un usuario ingresa un valor no númerico. En tal caso, el programa anterior arrojaría un error. Pruebe correr el programa anterior ingresando un valor no numérico.\ndef caf():\n  c = input()\n\n  try:\n    C = float(c)\n    F =(C*1.80+32)\n    print(f\"La temperatura es {F} F\")\n\n  except:\n    print(\"ingrese un valor númerico como temperatura\")\n    caf()\n\n\n\n\n\n\n\nPlanteoPista\n\n\nRealizar un programa en el que se ingrese la base y la altura de un triángulo e informe su superficie. El programa debe imprimir una leyenda que incluya los datos de entrada y el resultado.\nIngrese la base del triángulo: 8\nIngrese la altura del triángulo: 5\nLa superficie del triángulo de base 7 y altura 5 es 17.50\n\n\nCon lo hecho en el problema anterior se puede resolver. Recordar que la potenciación es una multipliación repetida, por lo que en pyhton el operador es **.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nDesarrollar un programa en el que se ingrese un número de 5 dígitos y que como salida se muestre:\n\ncada dígito separado por un guión\nla suma de todos los dígitos\n\n\n\nUna forma de encontrar el primer dígito de un número es dividirlo por \\(10^n\\) donde n es el orden de magnitud del número y quedarse con la parte entera. Por ejemplo: Si tenemos el número 1450 y lo dividimos por 1000 el primer dígito es la parte entera del resultado de la división, usando la operación división entera // y módulo % podemos obtener los elementos necesarios para resolver este problema. Para el resto de los dígitos, usando el operador módulo en potencias de diez decrecientes, obtenemos los “restos” usamos para reiterar el proceso de obtener el primer dígito.\nprint(1450//1000)\n\nprint(1450%1000)\n\n450//100\n\n450%100\nOtra forma es tratar al número como texto y acceder a cada elmento por separado. Para los cálculos habría que convertir nuevamente el dato a número para operar.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nHacer un programa en el que se ingrese la medida de los catetos de un triángulo rectángulo y que se calcule y muestre el perímetro de dicho triángulo. Incluir math a fin de utilizar la función sqrt(expresión) que calcula la raíz cuadrada de un número.\nPara usar la función, tenemos que importarla desde el módulo math. Para ello hacemos\nimport math\no\nimport math.sqrt as sqrt\nLa diferencia es qe en el primer caso tendremos que llamarla usando el nombre completo math.sqrt(num) mientras que en el segundo caso no. Como opción, también se puede prescindir de la raíz cuadrada y elevar a \\(\\frac{1}{2}\\).\n\n\nUsar pitágoras para conocer el lado restante.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nElaborar un programa en el que se ingrese una cantidad expresada en segundos y luego la exprese en días, horas, minutos y segundos.\nEjemplo: Ingrese tiempo en segundos: 93714.\n1 dia(s), 2 hora(s), 1 minuto(s), 54 segundo(s)\n\n\nSimilar al problema de los dígitos, solo que el resto no resulta de dividir por potencias de diez, sino de 60.\n\n\n\n\n\n\n\nPlanteoPista\n\n\n\nEl usuario ingresa un instante de tiempo (t) y el programa calcula e imprime la posición de un móvil arrojado a 20 m/s hacia arriba en el planeta tierra para ese instante de tiempo.\nCree otra versión en donde el usuario también ingresa la velocidad inicial.\n\n\n\nEscribir una ecuación para la la posición en función del tiempo con los datos del problema y crear la variable t como dato de entrada.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nRealizar un programa en el que se ingresen dos números enteros positivos. Luego deberá restar el mayor del menor e indicar si dicha diferencia es un valor que está entre ambos números (es decir, es mayor que el más chico y menor que el más grande de los ingresados).\n\n\nSe almacenan los dos números a comparar, se efectúan los cálculos, se devuelve el resultado condicionalmente usando if para cada caso.\n\n\n\n\n\n\n\nPlanteoPistaOtra pista\n\n\nRealizar un programa que solicite 3 notas de parciales obtenidas por un alumno. A continuación se mostrará por pantalla un mensaje que indique la situación del alumno:\n\nSi el alumno aprobó los 3 parciales (nota 6 o más) y su promedio es mayor o igual a 8, promociona la materia con la nota promedio.\nSi el alumno aprobó los 3 parciales pero su promedio no supera los 8 puntos, debe rendir examen final.\nSi el alumno no aprobó uno o más parciales, se solicitará que se ingrese la nota de un recuperatorio. Si éste hubiera sido aprobado, se informará el promedio general (3 parciales + el recuperatorio) y su condición de aprobado (aún cuando el promedio no supere los 6 puntos).\nSi no hubiera aprobado el recuperatorio se informará que el alumno fue aplazado.\n\n\n\nEste código no resuelve todo el problema pero presenta algunas herramientas útiles, como limitar los dígitos que se muestran al imprimir una variable o el uso de la funcion suma sobre los elementos de una lista. Lea atentamente cada línea y asegúrese de que comprende qué hace en cada caso. El problema requiere evaluar los escenarios posibles por lo que quizás le resulte útil hacer un bosquejo en papel sobre los posibles casos para luego pasarlos a código.\n\n\ndef calif(n=3):\n  \"\"\"\n  Función que hace lo que se pide\n  \"\"\"\n  notas = []\n  for i in range(n):\n    print(f\"ingrese la {i+1} nota\")\n    nota = float(input())\n    notas.append(nota)\n\n  prom = (sum(notas))/n\n  return f\"{prom:.2f}\"",
     "crumbs": [
       "trabajos practicos",
       "TP 01"
@@ -70,7 +70,7 @@
     "href": "trabajos practicos/TP 01.html#tiro-vertical",
     "title": "TP 01",
     "section": "",
-    "text": "PlanteoPista\n\n\nEl usuario ingresa un instante de tiempo (t) y el programa calcula e imprime la posición de un móvil arrojado a 20 m/s hacia arriba en el planeta tierra para ese instante de tiempo.\n\n\nEscribir una ecuación para la la posición en función del tiempo con los datos del problema y crear la variable t como dato de entrada.",
+    "text": "PlanteoPista\n\n\n\nEl usuario ingresa un instante de tiempo (t) y el programa calcula e imprime la posición de un móvil arrojado a 20 m/s hacia arriba en el planeta tierra para ese instante de tiempo.\nCree otra versión en donde el usuario también ingresa la velocidad inicial.\n\n\n\nEscribir una ecuación para la la posición en función del tiempo con los datos del problema y crear la variable t como dato de entrada.",
     "crumbs": [
       "trabajos practicos",
       "TP 01"
@@ -92,7 +92,7 @@
     "href": "trabajos practicos/TP 01.html#aprobación-con-condiciones",
     "title": "TP 01",
     "section": "",
-    "text": "PlanteoPistaOtra pista\n\n\nRealizar un programa que solicite 3 notas de parciales obtenidas por un alumno. A continuación se mostrará por pantalla un mensaje que indique la situación del alumno:\n\nSi el alumno aprobó los 3 parciales (nota 4 o más) y su promedio es mayor a 7, promociona la materia con la nota promedio.\nSi el alumno aprobó los 3 parciales pero su promedio no supera los 7 puntos, debe rendir examen final.\nSi el alumno no aprobó uno o más parciales, se solicitará que se ingrese la nota de un recuperatorio. Si éste hubiera sido aprobado, se informará el promedio general (3 parciales + el recuperatorio) y su condición de aprobado (aún cuando el promedio no supere los 4 puntos).\nSi no hubiera aprobado el recuperatorio se informará que el alumno fue aplazado.\n\n\n\nEste código no resuelve todo el problema pero presenta algunas herramientas útiles, como limitar los dígitos que se muestran al imprimir una variable o el uso de la funcion suma sobre los elementos de una lista. Lea atentamente cada línea y asegúrese de que comprende qué hace en cada caso. El problema requiere evaluar los escenarios posibles por lo que quizás le resulte útil hacer un bosquejo en papel sobre los posibles casos para luego pasarlos a código.\n\n\ndef calif(n=3):\n  \"\"\"\n  Función que hace lo que se pide\n  \"\"\"\n  notas = []\n  for i in range(n):\n    print(f\"ingrese la {i+1} nota\")\n    nota = float(input())\n    notas.append(nota)\n\n  prom = (sum(notas))/n\n  return f\"{prom:.2f}\"",
+    "text": "PlanteoPistaOtra pista\n\n\nRealizar un programa que solicite 3 notas de parciales obtenidas por un alumno. A continuación se mostrará por pantalla un mensaje que indique la situación del alumno:\n\nSi el alumno aprobó los 3 parciales (nota 6 o más) y su promedio es mayor o igual a 8, promociona la materia con la nota promedio.\nSi el alumno aprobó los 3 parciales pero su promedio no supera los 8 puntos, debe rendir examen final.\nSi el alumno no aprobó uno o más parciales, se solicitará que se ingrese la nota de un recuperatorio. Si éste hubiera sido aprobado, se informará el promedio general (3 parciales + el recuperatorio) y su condición de aprobado (aún cuando el promedio no supere los 6 puntos).\nSi no hubiera aprobado el recuperatorio se informará que el alumno fue aplazado.\n\n\n\nEste código no resuelve todo el problema pero presenta algunas herramientas útiles, como limitar los dígitos que se muestran al imprimir una variable o el uso de la funcion suma sobre los elementos de una lista. Lea atentamente cada línea y asegúrese de que comprende qué hace en cada caso. El problema requiere evaluar los escenarios posibles por lo que quizás le resulte útil hacer un bosquejo en papel sobre los posibles casos para luego pasarlos a código.\n\n\ndef calif(n=3):\n  \"\"\"\n  Función que hace lo que se pide\n  \"\"\"\n  notas = []\n  for i in range(n):\n    print(f\"ingrese la {i+1} nota\")\n    nota = float(input())\n    notas.append(nota)\n\n  prom = (sum(notas))/n\n  return f\"{prom:.2f}\"",
     "crumbs": [
       "trabajos practicos",
       "TP 01"
@@ -160,6 +160,123 @@
     "title": "Presentación Clase 02",
     "section": "Funciones para recibir entradas del usuario",
     "text": "Funciones para recibir entradas del usuario\nUna función para permitir al usuario interactuar con el código ingresando valores es la función input() cuyo funcionamiento se ejemplifica a continuación:\nuser_input = input(\"Ingrese algo: \")\nprint(f\"Usted ha ingresado: {user_input}\")\nHay que tener en cuenta que la función input entiende todo lo que ingresemos a ella como si fuera texto, por lo que si deseamos recibir valores numéricos debemos convertir lo que recibamos. Por ejemplo:\n1price = float(input(\"Ingrese el precio: \"))\nprint(f\"El precio es {price}\")\n\n2age = int(input(\"Ingrese su edad: \"))\nprint(f\"Usted tiene {age} años\")\n\n1\n\nSe convierte a un número float\n\n2\n\nSe convierte a un número entero int\n\n\nEjemplo\nPara interrumpir la ejecución podemos usar una combinación de while, try- except como se muestra en este ejemplo que saqué de esta web:\nwhile True:\n    try:\n1        number = int(input(\"Enter an integer: \"))\n2        break\n3    except ValueError:\n4        print(\"Invalid input! Please enter a valid integer.\")\n\n1\n\nConvierte la entrada a un entero\n\n2\n\nSi tiene éxito interrumpe el programa ahí mismo\n\n3\n\nEn caso de recibir una excepción del tipo ValueError\n\n4\n\nImprime un texto de referencia."
+  },
+  {
+    "objectID": "clases/Clase-02.html",
+    "href": "clases/Clase-02.html",
+    "title": "Python 02",
+    "section": "",
+    "text": "Presentación",
+    "crumbs": [
+      "Clases",
+      "Python 02"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-02.html#condicional-if",
+    "href": "clases/Clase-02.html#condicional-if",
+    "title": "Python 02",
+    "section": "Condicional if",
+    "text": "Condicional if\nEn python las secuencias se encierran en bloques indentados, con tabulaciones\nSintaxis (ver los espacios):\nif condicion:\n    hace_algo\nelif condicion:\n    hace_esta_otra_cosa\nelse:\n    haga_esto_otro # se suele usar para errores\n                 # luego de una lista de opciones\nLa conversión implícita de los valores a bool() se hace si la condición a evaluar no es booleana en sí misma:\nn = 2\n\nif n:\n    print(\"n no es cero o no es null\")\n\nif n is None:\n    print(\"n es None\")\n\nif n is not str:\n    print(\"n no es una cadena de texto\")\nPodemos añadir bifurcaciones usando elif\nx = 20\ny = 21\n\nif y &gt; x:\n    print('y &gt; x')\nelif y &lt; x:\n    print('y &lt; x')\nLa palabra reservada and implica que ambas condiciones deben ser verdaderas\nif x==20 and y==21:\n    print('True')\nelse:\n    print('False')\nLa palabra reservada or implica que al menos una condición debe ser verdadera\nif x==20 or y==100:\n    print('True')\nelse:\n    print('False')",
+    "crumbs": [
+      "Clases",
+      "Python 02"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-02.html#bucle-for",
+    "href": "clases/Clase-02.html#bucle-for",
+    "title": "Python 02",
+    "section": "Bucle for",
+    "text": "Bucle for\nEl bucle for es quizás la construcción más habitual en python. Su sintaxis es\nfor elemento in secuencia:\n    haga_esto\nEn un ejemplo:\nfor i in [0, 1, 2, 3, 4, 5]:\n    print(i)\nUsando la función range() (que devuelve los enteros del conjunto)\nfor i in range(2,5):\n    print(i)\nUsando una lista y la función enumerate() para devolver el elemento y su posición en la lista\nlist_a = ['P','S','Y','C','H']\n\nfor index, value in enumerate(list_a):\n    print(index, value)\nRecorriendo los elementos de una cadena de texto uno a no\ncadena_de_texto = \"Python facilita la ciencia\"\nfor c in cadena_de_texto:\n    print(c)",
+    "crumbs": [
+      "Clases",
+      "Python 02"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-02.html#estructura-while",
+    "href": "clases/Clase-02.html#estructura-while",
+    "title": "Python 02",
+    "section": "Estructura while",
+    "text": "Estructura while\nSe puede usar también un bule while para iterar mientras una condición sea verdadera:\nwhile condción :\n    hacer_esto\nx = 0\nend = 10\n\ncsum = 0\n1while x &lt; end:\n2    csum += x\n3    print(x, csum)\n4    x +=1\nprint(f\"x vale {x}\")\n\n1\n\nMientras x sea menor a end\n\n2\n\nSumarle x a la variable csum\n\n3\n\nImprimir el valor de ambas variables\n\n4\n\nSumarle uno a x",
+    "crumbs": [
+      "Clases",
+      "Python 02"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-02.html#estructura-try-except",
+    "href": "clases/Clase-02.html#estructura-try-except",
+    "title": "Python 02",
+    "section": "Estructura try-except",
+    "text": "Estructura try-except\nSe puede atrapar o “atajar” errores usando esta estructura. Cada vez que el programa de como resultado un error (un dato mal ingresado o no válido) podremos especificar que hacer. Se puede indicar incluso una respuesta diferente para errores de distinto tipo.\n\ntry:\n    acción_a_intentar\nexcept:\n    que_hacer_si_ocurre_un_error",
+    "crumbs": [
+      "Clases",
+      "Python 02"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-02.html#listas",
+    "href": "clases/Clase-02.html#listas",
+    "title": "Python 02",
+    "section": "Listas",
+    "text": "Listas\nUna lista es una arreglo mutable. Lo que quiere decir que podemos redefinir y alterar sus valores - Cada valor en la lista es un elemento o item - Los elementos pueden ser cualquier objeto - Las listas pueden contener objetos de diferente tipo\n\nUna lista vaciía se define como [] o como list()\n\nl = [1,2,3]\n\nLos elementos de una lista estan indizados o indexados (contando desde 0)\n\nl[0]\n\nLos elemnentos pueden ser listas en sí mismas\n\nlista_anidada = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\n\nLas listas pueden ser “rebanadas”\n\nl[inicio:fin:orientación]\n\nTodos los métodos de las listas\nPodemos tener a mano una lista de los métodos mas usuales para las listas\n\n\n\n\n\n\n\nMétodo\nDescripción\n\n\n\n\nappend()\nAgrega elemento al final de la lista\n\n\nclear()\nElimina los elementos de la lista\n\n\ncopy()\ndevuelve una copia de la lista\n\n\ncount()\nDevuelve la cantidad de elementos que tienen determinado valor\n\n\nextend()\nAgrega los elementos (o cualquier iterable) al final de la lista\n\n\nindex()\nDevuele el índice (posición) del elemento que tiene determinado valor\n\n\ninsert()\nAgrega a la lista en la posición especificada\n\n\npop()\nEliminar el elemento en la posición especificada\n\n\nremove()\nRemueve el elemento con el valor especificado\n\n\nreverse()\nDa la lista invertida\n\n\nsort()\nOrdena la lista\n\n\n\nSe puede consultar mas sobre como rebanar una lista acá\nVeamos algunos ejemplos\na.insert(index,new element)\na.append(element to add at end)\nlen(a)\nlist_a = [1,2,3]\nprint(list_a)\nlist_of_strings = ['hola', 'chau', 'buenas tardes']\nprint(list_of_strings)\nLos elementos de la lista se pueden ubicar usando sus índices.\nlist_b = ['lista','de','cosas']\nprint(list_b[0])\nprint(list_b[1:3])\nprint(list_b[-1])\nlist_b.append('.')\nprint(list_b)\nexample_string = 'Computación 2 266 - Instituto Nacional Superior del Profesorado Técnico'\nprint(example_string)\nprint(example_string.upper())",
+    "crumbs": [
+      "Clases",
+      "Python 02"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-02.html#diccionarios",
+    "href": "clases/Clase-02.html#diccionarios",
+    "title": "Python 02",
+    "section": "Diccionarios",
+    "text": "Diccionarios\n\nUn diccionario (dict) es un mapeo entre un conjunto de índices (keys) y otro de valores (values)\nCada objeto de un diccionario es un par índice-valor (key-value)\nLas claves pueden ser cualquier tipo de dato\nLos diccionarios no tienen un orden prestablecido\n\nLos diccionarios se escrbien entre llaves\neng2sp = {}\neng2sp['one'] = 'uno' # la clave 'one' tiene como valor 'uno'\nprint(eng2sp)\neng2sp = {'one': 'uno', 'two': 'dos', 'three': 'tres'}\nprint(eng2sp)\nLas claves y sus valores se pueden acceder a través de los métodos .keys() y .values()\nprint(eng2sp.keys())\nprint(eng2sp.values())",
+    "crumbs": [
+      "Clases",
+      "Python 02"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-02.html#funciones-para-recibir-entradas-del-usuario",
+    "href": "clases/Clase-02.html#funciones-para-recibir-entradas-del-usuario",
+    "title": "Python 02",
+    "section": "Funciones para recibir entradas del usuario",
+    "text": "Funciones para recibir entradas del usuario\nUna función para permitir al usuario interactuar con el código ingresando valores es la función input() cuyo funcionamiento se ejemplifica a continuación:\nuser_input = input(\"Ingrese algo: \")\nprint(f\"Usted ha ingresado: {user_input}\")\nHay que tener en cuenta que la función input entiende todo lo que ingresemos a ella como si fuera texto, por lo que si deseamos recibir valores numéricos debemos convertir lo que recibamos. Por ejemplo:\n1price = float(input(\"Ingrese el precio: \"))\nprint(f\"El precio es {price}\")\n\n2age = int(input(\"Ingrese su edad: \"))\nprint(f\"Usted tiene {age} años\")\n\n1\n\nSe convierte a un número float\n\n2\n\nSe convierte a un número entero int\n\n\nPara interrumpir la ejecución podemos usar una combinación de while, try- except como se muestra en este ejemplo que saqué de esta web:\nwhile True:\n    try:\n1        number = int(input(\"Enter an integer: \"))\n2        break\n3    except ValueError:\n4        print(\"Invalid input! Please enter a valid integer.\")\n\n1\n\nConvierte la entrada a un entero\n\n2\n\nSi tiene éxito interrumpe el programa ahí mismo\n\n3\n\nEn caso de recibir una excepción del tipo ValueError\n\n4\n\nImprime un texto de referencia.",
+    "crumbs": [
+      "Clases",
+      "Python 02"
+    ]
+  },
+  {
+    "objectID": "calendario.html",
+    "href": "calendario.html",
+    "title": "Calenadario de clases",
+    "section": "",
+    "text": "Cronograma Inicial de Clases",
+    "crumbs": [
+      "Info Cursada",
+      "Calendario de clases"
+    ]
+  },
+  {
+    "objectID": "calendario.html#cronograma-actualizado",
+    "href": "calendario.html#cronograma-actualizado",
+    "title": "Calenadario de clases",
+    "section": "Cronograma actualizado",
+    "text": "Cronograma actualizado\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nClase\nDía\nFecha\nContenido\nApuntes\nDiapos\nEjs.\nTp\nExamen\nProyecto\n\n\n\n\n1\nMiércoles\n25/03/2026\nPython: Introducción a la programación en Python\n\n\n\n\n\n\n\n\n2\nMiércoles\n01/04/2026\nPython: Tipos de datos y contenedores\n\n\n\n\n\n\n\n\n3\nMiércoles\n07/04/2026\nPython: Estructuras de control\n\n\n\n\n\n\n\n\n4\nMiércoles\n14/04/2026\nPython: Funciones y estructuras de control\n\n\n\n\n\n\n\n\n5\nMiércoles\n21/04/2026\nPython: Funciones y estructuras de control",
+    "crumbs": [
+      "Info Cursada",
+      "Calendario de clases"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Computación 1-661",
+    "section": "",
+    "text": "About this site"
   },
   {
     "objectID": "clases/Clase-01.html",
@@ -250,40 +367,11 @@
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Computación 1-661",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "calendario.html",
-    "href": "calendario.html",
-    "title": "Calenadario de clases",
-    "section": "",
-    "text": "Cronograma Inicial de Clases",
-    "crumbs": [
-      "Info Cursada",
-      "Calendario de clases"
-    ]
-  },
-  {
-    "objectID": "calendario.html#cronograma-actualizado",
-    "href": "calendario.html#cronograma-actualizado",
-    "title": "Calenadario de clases",
-    "section": "Cronograma actualizado",
-    "text": "Cronograma actualizado\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nClase\nDía\nFecha\nContenido\nApuntes\nDiapos\nEjs.\nTp\nExamen\nProyecto\n\n\n\n\n1\nMiércoles\n25/03/2026\nPython: Introducción a la programación en Python\n\n\n\n\n\n\n\n\n2\nMiércoles\n01/04/2026\nPython: Tipos de datos y contenedores\n\n\n\n\n\n\n\n\n3\nMiércoles\n07/04/2026\nPython: Estructuras de control\n\n\n\n\n\n\n\n\n4\nMiércoles\n14/04/2026\nPython: Funciones y estructuras de control\n\n\n\n\n\n\n\n\n5\nMiércoles\n21/04/2026\nPython: Funciones y estructuras de control",
-    "crumbs": [
-      "Info Cursada",
-      "Calendario de clases"
-    ]
-  },
-  {
     "objectID": "clases.html",
     "href": "clases.html",
     "title": "Clases",
     "section": "",
-    "text": "Ordenar por\n       Por defecto\n         \n          Título\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTítulo\n\n\nSubtítulo\n\n\nDescripción\n\n\n\n\n\n\nPython 01\n\n\nIntroducción a la programación en Python\n\n\n\n\n\n\n\n\nNo hay resultados"
+    "text": "Ordenar por\n       Por defecto\n         \n          Título\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTítulo\n\n\nSubtítulo\n\n\nDescripción\n\n\n\n\n\n\nPython 01\n\n\nIntroducción a la programación en Python\n\n\n\n\n\n\n\nPython 02\n\n\nContenedores, estructuras lógicas y funciones\n\n\n\n\n\n\n\n\nNo hay resultados"
   },
   {
     "objectID": "index.html",
