@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>TP 01 – C2-661 2026</title>
+<title>TP 02 – C2-661 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -132,8 +132,8 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="TP 01 – C2-661 2026">
-<meta property="og:description" content="Variables, entradas y salidas">
+<meta property="og:title" content="TP 02 – C2-661 2026">
+<meta property="og:description" content="Iteraciones y bucles">
 <meta property="og:site_name" content="C2-661 2026">
 </head>
 
@@ -146,7 +146,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../trabajos practicos/TP 01.html">trabajos practicos</a></li><li class="breadcrumb-item"><a href="../trabajos practicos/TP 01.html">TP 01</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../trabajos practicos/TP 01.html">trabajos practicos</a></li><li class="breadcrumb-item"><a href="../trabajos practicos/TP 02.html">TP 02</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -252,13 +252,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../trabajos practicos/TP 01.html" class="sidebar-item-text sidebar-link active">
+  <a href="../trabajos practicos/TP 01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TP 01</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../trabajos practicos/TP 02.html" class="sidebar-item-text sidebar-link">
+  <a href="../trabajos practicos/TP 02.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">TP 02</span></a>
   </div>
 </li>
@@ -276,14 +276,16 @@ window.Quarto = {
   <ul>
   <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link active" data-scroll-target="#ejercicios">Ejercicios</a>
   <ul class="collapse">
-  <li><a href="#conversión-de-temperatura" id="toc-conversión-de-temperatura" class="nav-link" data-scroll-target="#conversión-de-temperatura">Conversión de temperatura</a></li>
-  <li><a href="#superficie-de-un-triángulo" id="toc-superficie-de-un-triángulo" class="nav-link" data-scroll-target="#superficie-de-un-triángulo">Superficie de un triángulo</a></li>
-  <li><a href="#dígitos-de-un-número" id="toc-dígitos-de-un-número" class="nav-link" data-scroll-target="#dígitos-de-un-número">Dígitos de un número</a></li>
-  <li><a href="#perímetro-de-un-triángulo" id="toc-perímetro-de-un-triángulo" class="nav-link" data-scroll-target="#perímetro-de-un-triángulo">Perímetro de un triángulo</a></li>
-  <li><a href="#conversiones-de-tiempo" id="toc-conversiones-de-tiempo" class="nav-link" data-scroll-target="#conversiones-de-tiempo">Conversiones de tiempo</a></li>
-  <li><a href="#tiro-vertical" id="toc-tiro-vertical" class="nav-link" data-scroll-target="#tiro-vertical">Tiro Vertical</a></li>
-  <li><a href="#comparación-de-números" id="toc-comparación-de-números" class="nav-link" data-scroll-target="#comparación-de-números">Comparación de números</a></li>
-  <li><a href="#aprobación-con-condiciones" id="toc-aprobación-con-condiciones" class="nav-link" data-scroll-target="#aprobación-con-condiciones">Aprobación con condiciones</a></li>
+  <li><a href="#divisores-de-un-número" id="toc-divisores-de-un-número" class="nav-link" data-scroll-target="#divisores-de-un-número">Divisores de un número</a></li>
+  <li><a href="#números-primos" id="toc-números-primos" class="nav-link" data-scroll-target="#números-primos">Números primos</a></li>
+  <li><a href="#cifras-con-condiciones" id="toc-cifras-con-condiciones" class="nav-link" data-scroll-target="#cifras-con-condiciones">Cifras con condiciones</a></li>
+  <li><a href="#números-perfectos" id="toc-números-perfectos" class="nav-link" data-scroll-target="#números-perfectos">Números perfectos</a></li>
+  <li><a href="#bucle-con-condición" id="toc-bucle-con-condición" class="nav-link" data-scroll-target="#bucle-con-condición">Bucle con condición</a></li>
+  <li><a href="#serie-armónica" id="toc-serie-armónica" class="nav-link" data-scroll-target="#serie-armónica">Serie Armónica</a></li>
+  <li><a href="#sucesión-de-fibonacci" id="toc-sucesión-de-fibonacci" class="nav-link" data-scroll-target="#sucesión-de-fibonacci">Sucesión de Fibonacci</a></li>
+  <li><a href="#fibonacci-y-la-proporción-aurea" id="toc-fibonacci-y-la-proporción-aurea" class="nav-link" data-scroll-target="#fibonacci-y-la-proporción-aurea">Fibonacci y la proporción aurea</a></li>
+  <li><a href="#apéndice" id="toc-apéndice" class="nav-link" data-scroll-target="#apéndice">Apéndice</a></li>
+  <li><a href="#entrega" id="toc-entrega" class="nav-link" data-scroll-target="#entrega">Entrega</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -291,10 +293,10 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../trabajos practicos/TP 01.html">trabajos practicos</a></li><li class="breadcrumb-item"><a href="../trabajos practicos/TP 01.html">TP 01</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../trabajos practicos/TP 01.html">trabajos practicos</a></li><li class="breadcrumb-item"><a href="../trabajos practicos/TP 02.html">TP 02</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">TP 01</h1>
-<p class="subtitle lead">Variables, entradas y salidas</p>
+<h1 class="title">TP 02</h1>
+<p class="subtitle lead">Iteraciones y bucles</p>
 </div>
 
 
@@ -313,180 +315,258 @@ window.Quarto = {
 
 <section id="ejercicios" class="level1">
 <h1>Ejercicios</h1>
-<p>Para entregar esta práctica deberá subir al campus el archivo <code>.py</code> que han trabajado.</p>
-<section id="conversión-de-temperatura" class="level2">
-<h2 class="anchored" data-anchor-id="conversión-de-temperatura">Conversión de temperatura</h2>
+<section id="divisores-de-un-número" class="level2">
+<h2 class="anchored" data-anchor-id="divisores-de-un-número">Divisores de un número</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Planteo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Solución</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Versión mejorada</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Planteo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Solución</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Otra opción</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>El usuario ingresa un número que representa una temperatura en °C. El programa imprime esa temperatura en F</p>
+<p>Elaborar un programa que solicite a un usuario que ingrese un número entero y muestre todos los divisores de ese número (un número al dividirse por sus divisores arroja resto 0).</p>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"ingrese la temperatura en C"</span>) <span class="co"># se imprime un mensaje</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>C <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>()) <span class="co"># se pide un valor por teclado y se lo convierte en número</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>F <span class="op">=</span>(C<span class="op">*</span><span class="fl">1.80</span><span class="op">+</span><span class="dv">32</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"La temperatura es </span><span class="sc">{</span>F<span class="sc">}</span><span class="ss"> F"</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Una opción es usar un bucle while y un contador junto al operador módulo. Si el modulo de dividir al número ingresado con el contador es cero, signiica que el contador es divisor del número. Incrementando el contador desde 1 hasta el número ingresado se usa un condicional para imprimir sólo aquellos resultados donde <code>num%div==0</code></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>num <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"ingrese un número entero: "</span>))</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>div <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> div <span class="op">&lt;</span> num:</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> num<span class="op">%</span>div <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(div, <span class="st">"es divisor de "</span>,num)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  div <span class="op">=</span> div<span class="op">+</span><span class="dv">1</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>¿Cómo hacer para tratar con un dato erróneo? Por ejemplo, un usuario ingresa un valor no númerico. En tal caso, el programa anterior arrojaría un error. Pruebe correr el programa anterior ingresando un valor no numérico.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> caf():</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  c <span class="op">=</span> <span class="bu">input</span>()</span>
+<p>Otra opción es usar un bucle for (se pueden almacenar los divisores en una lista usando <em>append</em>)</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>num <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"ingrese un número entero: "</span>))</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>divisores <span class="op">=</span> []</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">try</span>:</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    C <span class="op">=</span> <span class="bu">float</span>(c)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    F <span class="op">=</span>(C<span class="op">*</span><span class="fl">1.80</span><span class="op">+</span><span class="dv">32</span>)</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"La temperatura es </span><span class="sc">{</span>F<span class="sc">}</span><span class="ss"> F"</span>)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">except</span>:</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"ingrese un valor númerico como temperatura"</span>)</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    caf()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(num):</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> num<span class="op">%</span>(i<span class="op">+</span><span class="dv">1</span>) <span class="op">==</span> <span class="dv">0</span>: <span class="co"># uso i+1 porque range va de 0 a n-1. range(4) = 0,1,2,3</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i<span class="op">+</span><span class="dv">1</span>, <span class="st">"es divisor de "</span>,num)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    divisores.append(i<span class="op">+</span><span class="dv">1</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="bu">len</span>(divisores) <span class="op">==</span> <span class="dv">2</span>: <span class="co"># si la lista de divsores tiene dos elementos, el número es primo</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span> (num, <span class="st">"es primo"</span>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(num, <span class="st">"no es primo"</span>)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"divores de "</span>,num, <span class="st">": "</span> ,divisoresf()</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="superficie-de-un-triángulo" class="level2">
-<h2 class="anchored" data-anchor-id="superficie-de-un-triángulo">Superficie de un triángulo</h2>
+<section id="números-primos" class="level2">
+<h2 class="anchored" data-anchor-id="números-primos">Números primos</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Planteo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Pista</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<p>Realizar un programa en el que se ingrese la base y la altura de un triángulo e informe su superficie. El programa debe imprimir una leyenda que incluya los datos de entrada y el resultado.</p>
-<pre><code>Ingrese la base del triángulo: 8
-Ingrese la altura del triángulo: 5
-La superficie del triángulo de base 7 y altura 5 es 17.50</code></pre>
+<p>Elaborar un programa que solicite al usuario que ingrese un número entero y determine si el mismo es un número primo. Un número primo es un número que solo es divisible por 1 y por sí mismo.</p>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<p>Con lo hecho en el problema anterior se puede resolver. Recordar que la potenciación es una multipliación repetida, por lo que en pyhton el operador es <code>**</code>.</p>
+<p>La solución del problema anterior tiene las pistas para poder hacerl</p>
 </div>
 </div>
 </div>
 </section>
-<section id="dígitos-de-un-número" class="level2">
-<h2 class="anchored" data-anchor-id="dígitos-de-un-número">Dígitos de un número</h2>
+<section id="cifras-con-condiciones" class="level2">
+<h2 class="anchored" data-anchor-id="cifras-con-condiciones">Cifras con condiciones</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Planteo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Pista</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
-<p>Desarrollar un programa en el que se ingrese un número de 5 dígitos y que como salida se muestre:</p>
-<ol type="1">
-<li>cada dígito separado por un guión</li>
-<li>la suma de todos los dígitos</li>
-</ol>
+<p>Hacer un programa que encuentre e imprima un listado con todos los números de 4 cifras que cumplan la condición de que la suma de las cifras de orden impar es igual a la suma de las cifras de orden par. Por ejemplo, el número <span class="math inline">\(7821\)</span> cumple esta condición ya que <span class="math inline">\(7 + 2 = 8 + 1\)</span>.</p>
 </div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
-<p>Una forma de encontrar el primer dígito de un número es dividirlo por <span class="math inline">\(10^n\)</span> donde n es el orden de magnitud del número y quedarse con la parte entera. Por ejemplo: Si tenemos el número 1450 y lo dividimos por 1000 el primer dígito es la parte entera del resultado de la división, usando la operación división entera <code>//</code> y módulo <code>%</code> podemos obtener los elementos necesarios para resolver este problema. Para el resto de los dígitos, usando el operador módulo en potencias de diez decrecientes, obtenemos los “restos” usamos para reiterar el proceso de obtener el primer dígito.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="dv">1450</span><span class="op">//</span><span class="dv">1000</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="dv">1450</span><span class="op">%</span><span class="dv">1000</span>)</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="dv">450</span><span class="op">//</span><span class="dv">100</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="dv">450</span><span class="op">%</span><span class="dv">100</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Otra forma es tratar al número como texto y acceder a cada elmento por separado. Para los cálculos habría que convertir nuevamente el dato a número para operar.</p>
+<p>Más adelante veremos como se puede resolver este mismo problema mucho más fácil si se trata al número como un <code>string</code> y se acceden a las posiciones decimales de forma sistemática.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> una suma <span class="op">==</span> otra suma:</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>( num, <span class="st">'cumple con la condición'</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Podemos volver a usar el operador módulo para recuperar las cifras y usar una condicion para evaluar lo que se pide. Como debemos conseguir todos los números de cuatro cifras, nuestra condición deberá ser recorrida en un bucle <code>while</code> o <code>for</code></p>
 </div>
 </div>
 </div>
 </section>
-<section id="perímetro-de-un-triángulo" class="level2">
-<h2 class="anchored" data-anchor-id="perímetro-de-un-triángulo">Perímetro de un triángulo</h2>
+<section id="números-perfectos" class="level2">
+<h2 class="anchored" data-anchor-id="números-perfectos">Números perfectos</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Planteo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Pista</a></li></ul>
 <div class="tab-content">
 <div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
-<p>Hacer un programa en el que se ingrese la medida de los catetos de un triángulo rectángulo y que se calcule y muestre el perímetro de dicho triángulo. Incluir math a fin de utilizar la función sqrt(expresión) que calcula la raíz cuadrada de un número.</p>
-<p>Para usar la función, tenemos que importarla desde el módulo math. Para ello hacemos</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>o</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math.sqrt <span class="im">as</span> sqrt</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>La diferencia es qe en el primer caso tendremos que llamarla usando el nombre completo <code>math.sqrt(num)</code> mientras que en el segundo caso no. Como opción, también se puede prescindir de la raíz cuadrada y elevar a <span class="math inline">\(\frac{1}{2}\)</span>.</p>
+<p>Escribir un programa que encuentre los primeros 4 números perfectos. Un número perfecto es un entero positivo, que es igual a la suma de todos los enteros positivos (excluido él mismo) que son divisores del número. Por ejemplo, el primer número perfecto es <span class="math inline">\(6\)</span>, ya que los divisores de <span class="math inline">\(6\)</span> son $1, 2, 3 , $ y <span class="math inline">\(1 + 2 + 3 = 6\)</span>.</p>
 </div>
 <div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
-<p>Usar pitágoras para conocer el lado restante.</p>
+<p>Es muy similar al problema anterior, sólo que tenemos que agregar un contador que al llegar a 4 detenga la ejecución del bucle.</p>
 </div>
 </div>
 </div>
 </section>
-<section id="conversiones-de-tiempo" class="level2">
-<h2 class="anchored" data-anchor-id="conversiones-de-tiempo">Conversiones de tiempo</h2>
+<section id="bucle-con-condición" class="level2">
+<h2 class="anchored" data-anchor-id="bucle-con-condición">Bucle con condición</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">Planteo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Pista</a></li></ul>
 <div class="tab-content">
 <div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
-<p>Elaborar un programa en el que se ingrese una cantidad expresada en segundos y luego la exprese en días, horas, minutos y segundos.</p>
-<p><strong>Ejemplo:</strong> Ingrese tiempo en segundos: 93714.</p>
-<p>1 dia(s), 2 hora(s), 1 minuto(s), 54 segundo(s)</p>
+<p>Escribir un programa que reciba una cantidad indefinida de números enteros positivos hasta que se ingresa el 0. A continuación el programa debe indicar cuál fue el mayor y cuál el menor.</p>
 </div>
 <div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
-<p>Similar al problema de los dígitos, solo que el resto no resulta de dividir por potencias de diez, sino de 60.</p>
+<p>Debemos tener dos variables, una que registre el número mínimo y otra para guardar el máximo. Este bucle se ejecuta hasta que el usuario ingresa el cero, y luego nos devuelve los dos resultados almacenados en nusestras variables. Una pista</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>menor <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>mayor <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> n <span class="op">!=</span><span class="dv">0</span>:</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> n<span class="op">&gt;</span>mayor:</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    mayor <span class="op">=</span> n</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> n<span class="op">&lt;</span>menor:</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    menor <span class="op">=</span> n</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="tiro-vertical" class="level2">
-<h2 class="anchored" data-anchor-id="tiro-vertical">Tiro Vertical</h2>
+<section id="serie-armónica" class="level2">
+<h2 class="anchored" data-anchor-id="serie-armónica">Serie Armónica</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">Planteo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">Pista</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">Planteo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">Pista</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false">Pista 2</a></li></ul>
 <div class="tab-content">
 <div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
-<ul>
-<li>El usuario ingresa un instante de tiempo (t) y el programa calcula e imprime la posición de un móvil arrojado a 20 m/s hacia arriba en el planeta tierra para ese instante de tiempo.</li>
-<li>Cree otra versión en donde el usuario también ingresa la velocidad inicial.</li>
-</ul>
+<p>Realizar un programa que aproxime el cálculo de una serie armónica calculando e imprimiendo los primeros N términos y su sumatoria donde N es un valor ingresado por teclado. La serie armónica es:</p>
+<p><span class="math display">\[
+\sum_{n=1}^{∞} \frac{1}{x}
+\]</span></p>
+<p>Pruebe también con la serie</p>
+<p><span class="math display">\[
+\sum_{n=1}^{∞} \frac{1}{x^2}
+\]</span></p>
+<p>¿Qué diferencia se observa?</p>
+<p>[wikipedia de la serie armónica](https://es.wikipedia.org/wiki/Serie_arm%C3%B3nica_(matem%C3%A1tica)</p>
 </div>
 <div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
-<p>Escribir una ecuación para la la posición en función del tiempo con los datos del problema y crear la variable t como dato de entrada.</p>
+<p>Un enfoque sería acumular el resultado iterativamente, es decir, que el término siguiente se suma al anterior y el próximo se suma a lo que uno ya tiene calculado y así sucesivamente.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>n1 <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>n2 <span class="op">=</span> n1<span class="op">+</span><span class="dv">1</span><span class="op">/</span><span class="dv">2</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>n3 <span class="op">=</span> n2 <span class="op">+</span> <span class="dv">1</span><span class="op">/</span><span class="dv">3</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Se puede incluir la variable en el cálculo. Un paso intermedio útil puede ser generar una variable que se incremente y nos dé los términos <span class="math inline">\(\frac{1}{n}\)</span> en un bucle</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>n<span class="op">=</span><span class="dv">1</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> n <span class="op">&lt;</span> <span class="dv">5</span>:</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  term <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>n</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(term)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  n<span class="op">=</span>n<span class="op">+</span><span class="dv">1</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Otra opción es usar un bucle <code>for</code> con <code>range()</code>.</p>
+</div>
+<div id="tabset-6-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-3-tab">
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>nterm <span class="op">=</span> <span class="dv">3</span> <span class="co">#@param {type:"integer"}</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>suma <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">1</span> <span class="co"># contador comienza en uno (conviene en este caso para evitar dividir por cero)</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> n <span class="op">&lt;=</span> nterm:</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  term <span class="op">=</span> <span class="dv">1</span><span class="op">/</span>n</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  suma <span class="op">=</span> suma <span class="op">+</span> term</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f"termino: </span><span class="sc">{</span>n<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>term<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f"suma: </span><span class="sc">{</span>suma<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>  n<span class="op">=</span>n<span class="op">+</span><span class="dv">1</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="comparación-de-números" class="level2">
-<h2 class="anchored" data-anchor-id="comparación-de-números">Comparación de números</h2>
+<section id="sucesión-de-fibonacci" class="level2">
+<h2 class="anchored" data-anchor-id="sucesión-de-fibonacci">Sucesión de Fibonacci</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true">Planteo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false">Pista</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true">Planteo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false">Pista</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-3" role="tab" aria-controls="tabset-7-3" aria-selected="false">Otra pista</a></li></ul>
 <div class="tab-content">
 <div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
-<p>Realizar un programa en el que se ingresen dos números enteros positivos. Luego deberá restar el mayor del menor e indicar si dicha diferencia es un valor que está entre ambos números (es decir, es mayor que el más chico y menor que el más grande de los ingresados).</p>
+<p>Realizar un programa que imprima los primeros N términos de una sucesión de fibonacci, la que empieza con 0 y 1, y cada término que sigue a estos valores es la suma de los dos valores anteriores. Imprimir la razón entre un número y su número anterior).</p>
 </div>
 <div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
-<p>Se almacenan los dos números a comparar, se efectúan los cálculos, se devuelve el resultado condicionalmente usando if para cada caso.</p>
+<p>Una aproximación poco eficiente es calcular todo el árbol cada vez que se nos pide un término: si se nos pide el término “n” se calcular todos los anteriores para luego hacer la suma y obtener el que se nos pide. Esto implica que vamos “Bajando” por un proceso en donde a fin de cuentas sólo calcularemos muchas veces <span class="math inline">\(f(0)\)</span> y <span class="math inline">\(f(1)\)</span></p>
+<p>matemáticamente tenemos que:</p>
+<p><span class="math display">\[\begin{align}
+f_0 &amp;= 0 \\
+f_1 &amp;= 1 \\
+f_n &amp;= f_{n-1} + f_{n-2} \\
+f_2 &amp;= f_{2-1} + f_{2-2} \\
+f_2 &amp;= f_{1} + f_{0} \\
+f_2 &amp;= 1 + 0 = 1 \\
+\end{align}\]</span></p>
+<p>Calcular <span class="math inline">\(f(3)\)</span> implica calcular <span class="math inline">\(f(2)\)</span> (que incluye a los términos anteriores) y así sucesivamente.</p>
+</div>
+<div id="tabset-7-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-3-tab">
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">2</span> </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>contador <span class="op">=</span> <span class="dv">0</span> <span class="co"># el contador controla el bucle</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># definimos los valores iniciales</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>f0 <span class="op">=</span> <span class="dv">0</span>  <span class="co"># valor fijo al comienzo de la secuencia</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>f1 <span class="op">=</span> <span class="dv">1</span>  <span class="co"># valor fijo al comienzo de la secuencia</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>fn <span class="op">=</span> f0<span class="op">+</span>f1  <span class="co"># termino n de la secuencia</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> contador <span class="op">&lt;=</span> n:</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> n <span class="op">&lt;=</span><span class="dv">2</span>:</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>      <span class="bu">print</span>(f0)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">1</span>:</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>      <span class="bu">print</span>(f0,f1)</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">2</span>:</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>      <span class="bu">print</span>(f0,f1,fn)</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">break</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">else</span>:</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    f0 <span class="op">=</span> f1</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    f1 <span class="op">=</span> fn</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>    fn <span class="op">=</span> f0<span class="op">+</span>f1</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>    contador <span class="op">=</span> contador<span class="op">+</span><span class="dv">1</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(fn)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="aprobación-con-condiciones" class="level2">
-<h2 class="anchored" data-anchor-id="aprobación-con-condiciones">Aprobación con condiciones</h2>
+<section id="fibonacci-y-la-proporción-aurea" class="level2">
+<h2 class="anchored" data-anchor-id="fibonacci-y-la-proporción-aurea">Fibonacci y la proporción aurea</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-8-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-1" role="tab" aria-controls="tabset-8-1" aria-selected="true">Planteo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-2" role="tab" aria-controls="tabset-8-2" aria-selected="false">Pista</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-3" role="tab" aria-controls="tabset-8-3" aria-selected="false">Otra pista</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-8-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-1" role="tab" aria-controls="tabset-8-1" aria-selected="true">Planteo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-2" role="tab" aria-controls="tabset-8-2" aria-selected="false">Pista</a></li></ul>
 <div class="tab-content">
 <div id="tabset-8-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-8-1-tab">
-<p>Realizar un programa que solicite 3 notas de parciales obtenidas por un alumno. A continuación se mostrará por pantalla un mensaje que indique la situación del alumno:</p>
-<ul>
-<li>Si el alumno aprobó los 3 parciales (nota 6 o más) y su promedio es mayor o igual a 8, promociona la materia con la nota promedio.</li>
-<li>Si el alumno aprobó los 3 parciales pero su promedio no supera los 8 puntos, debe rendir examen final.</li>
-<li>Si el alumno no aprobó uno o más parciales, se solicitará que se ingrese la nota de un recuperatorio. Si éste hubiera sido aprobado, se informará el promedio general (3 parciales + el recuperatorio) y su condición de aprobado (aún cuando el promedio no supere los 6 puntos).</li>
-<li>Si no hubiera aprobado el recuperatorio se informará que el alumno fue aplazado.</li>
-</ul>
+<p>Realizar un programa que imprima términos de la sucesión de fibonacci hasta que la razón entre un número y su número anterior de como resultado, con una incerteza de una diez millonésima parte, el número áureo.</p>
 </div>
 <div id="tabset-8-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-2-tab">
-<p>Este código no resuelve todo el problema pero presenta algunas herramientas útiles, como limitar los dígitos que se muestran al imprimir una variable o el uso de la funcion suma sobre los elementos de una lista. Lea atentamente cada línea y asegúrese de que comprende qué hace en cada caso. El problema requiere evaluar los escenarios posibles por lo que quizás le resulte útil hacer un bosquejo en papel sobre los posibles casos para luego pasarlos a código.</p>
-</div>
-<div id="tabset-8-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-3-tab">
-<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calif(n<span class="op">=</span><span class="dv">3</span>):</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">"""</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">  Función que hace lo que se pide</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">  """</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  notas <span class="op">=</span> []</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n):</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"ingrese la </span><span class="sc">{</span>i<span class="op">+</span><span class="dv">1</span><span class="sc">}</span><span class="ss"> nota"</span>)</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    nota <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>())</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    notas.append(nota)</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>  prom <span class="op">=</span> (<span class="bu">sum</span>(notas))<span class="op">/</span>n</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="ss">f"</span><span class="sc">{</span>prom<span class="sc">:.2f}</span><span class="ss">"</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Usando lo que vimos sobre funciones y listas, la clave está en como detener el bucle que usen para controlar la ejecución: el programa debería detenerse cuando: <span class="math display">\[
+\left|\frac{1+\sqrt{5}}{2}-\frac{f(n+1)}{f(n)}\right|&lt;1\cdot 10^{-7}
+\]</span></p>
 </div>
 </div>
 </div>
+</section>
+<section id="apéndice" class="level2">
+<h2 class="anchored" data-anchor-id="apéndice">Apéndice</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>División entera</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="dv">123</span><span class="op">//</span><span class="dv">100</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Módulo y división entera</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>(<span class="dv">123</span><span class="op">%</span><span class="dv">100</span>)<span class="op">//</span><span class="dv">10</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<p>Uso de <code>if</code>, `<code>else</code> y <code>elif</code></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">8</span> <span class="co">#@param {type:"integer"}</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> n <span class="op">==</span> <span class="dv">8</span>:</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'ocho'</span>)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> n <span class="op">==</span><span class="dv">9</span>:</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'nueve'</span>)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="st">'no es ni ocho ni nueve'</span>)</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="entrega" class="level2">
+<h2 class="anchored" data-anchor-id="entrega">Entrega</h2>
+<p>Vía campus virtual en la sección trabajos prácticos. Un archivo <code>.py</code> con todos los ejercicios juntos, pueden estar separados por el comando de celda <code>#%%</code> o por comentarios, que pueden usar también para explicar sus desarrollos.</p>
 
 
 </section>
