@@ -1,5 +1,60 @@
 [
   {
+    "objectID": "trabajos practicos/TP 04.html",
+    "href": "trabajos practicos/TP 04.html",
+    "title": "TP 04",
+    "section": "",
+    "text": "Crear un programa que grafique la familia de funciones cuadráticas de la forma \\(y=a\\cdot x^2\\) para \\(-5&lt;a&lt;5\\) en un mismo par de ejes cartesianos.\n\nAgregar nombre a los ejes (horizontal y vertical)\nAgregar un título para la gráfica\nMostrar la leyenda",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 04"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/TP 04.html#familia-de-funciones",
+    "href": "trabajos practicos/TP 04.html#familia-de-funciones",
+    "title": "TP 04",
+    "section": "",
+    "text": "Crear un programa que grafique la familia de funciones cuadráticas de la forma \\(y=a\\cdot x^2\\) para \\(-5&lt;a&lt;5\\) en un mismo par de ejes cartesianos.\n\nAgregar nombre a los ejes (horizontal y vertical)\nAgregar un título para la gráfica\nMostrar la leyenda",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 04"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/TP 04.html#at-vt-y-xt-en-un-lienzo",
+    "href": "trabajos practicos/TP 04.html#at-vt-y-xt-en-un-lienzo",
+    "title": "TP 04",
+    "section": "2 \\(a(t)\\), \\(v(t)\\) y \\(x(t)\\) en un lienzo",
+    "text": "2 \\(a(t)\\), \\(v(t)\\) y \\(x(t)\\) en un lienzo\nDado un movimiento en caída libre en una dimensión con condiciones iniciales arbitrarias crear en un sólo lienzo gráficas de posición, velocidad y aceleración en función del tiempo.",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 04"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/TP 04.html#m.a.s",
+    "href": "trabajos practicos/TP 04.html#m.a.s",
+    "title": "TP 04",
+    "section": "3 M.A.S",
+    "text": "3 M.A.S\nDado un movimiento armónico simple en una dimensión (con condiciones iniciales arbitrarias) crear en un sólo lienzo las gráficas de posición, velocidad y aceleración en función del tiempo",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 04"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/TP 04.html#reorganización-del-lienzo-x2",
+    "href": "trabajos practicos/TP 04.html#reorganización-del-lienzo-x2",
+    "title": "TP 04",
+    "section": "4 Reorganización del lienzo x2",
+    "text": "4 Reorganización del lienzo x2\nModificar las gráficas de los dos puntos anteriores para que el lienzo muestre \\(x(t)\\) ocupando la primera fila extendiéndose a dos columnas, mientras que a \\(v(t)\\) y \\(a(t)\\) ocupando una columna de la segunda fila.",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 04"
+    ]
+  },
+  {
     "objectID": "trabajos practicos/TP 02.html",
     "href": "trabajos practicos/TP 02.html",
     "title": "TP 02",
@@ -171,156 +226,94 @@
     "href": "clases.html",
     "title": "Clases",
     "section": "",
-    "text": "Ordenar por\n       Por defecto\n         \n          Título\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTítulo\n\n\nSubtítulo\n\n\nDescripción\n\n\n\n\n\n\nPython 01\n\n\nIntroducción a la programación en Python\n\n\n\n\n\n\n\nPython 02\n\n\nContenedores, estructuras lógicas y funciones\n\n\n\n\n\n\n\nPython 03\n\n\nAlgo más sobre funciones y listas\n\n\n\n\n\n\n\nPython 04\n\n\nIntroducción a Numpy\n\n\n\n\n\n\n\n\nNo hay resultados"
+    "text": "Ordenar por\n       Por defecto\n         \n          Título\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTítulo\n\n\nSubtítulo\n\n\nDescripción\n\n\n\n\n\n\nPython 01\n\n\nIntroducción a la programación en Python\n\n\n\n\n\n\n\nPython 02\n\n\nContenedores, estructuras lógicas y funciones\n\n\n\n\n\n\n\nPython 03\n\n\nAlgo más sobre funciones y listas\n\n\n\n\n\n\n\nPython 04\n\n\nIntroducción a Numpy\n\n\n\n\n\n\n\nPython 05\n\n\nMatplotlib (introducción)\n\n\n\n\n\n\n\n\nNo hay resultados"
   },
   {
-    "objectID": "clases/Clase-03.html",
-    "href": "clases/Clase-03.html",
-    "title": "Python 03",
+    "objectID": "clases/Clase-04.html",
+    "href": "clases/Clase-04.html",
+    "title": "Python 04",
     "section": "",
-    "text": "Temario\n\n\n\nEn esta clase veremos:\n\nComo definir una función\nLos métodos más comunes de las listas\nUsaremos los anterior para resolver de mejor forma algunas situaciones",
+    "text": "Para agregar a nuestro espacio de trabajo las funciones que un módulo de python nos provee debemos importarlo. La sintaxis sigue algunas de estas convenciones\nimport modulo as m\nImportamos el modulo y le asignamos un nombre m en este caso, ya sea para evitar confusiones, hacerlo más manejable o corto.\nfrom modulo import submodulo as sm\nDe una librería importamos sólo la función o submódulo que necesitamos.\n\n\n\n\n\n\n\n\nTemario\n\n\n\nEn esta clase veremos:\n\nQué es Numpy\nArrays de Numpy\nAlgunos métodos y funciones de Numpy",
     "crumbs": [
       "Clases",
-      "Python 03"
+      "Python 04"
     ]
   },
   {
-    "objectID": "clases/Clase-03.html#repaso-sobre-funciones-y-listas",
-    "href": "clases/Clase-03.html#repaso-sobre-funciones-y-listas",
-    "title": "Python 03",
-    "section": "Repaso sobre funciones y listas",
-    "text": "Repaso sobre funciones y listas\nPodemos usar el problema de Fibonacci de la práctica para repasar las funciones y algunas propiedades de las listas en python. Ya que los valores de \\(f_n\\) se calculan una y otra vez, quizás podríamos guardar éstos mismos en una lista. En python una lista es cualquier cosa encerrada entre corchetes.\nlista = []\narriba vemos una lista vacía\nlista = [2,3]\nLista con dos elementos numéricos\nlista = [2.0,2,'boca','river']\nLista con elementos mixtos\nlista[2]\nnos devuelve el elemento que ocula la posición 2 (recordar que los índices empiezan en cero)\nlista[2] = 'velez'\nasigna el dato ingresado en la posición 2 de la lista.\npodemos agregar un valor al final de una lista usando\nlista.append('mi nuevo valor')",
-    "crumbs": [
-      "Clases",
-      "Python 03"
-    ]
-  },
-  {
-    "objectID": "clases/Clase-03.html#funciones",
-    "href": "clases/Clase-03.html#funciones",
-    "title": "Python 03",
-    "section": "Funciones",
-    "text": "Funciones\nLas definimos tal como en matemática\ndef f(x):\n  y=2*x\n  return y\nla palabra def es reservada para definir funciones. Luego del nombre, en el ejemplo es f entre paréntesis van los argumentos. Luego, en el bloque central las instrucciones. La palabra return hace explicita la ejecución de la función y “devuelve” lo que se ponga allí. De todas formas, las funciones pueden imprimir en consola respuestas o valores sin necesidad de que devuelvan un resultado mediante return.\ndef f(x):\n  y=2*x\n  print(y)\nla diferencia radica en que al imprimir, el resultado sólo esta visible en pantalla y no podemos volver a usar ese dato para otro cálculo o proceso. por ejemplo, si uno quisiera Graficar la función f debería poder tener los valores de entrada y salida como pares ordenados y eso sólo podríamos lograrlo mediante el uso de return. Más adelante profundizaremos.\n\nPara Fibonacci\ndef fibo(n):\n  serie = [0,1]\n  ratio = [\"-\",1]\n  if n &lt;= 2:\n    print(serie[0:n]) # imprime desde las posiciones 0 a la n de la lista serie\n    print(ratio[0:n]) # imprime desde las posiciones 0 a la n de la lista ratio\n  else:\n\n    for i in range(1,n):\n      serie.append(serie[i]+serie[i-1])\n      ratio.append(serie[i+1]/serie[i])\n\n    print(serie)\n    print(ratio)\nSe puede definir un método recurrente (que se llama a sí mismo dentro de su definición) para calcular la sucesión de Fibonacci. Lo pueden googlear, pero es didácticamente bastante oscuro, por lo que no lo recomiendo como material de enseñanza.\nLo que si se puede hacer, es la versión mas sencilla, que también es un poco críptica pero más clara, que sería algo así:\ndef fib(n):\n    f_n = 0  # posición n\n    fn_1 = 1  # posición n+1\n\n1    for k in range(n):\n2        fn_2 = fn_1+ f_n\n3        f_n = fn_1\n4        fn_1 = fn_2\n\n        # para n=1\n        # fn_2 = 1+1\n        # f_n = 1\n        # f_n1 =2\n\n        # para n=2\n        # fn_2 = 2+1 =3\n        # f_n = 2\n        #fn_1 = 3\n\n        # para n=3\n        # fn_2 = 3+2= 5\n        # fn = 3\n        # fn_1 = 3\n\n    return f_n\n\nfor i in range(8):\n  print(fib(i))\n\n1\n\nrecorro de 0 a n calculando los valores\n\n2\n\nposición n+2, para n=0 fn_2 =&gt; vale 1=1+0\n\n3\n\nahora la posición n, que es la que se va a imprimir, se redefine como la posición siguiente f_n=1\n\n4\n\nla posición n+1 se define como lo que se obtuvo para n+2 y volvemos al inicio del bucle fn_1 = 1\n\n\nPresentación",
-    "crumbs": [
-      "Clases",
-      "Python 03"
-    ]
-  },
-  {
-    "objectID": "clases/Clase-01.html",
-    "href": "clases/Clase-01.html",
-    "title": "Python 01",
+    "objectID": "clases/Clase-04.html#importar-módulos",
+    "href": "clases/Clase-04.html#importar-módulos",
+    "title": "Python 04",
     "section": "",
-    "text": "Código para escanear\n\n\n\n\nFigura 1: Formulario a completar",
+    "text": "Para agregar a nuestro espacio de trabajo las funciones que un módulo de python nos provee debemos importarlo. La sintaxis sigue algunas de estas convenciones\nimport modulo as m\nImportamos el modulo y le asignamos un nombre m en este caso, ya sea para evitar confusiones, hacerlo más manejable o corto.\nfrom modulo import submodulo as sm\nDe una librería importamos sólo la función o submódulo que necesitamos.\n\n\n\n\n\n\n\n\nTemario\n\n\n\nEn esta clase veremos:\n\nQué es Numpy\nArrays de Numpy\nAlgunos métodos y funciones de Numpy",
     "crumbs": [
       "Clases",
-      "Python 01"
+      "Python 04"
     ]
   },
   {
-    "objectID": "clases/Clase-01.html#formulario-de-bienvenida",
-    "href": "clases/Clase-01.html#formulario-de-bienvenida",
-    "title": "Python 01",
-    "section": "",
-    "text": "Código para escanear\n\n\n\n\nFigura 1: Formulario a completar",
+    "objectID": "clases/Clase-04.html#arrays-de-numpy",
+    "href": "clases/Clase-04.html#arrays-de-numpy",
+    "title": "Python 04",
+    "section": "Arrays de numpy",
+    "text": "Arrays de numpy\nEl objeto principal de Numpy es un array homogéneo multidimensional. Básicamente se trata de una tabla de elementos (generalmente números) todos del mismo tipo (ésta es una diferencia en cuanto a las listas, que permitían tipos mezclados) que se encuentran indizados (indexados). Las dimensiones del array en Numpy se denominan ejes (axes).\nLa clase base del array es ndarray (lo que Python nos devuelve si usamos la función type) sobre un array.\nLos atributos principales de un array son:\n\nndarray.ndim: la cantidad de ejes\nndarray.shape: La “forma” del array, es decir, sus dimensiones. Es una n-upla de enteros que nos dice la dimensión del array en cada eje. Por ejemplo, para una matriz de n filas y m columnas shape será (n,m) (existiendo un sólo eje o axis). La longitud de la forma shape será la cantidad de ejes que tengamos, es decir ndim. Podríamos tener en un mismo array varias matrices una en cada eje.\nndarray.size: Cantidad de elementos en el array.\nndarray.dtype: El tipo de datos que contiene el array.\nndarray.itemsize: El tamaño (en bytes) de los elementos del array",
     "crumbs": [
       "Clases",
-      "Python 01"
+      "Python 04"
     ]
   },
   {
-    "objectID": "clases/Clase-01.html#intro-a-python",
-    "href": "clases/Clase-01.html#intro-a-python",
-    "title": "Python 01",
-    "section": "Intro a Python",
-    "text": "Intro a Python\nEste documento es una adaptación de otro existente. Compilamos algunos recursos útiles para la materia\nManual de Python en español\nBibliografía de la materia",
+    "objectID": "clases/Clase-04.html#arange-y-linspace",
+    "href": "clases/Clase-04.html#arange-y-linspace",
+    "title": "Python 04",
+    "section": "Arange y Linspace",
+    "text": "Arange y Linspace\nImportamos numpy\nimport numpy as np\nPodemos crear un array desde cero usando algunas funciones que vienen con numpy\na = np.arange(15) # Array que va de 0 a 14\nLa sintaxis completa es siimlar a la función range de python\na = np.arange(inicio,fin,paso)\nPodmemos crear un array usando la función linspace que es más conveniente cuando queremos usar datos equiespaciados en una cantidad no entera\nnp.linspace(0,10,20) # inicio, fin, cantidad de elementos\n\nArray desde una lista\nEs posible convertir datos de otro origen al formato de array de numpy pero no desde elementos indivuduales\na = np.array(1,2,3,4)   # MAL\na = np.array([1,2,3,4]) # BIEN\na = np.array((1,2,3,4))  # BIEN\n\n\nArray desde tuplas\narray también puede transformar conjuntos de tuplas o secuencias de secuencias en arreglos n-dimensionales. Por ejemplo:\nc = np.array([(1.5, 2 ,3), (4, 5, 6), (7.1, 7.2, 7.3)])\nprint(c)\nprint(c.shape)\n\n\nZeros, Ones, empty\nLa función zeros crea un array de ceros, la función ones crea un array de unos y la función random.rand crea un array de valores float aleatorios en el intervalo [0,1] mientras que la función empty crea un array cuyo contenido depende de lo que haya en memoria (sinceramente nunca usé esta función) con el tipo float64.\nExisten otras funciones como zeros_like que crea arrays del tamaño de otro objeto, útil cuando queremos que dos arrays tengan el mismo tamaño.\n\nZerosOneEmptyZeros Like\n\n\nnp.zeros((3,4))\n\n\ntest = np.ones((2,3,4), dtype=np.int16)\nprint(test)\n\n\nnp.empty((2,3))\n\n\nC =np.zeros_like(B)\nnp.size(C)\nprint(C)",
     "crumbs": [
       "Clases",
-      "Python 01"
+      "Python 04"
     ]
   },
   {
-    "objectID": "clases/Clase-01.html#tipos-de-variables",
-    "href": "clases/Clase-01.html#tipos-de-variables",
-    "title": "Python 01",
-    "section": "Tipos de variables",
-    "text": "Tipos de variables\n\nNuméricas:\n\nint, float, long, complex\n\nstring\nbooleanas\n\nTrue / False\n\n\nSe resumen en la siguiente tabla:\n\nTipos de datos en Python\n\n\n\n\n\n\n\n\n\nTipo\nEjemplo\nDescripción\n\n\n\n\nstr\nx = 'abc'\nString: caracteres de texto\n\n\nint\nx = 1\nintegers (i.e., números enteros)\n\n\nfloat\nx = 1.0\nfloating-point numbers (i.e., números reales)\n\n\ncomplex\nx = 1 + 2j\nnúmeros complejos\n\n\nbool\nx = True\nBooleano: Verdadero/Falso\n\n\nNoneType\nx = None\nObjeto para designar el valor nulo\n\n\n\nSe usa la función type() para conocer el tipo de una variable\n\nFracciones\nBueno, las fracciones no son representaciones “típicas” en los lenguajes de programación, y en python, debemos usar los módulos específicos para operar con ellas. Más información acá. Veremos más adelante como trabjar con fracciones.\n\n\nstringIntegerFloatBooleanNone\n\n\n# String\nc = 'hello'\nprint(type(c))\n\n\n# Integer\na = 1\nprint(type(a))\n\n\n# Float\nb = 1.0\nprint(type(b))\n\n\n# Boolean\nd = True\nprint(type(d))\n\n\n# None\ne = None\nprint(type(e))",
+    "objectID": "clases/Clase-04.html#algunos-atributos",
+    "href": "clases/Clase-04.html#algunos-atributos",
+    "title": "Python 04",
+    "section": "Algunos atributos",
+    "text": "Algunos atributos\nA este elemento le podemos consultar los atributos que vimos en la sección anterior\n\ndtypendimitemsizesize\n\n\nprint(a.shape)\n\n\nprint(a.ndim)\n\n\nprint(a.dtype.name)\n\n\nprint(a.itemsize)\nprint(a.size)",
     "crumbs": [
       "Clases",
-      "Python 01"
+      "Python 04"
     ]
   },
   {
-    "objectID": "clases/Clase-01.html#operadores-de-cadenas-de-texto",
-    "href": "clases/Clase-01.html#operadores-de-cadenas-de-texto",
-    "title": "Python 01",
-    "section": "Operadores de cadenas de texto",
-    "text": "Operadores de cadenas de texto\nLos operadores matemáticos son diferentes en las cadenas de texto, por ejemplo el sigo + se usa para unir cadenas\nRepeticiones: Se usa *n para repetir una cadena n veces\n# Asignar y combinar cadenas\na = 'Hello'\nb = 'World'\nprint(a + ' ' + b)\n# f-strings: reemplazarvalores de variables en cadenas\nfirstname = 'Beto'\nprint(f'Me llamo {firstname}')\n# Combininar f-strings\nfirstname = 'Beto'\nlastname = 'Velez'\n\nprint(f'My name is {firstname} {lastname}')\n# Repetir una cadena\nprint(str(a)*5)\n# Repetir un cadena con espacios\nprint(str(a+' ')*5)",
+    "objectID": "clases/Clase-04.html#manipulación-de-arrays",
+    "href": "clases/Clase-04.html#manipulación-de-arrays",
+    "title": "Python 04",
+    "section": "Manipulación de arrays",
+    "text": "Manipulación de arrays\nLas funciones típicas son: - ravel() aplana el array - reshape() cambia la forma - transpose() lo transpone\nPodemos crear un array con valores aleatorios usando el submódulo random de numpy.\n1ejemplo = np.random.rand(4,4)\nprint(ejemplo)\n\n1\n\nUn array (matriz) de 4x4\n\n\n1example_flat = example.ravel()\nprint(example_flat)\n\n1\n\ndevuelve el array, “aplanado”\n\n\n1example_flat.reshape(2,8)\n\n1\n\nDevuelve el array pero como una matriz de 2x8\n\n\n1example_flat.reshape(4,4)\n\n1\n\nDevuelve el array a su forma original\n\n\n1test = np.random.rand(2,3,6)\n2print(test.ravel())\n3print(example.transpose())\n\n1\n\nDos arrays que contienen a su vez arrays de 2x3 (CxF)\n\n2\n\nAplana el array\n\n3\n\nTranspone (invierte filas y columnas)\n\n\nLa función rand() merece un apartado en sí misma y la veremos más adelante pero genera desde un array con un sólo elemento aleatorio entre cero y uno o arrays de cualquier forma.",
     "crumbs": [
       "Clases",
-      "Python 01"
+      "Python 04"
     ]
   },
   {
-    "objectID": "clases/Clase-01.html#operadores-matemáticos",
-    "href": "clases/Clase-01.html#operadores-matemáticos",
-    "title": "Python 01",
-    "section": "Operadores Matemáticos",
-    "text": "Operadores Matemáticos\nEn python tenemos los clásicos operadores matemáticos\n\n+, -, *, y /\nExponenciación **\nModulo % (Resto)\n\n\nAdiciónSustracciónMultiplicaciónDivisiónExponenciaciónModulo\n\n\na = 2 + 7\nprint(f'a = {a}')\n\n\nb = a - 5\nprint(f'b = a-5 = {a}-5 = {b}')\n\n\nprint(f'b*2 = {b}*2 = {b*2}')\n\n\nprint(f'a/3 = {a}/3 = {a/3}')\n\n\nprint(f'b^2 = b**2 = {b}**2 = {b**2}')\n\n\nModulo de vuelve el resto luego de dividir entre dos números\nprint('(Modulo de vuelve el resto luego de dividir entre dos números)')\nprint(f'el resto de  b/9 = resto de {b}/9 = {b%9}')",
+    "objectID": "clases/Clase-04.html#actividad",
+    "href": "clases/Clase-04.html#actividad",
+    "title": "Python 04",
+    "section": "Actividad",
+    "text": "Actividad\nUsando el módulo de ayuda buscar las funciones que permiten en numpy calcular:\n\nel valor medio\nla desviación estándar\nLa sumatoria de un array\nEl valor máximo de un array\nEl valor mínimo de un array",
     "crumbs": [
       "Clases",
-      "Python 01"
+      "Python 04"
     ]
   },
   {
-    "objectID": "clases/Clase-01.html#operadores-lógicos",
-    "href": "clases/Clase-01.html#operadores-lógicos",
-    "title": "Python 01",
-    "section": "Operadores lógicos",
-    "text": "Operadores lógicos\nHacen una comparación y devuelven un booleano (verdadero o falso)\nx == y # x es igual a y\nx != y # x no es igual a y\nx &gt; y # x es mayor que y\nx &lt; y # x es menor que y\nx &gt;= y # x es mayor o igual que y\nx &lt;= y # x es menor o igual que y\n\nEn cadenas de textoEn datos numéricos\n\n\na = 'hola'\nb = 'que tal'\nc = 'Hola'\nprint('a==b: ' + str(a==b))\nprint('a==c: ' + str(a==c))\nprint('a!=b: ' + str(a!=b))\nprint()\n\n\nd = 5\ne = 8\nprint('d &lt; e: ' + str(d &lt; e))\nprint('d &gt;= e: ' + str(d &gt;= e))",
+    "objectID": "clases/Clase-04.html#referencias",
+    "href": "clases/Clase-04.html#referencias",
+    "title": "Python 04",
+    "section": "Referencias",
+    "text": "Referencias\n\n✏️ Ejercicios de Numpy en W3Schools.com\n✏️ 101 Ejercicios de Numpy con soluciones\n✏️ Funciones estadísticas en Numpy",
     "crumbs": [
       "Clases",
-      "Python 01"
-    ]
-  },
-  {
-    "objectID": "clases/Clase-01.html#ejercicios",
-    "href": "clases/Clase-01.html#ejercicios",
-    "title": "Python 01",
-    "section": "Ejercicios",
-    "text": "Ejercicios\n\nCrear una variable de tipo numérica\nAsignar a la variable un número entero, por ejemplo “1” y ejecutar la función type sobre ella.\nAsignar a la variable un número con decimales ejemplo “3.5” y ejecutar la función type sobre ella.\nCrear dos variables, a una asignarle un valor numérico entero y a otra uno con lugares decimales, pero que coincidan. Por ejemplo “5” y “5.0” compararlos usando el operador lógico de igualdad. ¿Qué se obtiene?\nUsar la el operador módulo (resto) sobre diferentes números. ¿Cómo podría escribir un programa sencillo que me indique si un número es divible por otro? ¿Qué condiciones debería evaluar? ¿Qué operadores lógicos necesito?\nEscribir un diagrama de lo que debería hacer el programa del punto 5",
-    "crumbs": [
-      "Clases",
-      "Python 01"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Computación 1-661",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "calendario.html",
-    "href": "calendario.html",
-    "title": "Calenadario de clases",
-    "section": "",
-    "text": "Cronograma Inicial de Clases",
-    "crumbs": [
-      "Info Cursada",
-      "Calendario de clases"
-    ]
-  },
-  {
-    "objectID": "calendario.html#cronograma-actualizado",
-    "href": "calendario.html#cronograma-actualizado",
-    "title": "Calenadario de clases",
-    "section": "Cronograma actualizado",
-    "text": "Cronograma actualizado\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nClase\nDía\nFecha\nContenido\nApuntes\nDiapos\nEjs.\nTp\nExamen\nProyecto\n\n\n\n\n1\nMiércoles\n25/03/2026\nPython: Introducción a la programación en Python\n\n\n\n\n\n\n\n\n2\nMiércoles\n01/04/2026\nPython: Tipos de datos y contenedores\n\n\n\n\n\n\n\n\n3\nMiércoles\n07/04/2026\nPython: Estructuras de control\n\n\n\n\n\n\n\n\n4\nMiércoles\n14/04/2026\nPython: Funciones y estructuras de control\n\n\n\n\n\n\n\n\n5\nMiércoles\n21/04/2026\nPython: Funciones y estructuras de control",
-    "crumbs": [
-      "Info Cursada",
-      "Calendario de clases"
+      "Python 04"
     ]
   },
   {
@@ -412,91 +405,197 @@
     ]
   },
   {
-    "objectID": "clases/Clase-04.html",
-    "href": "clases/Clase-04.html",
-    "title": "Python 04",
+    "objectID": "calendario.html",
+    "href": "calendario.html",
+    "title": "Calenadario de clases",
     "section": "",
-    "text": "Para agregar a nuestro espacio de trabajo las funciones que un módulo de python nos provee debemos importarlo. La sintaxis sigue algunas de estas convenciones\nimport modulo as m\nImportamos el modulo y le asignamos un nombre m en este caso, ya sea para evitar confusiones, hacerlo más manejable o corto.\nfrom modulo import submodulo as sm\nDe una librería importamos sólo la función o submódulo que necesitamos.\n\n\n\n\n\n\n\n\nTemario\n\n\n\nEn esta clase veremos:\n\nQué es Numpy\nArrays de Numpy\nAlgunos métodos y funciones de Numpy",
+    "text": "Cronograma Inicial de Clases",
     "crumbs": [
-      "Clases",
-      "Python 04"
+      "Info Cursada",
+      "Calendario de clases"
     ]
   },
   {
-    "objectID": "clases/Clase-04.html#importar-módulos",
-    "href": "clases/Clase-04.html#importar-módulos",
-    "title": "Python 04",
+    "objectID": "calendario.html#cronograma-actualizado",
+    "href": "calendario.html#cronograma-actualizado",
+    "title": "Calenadario de clases",
+    "section": "Cronograma actualizado",
+    "text": "Cronograma actualizado\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nClase\nDía\nFecha\nContenido\nApuntes\nDiapos\nEjs.\nTp\nExamen\nProyecto\n\n\n\n\n1\nMiércoles\n25/03/2026\nPython: Introducción a la programación en Python\n\n\n\n\n\n\n\n\n2\nMiércoles\n01/04/2026\nPython: Tipos de datos y contenedores\n\n\n\n\n\n\n\n\n3\nMiércoles\n07/04/2026\nPython: Estructuras de control\n\n\n\n\n\n\n\n\n4\nMiércoles\n14/04/2026\nPython: Funciones y estructuras de control\n\n\n\n\n\n\n\n\n5\nMiércoles\n21/04/2026\nPython: Funciones y estructuras de control",
+    "crumbs": [
+      "Info Cursada",
+      "Calendario de clases"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Computación 1-661",
     "section": "",
-    "text": "Para agregar a nuestro espacio de trabajo las funciones que un módulo de python nos provee debemos importarlo. La sintaxis sigue algunas de estas convenciones\nimport modulo as m\nImportamos el modulo y le asignamos un nombre m en este caso, ya sea para evitar confusiones, hacerlo más manejable o corto.\nfrom modulo import submodulo as sm\nDe una librería importamos sólo la función o submódulo que necesitamos.\n\n\n\n\n\n\n\n\nTemario\n\n\n\nEn esta clase veremos:\n\nQué es Numpy\nArrays de Numpy\nAlgunos métodos y funciones de Numpy",
+    "text": "About this site"
+  },
+  {
+    "objectID": "clases/Clase-01.html",
+    "href": "clases/Clase-01.html",
+    "title": "Python 01",
+    "section": "",
+    "text": "Código para escanear\n\n\n\n\nFigura 1: Formulario a completar",
     "crumbs": [
       "Clases",
-      "Python 04"
+      "Python 01"
     ]
   },
   {
-    "objectID": "clases/Clase-04.html#arrays-de-numpy",
-    "href": "clases/Clase-04.html#arrays-de-numpy",
-    "title": "Python 04",
-    "section": "Arrays de numpy",
-    "text": "Arrays de numpy\nEl objeto principal de Numpy es un array homogéneo multidimensional. Básicamente se trata de una tabla de elementos (generalmente números) todos del mismo tipo (ésta es una diferencia en cuanto a las listas, que permitían tipos mezclados) que se encuentran indizados (indexados). Las dimensiones del array en Numpy se denominan ejes (axes).\nLa clase base del array es ndarray (lo que Python nos devuelve si usamos la función type) sobre un array.\nLos atributos principales de un array son:\n\nndarray.ndim: la cantidad de ejes\nndarray.shape: La “forma” del array, es decir, sus dimensiones. Es una n-upla de enteros que nos dice la dimensión del array en cada eje. Por ejemplo, para una matriz de n filas y m columnas shape será (n,m) (existiendo un sólo eje o axis). La longitud de la forma shape será la cantidad de ejes que tengamos, es decir ndim. Podríamos tener en un mismo array varias matrices una en cada eje.\nndarray.size: Cantidad de elementos en el array.\nndarray.dtype: El tipo de datos que contiene el array.\nndarray.itemsize: El tamaño (en bytes) de los elementos del array",
+    "objectID": "clases/Clase-01.html#formulario-de-bienvenida",
+    "href": "clases/Clase-01.html#formulario-de-bienvenida",
+    "title": "Python 01",
+    "section": "",
+    "text": "Código para escanear\n\n\n\n\nFigura 1: Formulario a completar",
     "crumbs": [
       "Clases",
-      "Python 04"
+      "Python 01"
     ]
   },
   {
-    "objectID": "clases/Clase-04.html#arange-y-linspace",
-    "href": "clases/Clase-04.html#arange-y-linspace",
-    "title": "Python 04",
-    "section": "Arange y Linspace",
-    "text": "Arange y Linspace\nImportamos numpy\nimport numpy as np\nPodemos crear un array desde cero usando algunas funciones que vienen con numpy\na = np.arange(15) # Array que va de 0 a 14\nLa sintaxis completa es siimlar a la función range de python\na = np.arange(inicio,fin,paso)\nPodmemos crear un array usando la función linspace que es más conveniente cuando queremos usar datos equiespaciados en una cantidad no entera\nnp.linspace(0,10,20) # inicio, fin, cantidad de elementos\n\nArray desde una lista\nEs posible convertir datos de otro origen al formato de array de numpy pero no desde elementos indivuduales\na = np.array(1,2,3,4)   # MAL\na = np.array([1,2,3,4]) # BIEN\na = np.array((1,2,3,4))  # BIEN\n\n\nArray desde tuplas\narray también puede transformar conjuntos de tuplas o secuencias de secuencias en arreglos n-dimensionales. Por ejemplo:\nc = np.array([(1.5, 2 ,3), (4, 5, 6), (7.1, 7.2, 7.3)])\nprint(c)\nprint(c.shape)\n\n\nZeros, Ones, empty\nLa función zeros crea un array de ceros, la función ones crea un array de unos y la función random.rand crea un array de valores float aleatorios en el intervalo [0,1] mientras que la función empty crea un array cuyo contenido depende de lo que haya en memoria (sinceramente nunca usé esta función) con el tipo float64.\nExisten otras funciones como zeros_like que crea arrays del tamaño de otro objeto, útil cuando queremos que dos arrays tengan el mismo tamaño.\n\nZerosOneEmptyZeros Like\n\n\nnp.zeros((3,4))\n\n\ntest = np.ones((2,3,4), dtype=np.int16)\nprint(test)\n\n\nnp.empty((2,3))\n\n\nC =np.zeros_like(B)\nnp.size(C)\nprint(C)",
+    "objectID": "clases/Clase-01.html#intro-a-python",
+    "href": "clases/Clase-01.html#intro-a-python",
+    "title": "Python 01",
+    "section": "Intro a Python",
+    "text": "Intro a Python\nEste documento es una adaptación de otro existente. Compilamos algunos recursos útiles para la materia\nManual de Python en español\nBibliografía de la materia",
     "crumbs": [
       "Clases",
-      "Python 04"
+      "Python 01"
     ]
   },
   {
-    "objectID": "clases/Clase-04.html#algunos-atributos",
-    "href": "clases/Clase-04.html#algunos-atributos",
-    "title": "Python 04",
-    "section": "Algunos atributos",
-    "text": "Algunos atributos\nA este elemento le podemos consultar los atributos que vimos en la sección anterior\n\ndtypendimitemsizesize\n\n\nprint(a.shape)\n\n\nprint(a.ndim)\n\n\nprint(a.dtype.name)\n\n\nprint(a.itemsize)\nprint(a.size)",
+    "objectID": "clases/Clase-01.html#tipos-de-variables",
+    "href": "clases/Clase-01.html#tipos-de-variables",
+    "title": "Python 01",
+    "section": "Tipos de variables",
+    "text": "Tipos de variables\n\nNuméricas:\n\nint, float, long, complex\n\nstring\nbooleanas\n\nTrue / False\n\n\nSe resumen en la siguiente tabla:\n\nTipos de datos en Python\n\n\n\n\n\n\n\n\n\nTipo\nEjemplo\nDescripción\n\n\n\n\nstr\nx = 'abc'\nString: caracteres de texto\n\n\nint\nx = 1\nintegers (i.e., números enteros)\n\n\nfloat\nx = 1.0\nfloating-point numbers (i.e., números reales)\n\n\ncomplex\nx = 1 + 2j\nnúmeros complejos\n\n\nbool\nx = True\nBooleano: Verdadero/Falso\n\n\nNoneType\nx = None\nObjeto para designar el valor nulo\n\n\n\nSe usa la función type() para conocer el tipo de una variable\n\nFracciones\nBueno, las fracciones no son representaciones “típicas” en los lenguajes de programación, y en python, debemos usar los módulos específicos para operar con ellas. Más información acá. Veremos más adelante como trabjar con fracciones.\n\n\nstringIntegerFloatBooleanNone\n\n\n# String\nc = 'hello'\nprint(type(c))\n\n\n# Integer\na = 1\nprint(type(a))\n\n\n# Float\nb = 1.0\nprint(type(b))\n\n\n# Boolean\nd = True\nprint(type(d))\n\n\n# None\ne = None\nprint(type(e))",
     "crumbs": [
       "Clases",
-      "Python 04"
+      "Python 01"
     ]
   },
   {
-    "objectID": "clases/Clase-04.html#manipulación-de-arrays",
-    "href": "clases/Clase-04.html#manipulación-de-arrays",
-    "title": "Python 04",
-    "section": "Manipulación de arrays",
-    "text": "Manipulación de arrays\nLas funciones típicas son: - ravel() aplana el array - reshape() cambia la forma - transpose() lo transpone\nPodemos crear un array con valores aleatorios usando el submódulo random de numpy.\n1ejemplo = np.random.rand(4,4)\nprint(ejemplo)\n\n1\n\nUn array (matriz) de 4x4\n\n\n1example_flat = example.ravel()\nprint(example_flat)\n\n1\n\ndevuelve el array, “aplanado”\n\n\n1example_flat.reshape(2,8)\n\n1\n\nDevuelve el array pero como una matriz de 2x8\n\n\n1example_flat.reshape(4,4)\n\n1\n\nDevuelve el array a su forma original\n\n\n1test = np.random.rand(2,3,6)\n2print(test.ravel())\n3print(example.transpose())\n\n1\n\nDos arrays que contienen a su vez arrays de 2x3 (CxF)\n\n2\n\nAplana el array\n\n3\n\nTranspone (invierte filas y columnas)\n\n\nLa función rand() merece un apartado en sí misma y la veremos más adelante pero genera desde un array con un sólo elemento aleatorio entre cero y uno o arrays de cualquier forma.",
+    "objectID": "clases/Clase-01.html#operadores-de-cadenas-de-texto",
+    "href": "clases/Clase-01.html#operadores-de-cadenas-de-texto",
+    "title": "Python 01",
+    "section": "Operadores de cadenas de texto",
+    "text": "Operadores de cadenas de texto\nLos operadores matemáticos son diferentes en las cadenas de texto, por ejemplo el sigo + se usa para unir cadenas\nRepeticiones: Se usa *n para repetir una cadena n veces\n# Asignar y combinar cadenas\na = 'Hello'\nb = 'World'\nprint(a + ' ' + b)\n# f-strings: reemplazarvalores de variables en cadenas\nfirstname = 'Beto'\nprint(f'Me llamo {firstname}')\n# Combininar f-strings\nfirstname = 'Beto'\nlastname = 'Velez'\n\nprint(f'My name is {firstname} {lastname}')\n# Repetir una cadena\nprint(str(a)*5)\n# Repetir un cadena con espacios\nprint(str(a+' ')*5)",
     "crumbs": [
       "Clases",
-      "Python 04"
+      "Python 01"
     ]
   },
   {
-    "objectID": "clases/Clase-04.html#actividad",
-    "href": "clases/Clase-04.html#actividad",
-    "title": "Python 04",
-    "section": "Actividad",
-    "text": "Actividad\nUsando el módulo de ayuda buscar las funciones que permiten en numpy calcular:\n\nel valor medio\nla desviación estándar\nLa sumatoria de un array\nEl valor máximo de un array\nEl valor mínimo de un array",
+    "objectID": "clases/Clase-01.html#operadores-matemáticos",
+    "href": "clases/Clase-01.html#operadores-matemáticos",
+    "title": "Python 01",
+    "section": "Operadores Matemáticos",
+    "text": "Operadores Matemáticos\nEn python tenemos los clásicos operadores matemáticos\n\n+, -, *, y /\nExponenciación **\nModulo % (Resto)\n\n\nAdiciónSustracciónMultiplicaciónDivisiónExponenciaciónModulo\n\n\na = 2 + 7\nprint(f'a = {a}')\n\n\nb = a - 5\nprint(f'b = a-5 = {a}-5 = {b}')\n\n\nprint(f'b*2 = {b}*2 = {b*2}')\n\n\nprint(f'a/3 = {a}/3 = {a/3}')\n\n\nprint(f'b^2 = b**2 = {b}**2 = {b**2}')\n\n\nModulo de vuelve el resto luego de dividir entre dos números\nprint('(Modulo de vuelve el resto luego de dividir entre dos números)')\nprint(f'el resto de  b/9 = resto de {b}/9 = {b%9}')",
     "crumbs": [
       "Clases",
-      "Python 04"
+      "Python 01"
     ]
   },
   {
-    "objectID": "clases/Clase-04.html#referencias",
-    "href": "clases/Clase-04.html#referencias",
-    "title": "Python 04",
+    "objectID": "clases/Clase-01.html#operadores-lógicos",
+    "href": "clases/Clase-01.html#operadores-lógicos",
+    "title": "Python 01",
+    "section": "Operadores lógicos",
+    "text": "Operadores lógicos\nHacen una comparación y devuelven un booleano (verdadero o falso)\nx == y # x es igual a y\nx != y # x no es igual a y\nx &gt; y # x es mayor que y\nx &lt; y # x es menor que y\nx &gt;= y # x es mayor o igual que y\nx &lt;= y # x es menor o igual que y\n\nEn cadenas de textoEn datos numéricos\n\n\na = 'hola'\nb = 'que tal'\nc = 'Hola'\nprint('a==b: ' + str(a==b))\nprint('a==c: ' + str(a==c))\nprint('a!=b: ' + str(a!=b))\nprint()\n\n\nd = 5\ne = 8\nprint('d &lt; e: ' + str(d &lt; e))\nprint('d &gt;= e: ' + str(d &gt;= e))",
+    "crumbs": [
+      "Clases",
+      "Python 01"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-01.html#ejercicios",
+    "href": "clases/Clase-01.html#ejercicios",
+    "title": "Python 01",
+    "section": "Ejercicios",
+    "text": "Ejercicios\n\nCrear una variable de tipo numérica\nAsignar a la variable un número entero, por ejemplo “1” y ejecutar la función type sobre ella.\nAsignar a la variable un número con decimales ejemplo “3.5” y ejecutar la función type sobre ella.\nCrear dos variables, a una asignarle un valor numérico entero y a otra uno con lugares decimales, pero que coincidan. Por ejemplo “5” y “5.0” compararlos usando el operador lógico de igualdad. ¿Qué se obtiene?\nUsar la el operador módulo (resto) sobre diferentes números. ¿Cómo podría escribir un programa sencillo que me indique si un número es divible por otro? ¿Qué condiciones debería evaluar? ¿Qué operadores lógicos necesito?\nEscribir un diagrama de lo que debería hacer el programa del punto 5",
+    "crumbs": [
+      "Clases",
+      "Python 01"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-03.html",
+    "href": "clases/Clase-03.html",
+    "title": "Python 03",
+    "section": "",
+    "text": "Temario\n\n\n\nEn esta clase veremos:\n\nComo definir una función\nLos métodos más comunes de las listas\nUsaremos los anterior para resolver de mejor forma algunas situaciones",
+    "crumbs": [
+      "Clases",
+      "Python 03"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-03.html#repaso-sobre-funciones-y-listas",
+    "href": "clases/Clase-03.html#repaso-sobre-funciones-y-listas",
+    "title": "Python 03",
+    "section": "Repaso sobre funciones y listas",
+    "text": "Repaso sobre funciones y listas\nPodemos usar el problema de Fibonacci de la práctica para repasar las funciones y algunas propiedades de las listas en python. Ya que los valores de \\(f_n\\) se calculan una y otra vez, quizás podríamos guardar éstos mismos en una lista. En python una lista es cualquier cosa encerrada entre corchetes.\nlista = []\narriba vemos una lista vacía\nlista = [2,3]\nLista con dos elementos numéricos\nlista = [2.0,2,'boca','river']\nLista con elementos mixtos\nlista[2]\nnos devuelve el elemento que ocula la posición 2 (recordar que los índices empiezan en cero)\nlista[2] = 'velez'\nasigna el dato ingresado en la posición 2 de la lista.\npodemos agregar un valor al final de una lista usando\nlista.append('mi nuevo valor')",
+    "crumbs": [
+      "Clases",
+      "Python 03"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-03.html#funciones",
+    "href": "clases/Clase-03.html#funciones",
+    "title": "Python 03",
+    "section": "Funciones",
+    "text": "Funciones\nLas definimos tal como en matemática\ndef f(x):\n  y=2*x\n  return y\nla palabra def es reservada para definir funciones. Luego del nombre, en el ejemplo es f entre paréntesis van los argumentos. Luego, en el bloque central las instrucciones. La palabra return hace explicita la ejecución de la función y “devuelve” lo que se ponga allí. De todas formas, las funciones pueden imprimir en consola respuestas o valores sin necesidad de que devuelvan un resultado mediante return.\ndef f(x):\n  y=2*x\n  print(y)\nla diferencia radica en que al imprimir, el resultado sólo esta visible en pantalla y no podemos volver a usar ese dato para otro cálculo o proceso. por ejemplo, si uno quisiera Graficar la función f debería poder tener los valores de entrada y salida como pares ordenados y eso sólo podríamos lograrlo mediante el uso de return. Más adelante profundizaremos.\n\nPara Fibonacci\ndef fibo(n):\n  serie = [0,1]\n  ratio = [\"-\",1]\n  if n &lt;= 2:\n    print(serie[0:n]) # imprime desde las posiciones 0 a la n de la lista serie\n    print(ratio[0:n]) # imprime desde las posiciones 0 a la n de la lista ratio\n  else:\n\n    for i in range(1,n):\n      serie.append(serie[i]+serie[i-1])\n      ratio.append(serie[i+1]/serie[i])\n\n    print(serie)\n    print(ratio)\nSe puede definir un método recurrente (que se llama a sí mismo dentro de su definición) para calcular la sucesión de Fibonacci. Lo pueden googlear, pero es didácticamente bastante oscuro, por lo que no lo recomiendo como material de enseñanza.\nLo que si se puede hacer, es la versión mas sencilla, que también es un poco críptica pero más clara, que sería algo así:\ndef fib(n):\n    f_n = 0  # posición n\n    fn_1 = 1  # posición n+1\n\n1    for k in range(n):\n2        fn_2 = fn_1+ f_n\n3        f_n = fn_1\n4        fn_1 = fn_2\n\n        # para n=1\n        # fn_2 = 1+1\n        # f_n = 1\n        # f_n1 =2\n\n        # para n=2\n        # fn_2 = 2+1 =3\n        # f_n = 2\n        #fn_1 = 3\n\n        # para n=3\n        # fn_2 = 3+2= 5\n        # fn = 3\n        # fn_1 = 3\n\n    return f_n\n\nfor i in range(8):\n  print(fib(i))\n\n1\n\nrecorro de 0 a n calculando los valores\n\n2\n\nposición n+2, para n=0 fn_2 =&gt; vale 1=1+0\n\n3\n\nahora la posición n, que es la que se va a imprimir, se redefine como la posición siguiente f_n=1\n\n4\n\nla posición n+1 se define como lo que se obtuvo para n+2 y volvemos al inicio del bucle fn_1 = 1\n\n\nPresentación",
+    "crumbs": [
+      "Clases",
+      "Python 03"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-05.html",
+    "href": "clases/Clase-05.html",
+    "title": "Python 05",
+    "section": "",
+    "text": "Es uno de los módulos mas usados para realizar gráficos. Posee dos enfoques diferentes, uno mas lineal y otro orientado a objetos. El primero posee una sintaxis similar a MATLAB y es mas adecuado para realizar gráficos en poco tiempo y con poca personalización, mientras que el segundo permite una mayor personalización de la presentación y manipulación de los datos.",
+    "crumbs": [
+      "Clases",
+      "Python 05"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-05.html#importar-el-módulo",
+    "href": "clases/Clase-05.html#importar-el-módulo",
+    "title": "Python 05",
+    "section": "Importar el módulo",
+    "text": "Importar el módulo\nPara importar el modulo hacemos\nimport matplotlib.pyplot as plt",
+    "crumbs": [
+      "Clases",
+      "Python 05"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-05.html#interfaz-orientada-a-objetos",
+    "href": "clases/Clase-05.html#interfaz-orientada-a-objetos",
+    "title": "Python 05",
+    "section": "Interfaz orientada a objetos",
+    "text": "Interfaz orientada a objetos\nLa interfaz tipo MATLAB tiene sus ventajas y desventajas. A favor, es que es sencilla, similar a algo que es bastante popular, como MATLAB y permite generar gráficas con poca escritura de código. Como desventaja, es que es más dificil de personalizar, en especial para arreglos de gráficas o gráficos mas complejos.\nLa interfaz orientada a objetos, se usa de la siguiente manera:\n\n\n\nFigure y Axes\n\n\nLa Figure es el lienzo en donde inscribimos nuestros gráficos\n\n\n\nAxes\n\n\nCada Figure puede contener varios pares de ejes cartesianos Axes\n\n\n\nArtists\n\n\nCada par de ejes a su vez tiene sus propios ejes Axes.\n\n\n\nAnatomía de una figura\n\n\n\ndias = range(1, 9)\ntemperatura = [25.6, 24.1, 26.7, 28.3, 27.5, 30.5, 32.8, 33.1]\n\nfig, ax = plt.subplots()\nax.plot(dias, temperatura)\nax.set(xlabel='Dia',\n       ylabel='Temperatura',\n       title='Gráfico de temperatura y una fórmula cualquiera $\\\\frac{1}{2}x^2$')\nplt.show()\n\n\n\n\n\n\n\n\n\nUn lienzo con un sólo gráfico\nUsamos la función subplots que devuevle dos objetos: un lienzo, y una matriz de sistemas de ejes coordenados. La sintaxis hace uso de que conocemos esto, y llama ‘fig’ al lienzo y ‘ax’ a los ejes de coordenadas. En este caso, sólo uno.\n\nfig, ax = plt.subplots(1, 1, figsize=(12,4))\nax.plot(x, y, 'o--', color='r', lw=0.4, ms=3)\nax.text(0.1, 0.1, 'text here', transform=ax.transAxes)\nax.set_xlabel('Time [s]')\nax.set_ylabel(r'$\\frac{d}{dx} f(x)$', fontsize=15)\nplt.show()\n\n\n\n\n\n\n\n\n\n\nMas de un par de ejes en un lienzo\nLa función subplots como primer argumento contiene la matriz de ejes, es decir, la cantidad de gráfios que haremos. Si nos e pasa argumento alguno devuelve un único eje. Se puede ademas definir ncols= y nrows= si queremos especificar columnas y filas por separado o tener gráficos en sólo una fila o sólo una columna.\n\nres = np.random.randn(1000)*0.2 + 0.4\nres2 = np.random.randn(1000)*0.2 + 0.4\n\nfig, axes = plt.subplots(3, 2, figsize=(8,8))\nax = axes[0][0] # eje de la fila cero columna cero\nax.plot(x, y, 'o--', color='r', lw=0.4, ms=3)\nax.text(0.1, 0.1, 'texto aca', transform=ax.transAxes)\nax = axes[1][1] # eje de la fila uno, columna uno\nax.hist(res, bins=30, density=True, histtype='step', label='C1')\nax.hist(res2, bins=30, density=True, histtype='step', label='C1')\nax.set_xlabel('$\\hat{E}-E$')\nax.legend()\nfig.tight_layout()\nfig.suptitle('Título de todos los gráficos', y=1.03, fontsize=25)\nplt.show()\n\n\n\n\n\n\n\n\n\nMosaico\nPara figuras donde el arreglo de ejes múltiples (varias gráficas) necesita que el tamaño de los gráficos no sea el mismo en todos, se pueden generar mosaicos.\n\nimport matplotlib.pyplot as plt\n\nfig, axm = plt.subplot_mosaic([['arriba izquierda','derecha'],['abajo izquierda','derecha']])\nfig.suptitle('usando plt.subplot_mosaic()')\n\nText(0.5, 0.98, 'usando plt.subplot_mosaic()')\n\n\n\n\n\n\n\n\n\n\nimport matplotlib.pyplot as plt\n\nfig, axm = plt.subplot_mosaic([['arriba','arriba'],['abajo izquierda','abajo derecha']])\nfig.suptitle('usando plt.subplot_mosaic()')\n\nText(0.5, 0.98, 'usando plt.subplot_mosaic()')\n\n\n\n\n\n\n\n\n\n\n\n\nPersonalización del gráfico\nTodas las opciones de los gráficos se pueden personalizar usando o bien la función set() agregando o la propiedad set_nombredelapropiedad(argumentos).\nLos argumentos que son propios del lienzo, se pueden pasar a la función que estemos usando para crear los ejes. Por ejemplo, el tamaño del lienzo se define usando figsize=(ancho,alto) dentro de subplots() o plt.subplot_mosaic().\n\nfig, ax = plt.subplots(1, 1, figsize=(8,3))\nax.plot(x, y, 'o--', color='r', lw=1, ms=5)\nax.text(0.1, 0.1, 'text here', transform=ax.transAxes)\nax.set_xlabel('Time [s]')\nax.set_ylabel(r'$\\frac{d}{dx} f(x)$', fontsize=15)\nax.tick_params(axis='both', which='major', labelsize=10)\nax.grid('minor')\nplt.show()\n\n\n\n\n\n\n\n\nEl aspecto por defecto de los gráfios en ocasiones presenta solapamiento entre números de los ejes u otras deficiencias estéticas. Una opción que suele dar resultado es pasar a la función que estemos usando para crear los gráficos opciones para layout podemos probar con ‘constrained’, ‘compressed’ o’tight’.\n\nimport numpy as np\nfig, ax = plt.subplots(figsize=(5, 3), layout='constrained')\nnp.random.seed(19680801)\nt = np.arange(200)\nx = np.cumsum(np.random.randn(200))\ny = np.cumsum(np.random.randn(200))\nlinesx = ax.plot(t, x, label='Random walk x')\nlinesy = ax.plot(t, y, label='Random walk y')\n\nax.set_xlabel('Tiempo [s]')\nax.set_ylabel('Distancia [km]')\nax.set_title('Caminata aleatoria')\nax.legend()\n\n\n\n\n\n\n\n\nSe pueden aplicar escalas logarítmicas y límites inferiores o superiores para las gráficas. En caso de que no especifiquemos límites para los ejes, estos se deducen de los datos.\n\nfig, ax = plt.subplots(figsize=(4, 2.5), layout='constrained')\nnp.random.seed(19680801)\nt = np.arange(200)\nx = 2**np.cumsum(np.random.randn(200))\nlinesx = ax.plot(t, x)\nax.set_yscale('log')\nax.set_xlim([20, 180])",
+    "crumbs": [
+      "Clases",
+      "Python 05"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-05.html#referencias",
+    "href": "clases/Clase-05.html#referencias",
+    "title": "Python 05",
     "section": "Referencias",
-    "text": "Referencias\n\n✏️ Ejercicios de Numpy en W3Schools.com\n✏️ 101 Ejercicios de Numpy con soluciones\n✏️ Funciones estadísticas en Numpy",
+    "text": "Referencias\n\n✏️ Inerfaz orientada a objetos\n✏️ Tutorial de Matplotlib\n✏️ Métodos de la clase Axes\n✏️ Estilos de science-plots\n📖 Hoja de trucos principiantes\n📖 Hoja de trucos intermedio\n📖 Hoja de trucos\n🔗 Varios ejes en una figura (mpl oficial)\n🔗 Introducción a los ejes (mpl oficial)\n🔗 Sintaxis y opciones de la función set()\n🔗 Opciones de Figure",
     "crumbs": [
       "Clases",
-      "Python 04"
+      "Python 05"
     ]
   },
   {
@@ -659,6 +758,61 @@
     "crumbs": [
       "trabajos practicos",
       "TP 01"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/TP 03.html",
+    "href": "trabajos practicos/TP 03.html",
+    "title": "TP 03",
+    "section": "",
+    "text": "PlanteoPista\n\n\nEscribir un programa que tome un array de longitud desconocida e imprima la sumatoria de todos sus valores y el promedio. Use las funciones intergadas de Numpy.\n\n\n\nUsar un bucle for para recorrer los elementos del array o lista\nUsar las funciones mean() y sum()\nEncerrar todo en una función\n\n\n\n\n\n\n\n\nPlanteoPista\n\n\nElaborar una función que tome como parámetros de entrada un número entero y un array o lista y que devuelva el elemento del array que se encuentra en la posición indicada. En caso de que se ingrese un índice fuera de rango, devolver un mensaje de error.\n\n\nUsar el indexado A[n] y combinarlo con if, elif, else\n\n\n\n\n\n\n\nPlanteoPista\n\n\nRealizar un programa que solicite el ingreso de números enteros hasta que se ingrese el cero. A continuación debe imprimir el máximo, el promedio y la suma de todos los números ingresados. Intente usar las funciones de numpy para ahorrase trabajo (y resolvimos estre problema anteriormente)\n\n\nInvestigue las funciones estadísticas de Numpy. Puede usar un bucle while para interrumpir la entrada de datos.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nRealizar un programa que genere un vector tiempo con números del 0 al 3 con un paso de 0.1 segundos. A continuación se debe llenar un vector posiciones que calcule las posiciones correspondientes a un tiro vertical de 3 segundos de duración que comience con velocidad inicial 30 m/s, y una altura inicial de 45 m. Encuentre la altura máxima alcanzada. Si ambos vectores tienen el mismo tamaño, agregando:\nimport matplotlib.pyplot as plt\nal principio del código, se pueden graficar ambos vectores mediante el comando plt.plot(t,y)\n\n\n\nEl vector t se puede crear usando linspace o arrange\nLa expresión \\(y(t)\\) será tratada automáticamente como un array de numpy",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 03"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/TP 03.html#suma-y-promedio",
+    "href": "trabajos practicos/TP 03.html#suma-y-promedio",
+    "title": "TP 03",
+    "section": "",
+    "text": "PlanteoPista\n\n\nEscribir un programa que tome un array de longitud desconocida e imprima la sumatoria de todos sus valores y el promedio. Use las funciones intergadas de Numpy.\n\n\n\nUsar un bucle for para recorrer los elementos del array o lista\nUsar las funciones mean() y sum()\nEncerrar todo en una función",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 03"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/TP 03.html#encuentra-el-elemento",
+    "href": "trabajos practicos/TP 03.html#encuentra-el-elemento",
+    "title": "TP 03",
+    "section": "",
+    "text": "PlanteoPista\n\n\nElaborar una función que tome como parámetros de entrada un número entero y un array o lista y que devuelva el elemento del array que se encuentra en la posición indicada. En caso de que se ingrese un índice fuera de rango, devolver un mensaje de error.\n\n\nUsar el indexado A[n] y combinarlo con if, elif, else",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 03"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/TP 03.html#encontrar-el-máximo",
+    "href": "trabajos practicos/TP 03.html#encontrar-el-máximo",
+    "title": "TP 03",
+    "section": "",
+    "text": "PlanteoPista\n\n\nRealizar un programa que solicite el ingreso de números enteros hasta que se ingrese el cero. A continuación debe imprimir el máximo, el promedio y la suma de todos los números ingresados. Intente usar las funciones de numpy para ahorrase trabajo (y resolvimos estre problema anteriormente)\n\n\nInvestigue las funciones estadísticas de Numpy. Puede usar un bucle while para interrumpir la entrada de datos.",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 03"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/TP 03.html#graficando-con-matplotlib-spolier",
+    "href": "trabajos practicos/TP 03.html#graficando-con-matplotlib-spolier",
+    "title": "TP 03",
+    "section": "",
+    "text": "PlanteoPista\n\n\nRealizar un programa que genere un vector tiempo con números del 0 al 3 con un paso de 0.1 segundos. A continuación se debe llenar un vector posiciones que calcule las posiciones correspondientes a un tiro vertical de 3 segundos de duración que comience con velocidad inicial 30 m/s, y una altura inicial de 45 m. Encuentre la altura máxima alcanzada. Si ambos vectores tienen el mismo tamaño, agregando:\nimport matplotlib.pyplot as plt\nal principio del código, se pueden graficar ambos vectores mediante el comando plt.plot(t,y)\n\n\n\nEl vector t se puede crear usando linspace o arrange\nLa expresión \\(y(t)\\) será tratada automáticamente como un array de numpy",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 03"
     ]
   }
 ]

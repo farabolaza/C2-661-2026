@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>cursada – C2-661 2026</title>
+<title>TP 03 – C2-661 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +20,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/C2-filete.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../assets/C2-filete.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -67,9 +101,39 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="C2-661 2026">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="TP 03 – C2-661 2026">
+<meta property="og:description" content="Numpy básico">
 <meta property="og:site_name" content="C2-661 2026">
 </head>
 
@@ -82,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./cursada.html">Info Cursada</a></li><li class="breadcrumb-item"><a href="./cursada.html">Información de cursada</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../trabajos practicos/TP 01.html">trabajos practicos</a></li><li class="breadcrumb-item"><a href="../trabajos practicos/TP 03.html">TP 03</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -96,8 +160,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./assets/C2.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../assets/C2.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main tools-wide">
     <a href="https://docs.python.org/es/3/tutorial/index.html" title="Ayuda oficial de python" class="quarto-navigation-tool px-1" aria-label="Ayuda oficial de python"><i class="bi bi-filetype-py"></i></a>
@@ -114,34 +178,34 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Info Cursada</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cursada.html" class="sidebar-item-text sidebar-link active">
+  <a href="../cursada.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Información de cursada</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./calendario.html" class="sidebar-item-text sidebar-link">
+  <a href="../calendario.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Calendario de clases</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./programa.html" class="sidebar-item-text sidebar-link">
+  <a href="../programa.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Programa de la materia</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bibliografia.html" class="sidebar-item-text sidebar-link">
+  <a href="../bibliografia.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Bibliografía</span></a>
   </div>
 </li>
@@ -159,31 +223,31 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clases/Clase-01.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/Clase-01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Python 01</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clases/Clase-02.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/Clase-02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Python 02</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clases/Clase-03.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/Clase-03.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Python 03</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clases/Clase-04.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/Clase-04.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Python 04</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./clases/Clase-05.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/Clase-05.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Python 05</span></a>
   </div>
 </li>
@@ -191,34 +255,34 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">trabajos practicos</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trabajos practicos/TP 01.html" class="sidebar-item-text sidebar-link">
+  <a href="../trabajos practicos/TP 01.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TP 01</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trabajos practicos/TP 02.html" class="sidebar-item-text sidebar-link">
+  <a href="../trabajos practicos/TP 02.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TP 02</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trabajos practicos/TP 03.html" class="sidebar-item-text sidebar-link">
+  <a href="../trabajos practicos/TP 03.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">TP 03</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./trabajos practicos/TP 04.html" class="sidebar-item-text sidebar-link">
+  <a href="../trabajos practicos/TP 04.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TP 04</span></a>
   </div>
 </li>
@@ -229,17 +293,114 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#ejercicios" id="toc-ejercicios" class="nav-link active" data-scroll-target="#ejercicios"><span class="header-section-number">1</span> Ejercicios</a>
+  <ul class="collapse">
+  <li><a href="#suma-y-promedio" id="toc-suma-y-promedio" class="nav-link" data-scroll-target="#suma-y-promedio"><span class="header-section-number">1.1</span> Suma y promedio</a></li>
+  <li><a href="#encuentra-el-elemento" id="toc-encuentra-el-elemento" class="nav-link" data-scroll-target="#encuentra-el-elemento"><span class="header-section-number">1.2</span> Encuentra el elemento</a></li>
+  <li><a href="#encontrar-el-máximo" id="toc-encontrar-el-máximo" class="nav-link" data-scroll-target="#encontrar-el-máximo"><span class="header-section-number">1.3</span> Encontrar el máximo</a></li>
+  <li><a href="#graficando-con-matplotlib-spolier" id="toc-graficando-con-matplotlib-spolier" class="nav-link" data-scroll-target="#graficando-con-matplotlib-spolier"><span class="header-section-number">1.4</span> Graficando con matplotlib (spolier)</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../trabajos practicos/TP 01.html">trabajos practicos</a></li><li class="breadcrumb-item"><a href="../trabajos practicos/TP 03.html">TP 03</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">TP 03</h1>
+<p class="subtitle lead">Numpy básico</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
+
+
+<section id="ejercicios" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Ejercicios</h1>
+<section id="suma-y-promedio" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="suma-y-promedio"><span class="header-section-number">1.1</span> Suma y promedio</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Planteo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Pista</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Escribir un programa que tome un array de longitud desconocida e imprima la sumatoria de todos sus valores y el promedio. Use las funciones intergadas de Numpy.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<ul>
+<li>Usar un bucle for para recorrer los elementos del array o lista</li>
+<li>Usar las funciones <code>mean()</code> y <code>sum()</code></li>
+<li>Encerrar todo en una función</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="encuentra-el-elemento" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="encuentra-el-elemento"><span class="header-section-number">1.2</span> Encuentra el elemento</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Planteo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Pista</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>Elaborar una función que tome como parámetros de entrada un número entero y un array o lista y que devuelva el elemento del array que se encuentra en la posición indicada. En caso de que se ingrese un índice fuera de rango, devolver un mensaje de error.</p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>Usar el indexado <code>A[n]</code> y combinarlo con <code>if</code>, <code>elif</code>, <code>else</code></p>
+</div>
+</div>
+</div>
+</section>
+<section id="encontrar-el-máximo" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="encontrar-el-máximo"><span class="header-section-number">1.3</span> Encontrar el máximo</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Planteo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Pista</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p>Realizar un programa que solicite el ingreso de números enteros hasta que se ingrese el cero. A continuación debe imprimir el máximo, el promedio y la suma de todos los números ingresados. Intente usar las funciones de numpy para ahorrase trabajo (y resolvimos estre problema anteriormente)</p>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>Investigue las funciones estadísticas de Numpy. Puede usar un bucle <code>while</code> para interrumpir la entrada de datos.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="graficando-con-matplotlib-spolier" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="graficando-con-matplotlib-spolier"><span class="header-section-number">1.4</span> Graficando con matplotlib (spolier)</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Planteo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Pista</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<p>Realizar un programa que genere un vector tiempo con números del 0 al 3 con un paso de 0.1 segundos. A continuación se debe llenar un vector posiciones que calcule las posiciones correspondientes a un tiro vertical de 3 segundos de duración que comience con velocidad inicial 30 m/s, y una altura inicial de 45 m. Encuentre la altura máxima alcanzada. Si ambos vectores tienen el mismo tamaño, agregando:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>al principio del código, se pueden graficar ambos vectores mediante el comando <code>plt.plot(t,y)</code></p>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<ul>
+<li>El vector <code>t</code> se puede crear usando <code>linspace</code> o <code>arrange</code></li>
+<li>La expresión <span class="math inline">\(y(t)\)</span> será tratada automáticamente como un array de numpy</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
