@@ -1,232 +1,374 @@
 [
   {
-    "objectID": "trabajos practicos/TP 04.html",
-    "href": "trabajos practicos/TP 04.html",
-    "title": "TP 04",
+    "objectID": "trabajos practicos/TP 05.html",
+    "href": "trabajos practicos/TP 05.html",
+    "title": "TP 05",
     "section": "",
-    "text": "Crear un programa que grafique la familia de funciones cuadráticas de la forma \\(y=a\\cdot x^2\\) para \\(-5&lt;a&lt;5\\) en un mismo par de ejes cartesianos.\n\nAgregar nombre a los ejes (horizontal y vertical)\nAgregar un título para la gráfica\nMostrar la leyenda",
+    "text": "Dado un movimiento en caída libre en una dimensión con condiciones inciales arbitrarias animar la posición en función del tiempo.\n\n\n\nHacer un gráfico de barras que muestre la relación (en una animación) entre energía cinética y energía potencial para la caída libre del punto 1",
     "crumbs": [
       "trabajos practicos",
-      "TP 04"
+      "TP 05"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 04.html#familia-de-funciones",
-    "href": "trabajos practicos/TP 04.html#familia-de-funciones",
-    "title": "TP 04",
+    "objectID": "trabajos practicos/TP 05.html#animación-xt",
+    "href": "trabajos practicos/TP 05.html#animación-xt",
+    "title": "TP 05",
     "section": "",
-    "text": "Crear un programa que grafique la familia de funciones cuadráticas de la forma \\(y=a\\cdot x^2\\) para \\(-5&lt;a&lt;5\\) en un mismo par de ejes cartesianos.\n\nAgregar nombre a los ejes (horizontal y vertical)\nAgregar un título para la gráfica\nMostrar la leyenda",
+    "text": "Dado un movimiento en caída libre en una dimensión con condiciones inciales arbitrarias animar la posición en función del tiempo.",
     "crumbs": [
       "trabajos practicos",
-      "TP 04"
+      "TP 05"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 04.html#at-vt-y-xt-en-un-lienzo",
-    "href": "trabajos practicos/TP 04.html#at-vt-y-xt-en-un-lienzo",
-    "title": "TP 04",
-    "section": "2 \\(a(t)\\), \\(v(t)\\) y \\(x(t)\\) en un lienzo",
-    "text": "2 \\(a(t)\\), \\(v(t)\\) y \\(x(t)\\) en un lienzo\nDado un movimiento en caída libre en una dimensión con condiciones iniciales arbitrarias crear en un sólo lienzo gráficas de posición, velocidad y aceleración en función del tiempo.",
+    "objectID": "trabajos practicos/TP 05.html#baras-de-energía",
+    "href": "trabajos practicos/TP 05.html#baras-de-energía",
+    "title": "TP 05",
+    "section": "",
+    "text": "Hacer un gráfico de barras que muestre la relación (en una animación) entre energía cinética y energía potencial para la caída libre del punto 1",
     "crumbs": [
       "trabajos practicos",
-      "TP 04"
+      "TP 05"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 04.html#m.a.s",
-    "href": "trabajos practicos/TP 04.html#m.a.s",
-    "title": "TP 04",
-    "section": "3 M.A.S",
-    "text": "3 M.A.S\nDado un movimiento armónico simple en una dimensión (con condiciones iniciales arbitrarias) crear en un sólo lienzo las gráficas de posición, velocidad y aceleración en función del tiempo",
+    "objectID": "trabajos practicos/TP 05.html#superficie-de-nivel",
+    "href": "trabajos practicos/TP 05.html#superficie-de-nivel",
+    "title": "TP 05",
+    "section": "2.1 Superficie de nivel",
+    "text": "2.1 Superficie de nivel\nGraficar una superficie de nivel para las funciones \\(f(x,y)=x^2+y^2\\) y \\(f(x,y)=x^2-y^2\\)",
     "crumbs": [
       "trabajos practicos",
-      "TP 04"
+      "TP 05"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 04.html#reorganización-del-lienzo-x2",
-    "href": "trabajos practicos/TP 04.html#reorganización-del-lienzo-x2",
-    "title": "TP 04",
-    "section": "4 Reorganización del lienzo x2",
-    "text": "4 Reorganización del lienzo x2\nModificar las gráficas de los dos puntos anteriores para que el lienzo muestre \\(x(t)\\) ocupando la primera fila extendiéndose a dos columnas, mientras que a \\(v(t)\\) y \\(a(t)\\) ocupando una columna de la segunda fila.",
+    "objectID": "trabajos practicos/TP 05.html#campos-vectoriales",
+    "href": "trabajos practicos/TP 05.html#campos-vectoriales",
+    "title": "TP 05",
+    "section": "2.2 Campos vectoriales",
+    "text": "2.2 Campos vectoriales\nGraficar el campo vectorial \\(F(x,y)=\\frac{1}{2}x \\hat{i}+\\frac{1}{2}y \\hat{j}\\)\nPueden consultar acá más sobre campos vectoriales y vectores en matplotlib.",
     "crumbs": [
       "trabajos practicos",
-      "TP 04"
+      "TP 05"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 02.html",
-    "href": "trabajos practicos/TP 02.html",
-    "title": "TP 02",
-    "section": "",
-    "text": "PlanteoSoluciónOtra opción\n\n\nElaborar un programa que solicite a un usuario que ingrese un número entero y muestre todos los divisores de ese número (un número al dividirse por sus divisores arroja resto 0).\n\n\nUna opción es usar un bucle while y un contador junto al operador módulo. Si el modulo de dividir al número ingresado con el contador es cero, signiica que el contador es divisor del número. Incrementando el contador desde 1 hasta el número ingresado se usa un condicional para imprimir sólo aquellos resultados donde num%div==0\nnum = int(input(\"ingrese un número entero: \"))\ndiv = 1\nwhile div &lt; num:\n  if num%div == 0:\n    print(div, \"es divisor de \",num)\n  div = div+1\n\n\nOtra opción es usar un bucle for (se pueden almacenar los divisores en una lista usando append)\nnum = int(input(\"ingrese un número entero: \"))\ndivisores = []\n\nfor i in range(num):\n  if num%(i+1) == 0: # uso i+1 porque range va de 0 a n-1. range(4) = 0,1,2,3\n    print(i+1, \"es divisor de \",num)\n    divisores.append(i+1)\nif len(divisores) == 2: # si la lista de divsores tiene dos elementos, el número es primo\n  print (num, \"es primo\")\nelse:\n  print(num, \"no es primo\")\nprint(\"divores de \",num, \": \" ,divisoresf()\n\n\n\n\n\n\n\nPlanteoPista\n\n\nElaborar un programa que solicite al usuario que ingrese un número entero y determine si el mismo es un número primo. Un número primo es un número que solo es divisible por 1 y por sí mismo.\n\n\nLa solución del problema anterior tiene las pistas para poder hacerl\n\n\n\n\n\n\n\nPlanteoPista\n\n\nHacer un programa que encuentre e imprima un listado con todos los números de 4 cifras que cumplan la condición de que la suma de las cifras de orden impar es igual a la suma de las cifras de orden par. Por ejemplo, el número \\(7821\\) cumple esta condición ya que \\(7 + 2 = 8 + 1\\).\n\n\nMás adelante veremos como se puede resolver este mismo problema mucho más fácil si se trata al número como un string y se acceden a las posiciones decimales de forma sistemática.\nif una suma == otra suma:\n  print( num, 'cumple con la condición')\nPodemos volver a usar el operador módulo para recuperar las cifras y usar una condicion para evaluar lo que se pide. Como debemos conseguir todos los números de cuatro cifras, nuestra condición deberá ser recorrida en un bucle while o for\n\n\n\n\n\n\n\nPlanteoPista\n\n\nEscribir un programa que encuentre los primeros 4 números perfectos. Un número perfecto es un entero positivo, que es igual a la suma de todos los enteros positivos (excluido él mismo) que son divisores del número. Por ejemplo, el primer número perfecto es \\(6\\), ya que los divisores de \\(6\\) son $1, 2, 3 , $ y \\(1 + 2 + 3 = 6\\).\n\n\nEs muy similar al problema anterior, sólo que tenemos que agregar un contador que al llegar a 4 detenga la ejecución del bucle.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nEscribir un programa que reciba una cantidad indefinida de números enteros positivos hasta que se ingresa el 0. A continuación el programa debe indicar cuál fue el mayor y cuál el menor.\n\n\nDebemos tener dos variables, una que registre el número mínimo y otra para guardar el máximo. Este bucle se ejecuta hasta que el usuario ingresa el cero, y luego nos devuelve los dos resultados almacenados en nusestras variables. Una pista\nmenor = 0\nmayor = 0\nwhile n !=0:\n  if n&gt;mayor:\n    mayor = n\n  if n&lt;menor:\n    menor = n\n\n\n\n\n\n\n\nPlanteoPistaPista 2\n\n\nRealizar un programa que aproxime el cálculo de una serie armónica calculando e imprimiendo los primeros N términos y su sumatoria donde N es un valor ingresado por teclado. La serie armónica es:\n\\[\n\\sum_{n=1}^{∞} \\frac{1}{x}\n\\]\nPruebe también con la serie\n\\[\n\\sum_{n=1}^{∞} \\frac{1}{x^2}\n\\]\n¿Qué diferencia se observa?\n[wikipedia de la serie armónica](https://es.wikipedia.org/wiki/Serie_arm%C3%B3nica_(matem%C3%A1tica)\n\n\nUn enfoque sería acumular el resultado iterativamente, es decir, que el término siguiente se suma al anterior y el próximo se suma a lo que uno ya tiene calculado y así sucesivamente.\nn1 = 1\nn2 = n1+1/2\nn3 = n2 + 1/3\nSe puede incluir la variable en el cálculo. Un paso intermedio útil puede ser generar una variable que se incremente y nos dé los términos \\(\\frac{1}{n}\\) en un bucle\nn=1\nwhile n &lt; 5:\n  term = 1/n\n  print(term)\n  n=n+1\nOtra opción es usar un bucle for con range().\n\n\nnterm = 3 #@param {type:\"integer\"}\nsuma = 0\nn = 1 # contador comienza en uno (conviene en este caso para evitar dividir por cero)\nwhile n &lt;= nterm:\n  term = 1/n\n  suma = suma + term\n  print(f\"termino: {n}: {term}\")\n  print(f\"suma: {suma}\")\n  n=n+1\n\n\n\n\n\n\n\nPlanteoPistaOtra pista\n\n\nRealizar un programa que imprima los primeros N términos de una sucesión de fibonacci, la que empieza con 0 y 1, y cada término que sigue a estos valores es la suma de los dos valores anteriores. Imprimir la razón entre un número y su número anterior).\n\n\nUna aproximación poco eficiente es calcular todo el árbol cada vez que se nos pide un término: si se nos pide el término “n” se calcular todos los anteriores para luego hacer la suma y obtener el que se nos pide. Esto implica que vamos “Bajando” por un proceso en donde a fin de cuentas sólo calcularemos muchas veces \\(f(0)\\) y \\(f(1)\\)\nmatemáticamente tenemos que:\n\\[\\begin{align}\nf_0 &= 0 \\\\\nf_1 &= 1 \\\\\nf_n &= f_{n-1} + f_{n-2} \\\\\nf_2 &= f_{2-1} + f_{2-2} \\\\\nf_2 &= f_{1} + f_{0} \\\\\nf_2 &= 1 + 0 = 1 \\\\\n\\end{align}\\]\nCalcular \\(f(3)\\) implica calcular \\(f(2)\\) (que incluye a los términos anteriores) y así sucesivamente.\n\n\nn = 2 \ncontador = 0 # el contador controla el bucle\n\n# definimos los valores iniciales\n\nf0 = 0  # valor fijo al comienzo de la secuencia\nf1 = 1  # valor fijo al comienzo de la secuencia\nfn = f0+f1  # termino n de la secuencia\n\nwhile contador &lt;= n:\n  if n &lt;=2:\n    if n == 0:\n      print(f0)\n    if n == 1:\n      print(f0,f1)\n    if n == 2:\n      print(f0,f1,fn)\n    break\n  else:\n    f0 = f1\n    f1 = fn\n    fn = f0+f1\n    contador = contador+1\n    print(fn)\n\n\n\n\n\n\n\nPlanteoPista\n\n\nRealizar un programa que imprima términos de la sucesión de fibonacci hasta que la razón entre un número y su número anterior de como resultado, con una incerteza de una diez millonésima parte, el número áureo.\n\n\nUsando lo que vimos sobre funciones y listas, la clave está en como detener el bucle que usen para controlar la ejecución: el programa debería detenerse cuando: \\[\n\\left|\\frac{1+\\sqrt{5}}{2}-\\frac{f(n+1)}{f(n)}\\right|&lt;1\\cdot 10^{-7}\n\\]\n\n\n\n\n\n\n\n\n\n\n\n\nDivisión entera\n\n\n123//100\n\n\n\n\nMódulo y división entera\n\n\n(123%100)//10\n\n\n\n\nUso de if, `else y elif\n\n\nn = 8 #@param {type:\"integer\"}\nif n == 8:\n  print('ocho')\nelif n ==9:\n  print('nueve')\nelse:\n  print('no es ni ocho ni nueve')\n\n\n\n\n\n\nVía campus virtual en la sección trabajos prácticos. Un archivo .py con todos los ejercicios juntos, pueden estar separados por el comando de celda #%% o por comentarios, que pueden usar también para explicar sus desarrollos.",
+    "objectID": "trabajos practicos/TP 05.html#gráfica-3d",
+    "href": "trabajos practicos/TP 05.html#gráfica-3d",
+    "title": "TP 05",
+    "section": "2.3 Gráfica 3D",
+    "text": "2.3 Gráfica 3D\nGrficar las siguientes funciones:\n\n\\(f(x,y)=x^2-y^2\\)\n\\(f(x,y)=x^2+y^2\\)\n\nIntenten hacer una animación como en el ejemplo que vimos en clase para cada una.",
     "crumbs": [
       "trabajos practicos",
-      "TP 02"
+      "TP 05"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 02.html#divisores-de-un-número",
-    "href": "trabajos practicos/TP 02.html#divisores-de-un-número",
-    "title": "TP 02",
+    "objectID": "trabajos practicos/TP 03.html",
+    "href": "trabajos practicos/TP 03.html",
+    "title": "TP 03",
     "section": "",
-    "text": "PlanteoSoluciónOtra opción\n\n\nElaborar un programa que solicite a un usuario que ingrese un número entero y muestre todos los divisores de ese número (un número al dividirse por sus divisores arroja resto 0).\n\n\nUna opción es usar un bucle while y un contador junto al operador módulo. Si el modulo de dividir al número ingresado con el contador es cero, signiica que el contador es divisor del número. Incrementando el contador desde 1 hasta el número ingresado se usa un condicional para imprimir sólo aquellos resultados donde num%div==0\nnum = int(input(\"ingrese un número entero: \"))\ndiv = 1\nwhile div &lt; num:\n  if num%div == 0:\n    print(div, \"es divisor de \",num)\n  div = div+1\n\n\nOtra opción es usar un bucle for (se pueden almacenar los divisores en una lista usando append)\nnum = int(input(\"ingrese un número entero: \"))\ndivisores = []\n\nfor i in range(num):\n  if num%(i+1) == 0: # uso i+1 porque range va de 0 a n-1. range(4) = 0,1,2,3\n    print(i+1, \"es divisor de \",num)\n    divisores.append(i+1)\nif len(divisores) == 2: # si la lista de divsores tiene dos elementos, el número es primo\n  print (num, \"es primo\")\nelse:\n  print(num, \"no es primo\")\nprint(\"divores de \",num, \": \" ,divisoresf()",
+    "text": "PlanteoPista\n\n\nEscribir un programa que tome un array de longitud desconocida e imprima la sumatoria de todos sus valores y el promedio. Use las funciones intergadas de Numpy.\n\n\n\nUsar un bucle for para recorrer los elementos del array o lista\nUsar las funciones mean() y sum()\nEncerrar todo en una función\n\n\n\n\n\n\n\n\nPlanteoPista\n\n\nElaborar una función que tome como parámetros de entrada un número entero y un array o lista y que devuelva el elemento del array que se encuentra en la posición indicada. En caso de que se ingrese un índice fuera de rango, devolver un mensaje de error.\n\n\nUsar el indexado A[n] y combinarlo con if, elif, else\n\n\n\n\n\n\n\nPlanteoPista\n\n\nRealizar un programa que solicite el ingreso de números enteros hasta que se ingrese el cero. A continuación debe imprimir el máximo, el promedio y la suma de todos los números ingresados. Intente usar las funciones de numpy para ahorrase trabajo (y resolvimos estre problema anteriormente)\n\n\nInvestigue las funciones estadísticas de Numpy. Puede usar un bucle while para interrumpir la entrada de datos.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nRealizar un programa que genere un vector tiempo con números del 0 al 3 con un paso de 0.1 segundos. A continuación se debe llenar un vector posiciones que calcule las posiciones correspondientes a un tiro vertical de 3 segundos de duración que comience con velocidad inicial 30 m/s, y una altura inicial de 45 m. Encuentre la altura máxima alcanzada. Si ambos vectores tienen el mismo tamaño, agregando:\nimport matplotlib.pyplot as plt\nal principio del código, se pueden graficar ambos vectores mediante el comando plt.plot(t,y)\n\n\n\nEl vector t se puede crear usando linspace o arrange\nLa expresión \\(y(t)\\) será tratada automáticamente como un array de numpy",
     "crumbs": [
       "trabajos practicos",
-      "TP 02"
+      "TP 03"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 02.html#números-primos",
-    "href": "trabajos practicos/TP 02.html#números-primos",
-    "title": "TP 02",
+    "objectID": "trabajos practicos/TP 03.html#suma-y-promedio",
+    "href": "trabajos practicos/TP 03.html#suma-y-promedio",
+    "title": "TP 03",
     "section": "",
-    "text": "PlanteoPista\n\n\nElaborar un programa que solicite al usuario que ingrese un número entero y determine si el mismo es un número primo. Un número primo es un número que solo es divisible por 1 y por sí mismo.\n\n\nLa solución del problema anterior tiene las pistas para poder hacerl",
+    "text": "PlanteoPista\n\n\nEscribir un programa que tome un array de longitud desconocida e imprima la sumatoria de todos sus valores y el promedio. Use las funciones intergadas de Numpy.\n\n\n\nUsar un bucle for para recorrer los elementos del array o lista\nUsar las funciones mean() y sum()\nEncerrar todo en una función",
     "crumbs": [
       "trabajos practicos",
-      "TP 02"
+      "TP 03"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 02.html#cifras-con-condiciones",
-    "href": "trabajos practicos/TP 02.html#cifras-con-condiciones",
-    "title": "TP 02",
+    "objectID": "trabajos practicos/TP 03.html#encuentra-el-elemento",
+    "href": "trabajos practicos/TP 03.html#encuentra-el-elemento",
+    "title": "TP 03",
     "section": "",
-    "text": "PlanteoPista\n\n\nHacer un programa que encuentre e imprima un listado con todos los números de 4 cifras que cumplan la condición de que la suma de las cifras de orden impar es igual a la suma de las cifras de orden par. Por ejemplo, el número \\(7821\\) cumple esta condición ya que \\(7 + 2 = 8 + 1\\).\n\n\nMás adelante veremos como se puede resolver este mismo problema mucho más fácil si se trata al número como un string y se acceden a las posiciones decimales de forma sistemática.\nif una suma == otra suma:\n  print( num, 'cumple con la condición')\nPodemos volver a usar el operador módulo para recuperar las cifras y usar una condicion para evaluar lo que se pide. Como debemos conseguir todos los números de cuatro cifras, nuestra condición deberá ser recorrida en un bucle while o for",
+    "text": "PlanteoPista\n\n\nElaborar una función que tome como parámetros de entrada un número entero y un array o lista y que devuelva el elemento del array que se encuentra en la posición indicada. En caso de que se ingrese un índice fuera de rango, devolver un mensaje de error.\n\n\nUsar el indexado A[n] y combinarlo con if, elif, else",
     "crumbs": [
       "trabajos practicos",
-      "TP 02"
+      "TP 03"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 02.html#números-perfectos",
-    "href": "trabajos practicos/TP 02.html#números-perfectos",
-    "title": "TP 02",
+    "objectID": "trabajos practicos/TP 03.html#encontrar-el-máximo",
+    "href": "trabajos practicos/TP 03.html#encontrar-el-máximo",
+    "title": "TP 03",
     "section": "",
-    "text": "PlanteoPista\n\n\nEscribir un programa que encuentre los primeros 4 números perfectos. Un número perfecto es un entero positivo, que es igual a la suma de todos los enteros positivos (excluido él mismo) que son divisores del número. Por ejemplo, el primer número perfecto es \\(6\\), ya que los divisores de \\(6\\) son $1, 2, 3 , $ y \\(1 + 2 + 3 = 6\\).\n\n\nEs muy similar al problema anterior, sólo que tenemos que agregar un contador que al llegar a 4 detenga la ejecución del bucle.",
+    "text": "PlanteoPista\n\n\nRealizar un programa que solicite el ingreso de números enteros hasta que se ingrese el cero. A continuación debe imprimir el máximo, el promedio y la suma de todos los números ingresados. Intente usar las funciones de numpy para ahorrase trabajo (y resolvimos estre problema anteriormente)\n\n\nInvestigue las funciones estadísticas de Numpy. Puede usar un bucle while para interrumpir la entrada de datos.",
     "crumbs": [
       "trabajos practicos",
-      "TP 02"
+      "TP 03"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 02.html#bucle-con-condición",
-    "href": "trabajos practicos/TP 02.html#bucle-con-condición",
-    "title": "TP 02",
+    "objectID": "trabajos practicos/TP 03.html#graficando-con-matplotlib-spolier",
+    "href": "trabajos practicos/TP 03.html#graficando-con-matplotlib-spolier",
+    "title": "TP 03",
     "section": "",
-    "text": "PlanteoPista\n\n\nEscribir un programa que reciba una cantidad indefinida de números enteros positivos hasta que se ingresa el 0. A continuación el programa debe indicar cuál fue el mayor y cuál el menor.\n\n\nDebemos tener dos variables, una que registre el número mínimo y otra para guardar el máximo. Este bucle se ejecuta hasta que el usuario ingresa el cero, y luego nos devuelve los dos resultados almacenados en nusestras variables. Una pista\nmenor = 0\nmayor = 0\nwhile n !=0:\n  if n&gt;mayor:\n    mayor = n\n  if n&lt;menor:\n    menor = n",
+    "text": "PlanteoPista\n\n\nRealizar un programa que genere un vector tiempo con números del 0 al 3 con un paso de 0.1 segundos. A continuación se debe llenar un vector posiciones que calcule las posiciones correspondientes a un tiro vertical de 3 segundos de duración que comience con velocidad inicial 30 m/s, y una altura inicial de 45 m. Encuentre la altura máxima alcanzada. Si ambos vectores tienen el mismo tamaño, agregando:\nimport matplotlib.pyplot as plt\nal principio del código, se pueden graficar ambos vectores mediante el comando plt.plot(t,y)\n\n\n\nEl vector t se puede crear usando linspace o arrange\nLa expresión \\(y(t)\\) será tratada automáticamente como un array de numpy",
     "crumbs": [
       "trabajos practicos",
-      "TP 02"
+      "TP 03"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 02.html#serie-armónica",
-    "href": "trabajos practicos/TP 02.html#serie-armónica",
-    "title": "TP 02",
+    "objectID": "trabajos practicos/TP 01.html",
+    "href": "trabajos practicos/TP 01.html",
+    "title": "TP 01",
     "section": "",
-    "text": "PlanteoPistaPista 2\n\n\nRealizar un programa que aproxime el cálculo de una serie armónica calculando e imprimiendo los primeros N términos y su sumatoria donde N es un valor ingresado por teclado. La serie armónica es:\n\\[\n\\sum_{n=1}^{∞} \\frac{1}{x}\n\\]\nPruebe también con la serie\n\\[\n\\sum_{n=1}^{∞} \\frac{1}{x^2}\n\\]\n¿Qué diferencia se observa?\n[wikipedia de la serie armónica](https://es.wikipedia.org/wiki/Serie_arm%C3%B3nica_(matem%C3%A1tica)\n\n\nUn enfoque sería acumular el resultado iterativamente, es decir, que el término siguiente se suma al anterior y el próximo se suma a lo que uno ya tiene calculado y así sucesivamente.\nn1 = 1\nn2 = n1+1/2\nn3 = n2 + 1/3\nSe puede incluir la variable en el cálculo. Un paso intermedio útil puede ser generar una variable que se incremente y nos dé los términos \\(\\frac{1}{n}\\) en un bucle\nn=1\nwhile n &lt; 5:\n  term = 1/n\n  print(term)\n  n=n+1\nOtra opción es usar un bucle for con range().\n\n\nnterm = 3 #@param {type:\"integer\"}\nsuma = 0\nn = 1 # contador comienza en uno (conviene en este caso para evitar dividir por cero)\nwhile n &lt;= nterm:\n  term = 1/n\n  suma = suma + term\n  print(f\"termino: {n}: {term}\")\n  print(f\"suma: {suma}\")\n  n=n+1",
+    "text": "Para entregar esta práctica deberá subir al campus el archivo .py que han trabajado.\n\n\n\nPlanteoSoluciónVersión mejorada\n\n\nEl usuario ingresa un número que representa una temperatura en °C. El programa imprime esa temperatura en F\n\n\nprint(\"ingrese la temperatura en C\") # se imprime un mensaje\nC = float(input()) # se pide un valor por teclado y se lo convierte en número\nF =(C*1.80+32)\nprint(f\"La temperatura es {F} F\")\n\n\n¿Cómo hacer para tratar con un dato erróneo? Por ejemplo, un usuario ingresa un valor no númerico. En tal caso, el programa anterior arrojaría un error. Pruebe correr el programa anterior ingresando un valor no numérico.\ndef caf():\n  c = input()\n\n  try:\n    C = float(c)\n    F =(C*1.80+32)\n    print(f\"La temperatura es {F} F\")\n\n  except:\n    print(\"ingrese un valor númerico como temperatura\")\n    caf()\n\n\n\n\n\n\n\nPlanteoPista\n\n\nRealizar un programa en el que se ingrese la base y la altura de un triángulo e informe su superficie. El programa debe imprimir una leyenda que incluya los datos de entrada y el resultado.\nIngrese la base del triángulo: 8\nIngrese la altura del triángulo: 5\nLa superficie del triángulo de base 7 y altura 5 es 17.50\n\n\nCon lo hecho en el problema anterior se puede resolver. Recordar que la potenciación es una multipliación repetida, por lo que en pyhton el operador es **.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nDesarrollar un programa en el que se ingrese un número de 5 dígitos y que como salida se muestre:\n\ncada dígito separado por un guión\nla suma de todos los dígitos\n\n\n\nUna forma de encontrar el primer dígito de un número es dividirlo por \\(10^n\\) donde n es el orden de magnitud del número y quedarse con la parte entera. Por ejemplo: Si tenemos el número 1450 y lo dividimos por 1000 el primer dígito es la parte entera del resultado de la división, usando la operación división entera // y módulo % podemos obtener los elementos necesarios para resolver este problema. Para el resto de los dígitos, usando el operador módulo en potencias de diez decrecientes, obtenemos los “restos” usamos para reiterar el proceso de obtener el primer dígito.\nprint(1450//1000)\n\nprint(1450%1000)\n\n450//100\n\n450%100\nOtra forma es tratar al número como texto y acceder a cada elmento por separado. Para los cálculos habría que convertir nuevamente el dato a número para operar.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nHacer un programa en el que se ingrese la medida de los catetos de un triángulo rectángulo y que se calcule y muestre el perímetro de dicho triángulo. Incluir math a fin de utilizar la función sqrt(expresión) que calcula la raíz cuadrada de un número.\nPara usar la función, tenemos que importarla desde el módulo math. Para ello hacemos\nimport math\no\nimport math.sqrt as sqrt\nLa diferencia es qe en el primer caso tendremos que llamarla usando el nombre completo math.sqrt(num) mientras que en el segundo caso no. Como opción, también se puede prescindir de la raíz cuadrada y elevar a \\(\\frac{1}{2}\\).\n\n\nUsar pitágoras para conocer el lado restante.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nElaborar un programa en el que se ingrese una cantidad expresada en segundos y luego la exprese en días, horas, minutos y segundos.\nEjemplo: Ingrese tiempo en segundos: 93714.\n1 dia(s), 2 hora(s), 1 minuto(s), 54 segundo(s)\n\n\nSimilar al problema de los dígitos, solo que el resto no resulta de dividir por potencias de diez, sino de 60.\n\n\n\n\n\n\n\nPlanteoPista\n\n\n\nEl usuario ingresa un instante de tiempo (t) y el programa calcula e imprime la posición de un móvil arrojado a 20 m/s hacia arriba en el planeta tierra para ese instante de tiempo.\nCree otra versión en donde el usuario también ingresa la velocidad inicial.\n\n\n\nEscribir una ecuación para la la posición en función del tiempo con los datos del problema y crear la variable t como dato de entrada.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nRealizar un programa en el que se ingresen dos números enteros positivos. Luego deberá restar el mayor del menor e indicar si dicha diferencia es un valor que está entre ambos números (es decir, es mayor que el más chico y menor que el más grande de los ingresados).\n\n\nSe almacenan los dos números a comparar, se efectúan los cálculos, se devuelve el resultado condicionalmente usando if para cada caso.\n\n\n\n\n\n\n\nPlanteoPistaOtra pista\n\n\nRealizar un programa que solicite 3 notas de parciales obtenidas por un alumno. A continuación se mostrará por pantalla un mensaje que indique la situación del alumno:\n\nSi el alumno aprobó los 3 parciales (nota 6 o más) y su promedio es mayor o igual a 8, promociona la materia con la nota promedio.\nSi el alumno aprobó los 3 parciales pero su promedio no supera los 8 puntos, debe rendir examen final.\nSi el alumno no aprobó uno o más parciales, se solicitará que se ingrese la nota de un recuperatorio. Si éste hubiera sido aprobado, se informará el promedio general (3 parciales + el recuperatorio) y su condición de aprobado (aún cuando el promedio no supere los 6 puntos).\nSi no hubiera aprobado el recuperatorio se informará que el alumno fue aplazado.\n\n\n\nEste código no resuelve todo el problema pero presenta algunas herramientas útiles, como limitar los dígitos que se muestran al imprimir una variable o el uso de la funcion suma sobre los elementos de una lista. Lea atentamente cada línea y asegúrese de que comprende qué hace en cada caso. El problema requiere evaluar los escenarios posibles por lo que quizás le resulte útil hacer un bosquejo en papel sobre los posibles casos para luego pasarlos a código.\n\n\ndef calif(n=3):\n  \"\"\"\n  Función que hace lo que se pide\n  \"\"\"\n  notas = []\n  for i in range(n):\n    print(f\"ingrese la {i+1} nota\")\n    nota = float(input())\n    notas.append(nota)\n\n  prom = (sum(notas))/n\n  return f\"{prom:.2f}\"",
     "crumbs": [
       "trabajos practicos",
-      "TP 02"
+      "TP 01"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 02.html#sucesión-de-fibonacci",
-    "href": "trabajos practicos/TP 02.html#sucesión-de-fibonacci",
-    "title": "TP 02",
+    "objectID": "trabajos practicos/TP 01.html#conversión-de-temperatura",
+    "href": "trabajos practicos/TP 01.html#conversión-de-temperatura",
+    "title": "TP 01",
     "section": "",
-    "text": "PlanteoPistaOtra pista\n\n\nRealizar un programa que imprima los primeros N términos de una sucesión de fibonacci, la que empieza con 0 y 1, y cada término que sigue a estos valores es la suma de los dos valores anteriores. Imprimir la razón entre un número y su número anterior).\n\n\nUna aproximación poco eficiente es calcular todo el árbol cada vez que se nos pide un término: si se nos pide el término “n” se calcular todos los anteriores para luego hacer la suma y obtener el que se nos pide. Esto implica que vamos “Bajando” por un proceso en donde a fin de cuentas sólo calcularemos muchas veces \\(f(0)\\) y \\(f(1)\\)\nmatemáticamente tenemos que:\n\\[\\begin{align}\nf_0 &= 0 \\\\\nf_1 &= 1 \\\\\nf_n &= f_{n-1} + f_{n-2} \\\\\nf_2 &= f_{2-1} + f_{2-2} \\\\\nf_2 &= f_{1} + f_{0} \\\\\nf_2 &= 1 + 0 = 1 \\\\\n\\end{align}\\]\nCalcular \\(f(3)\\) implica calcular \\(f(2)\\) (que incluye a los términos anteriores) y así sucesivamente.\n\n\nn = 2 \ncontador = 0 # el contador controla el bucle\n\n# definimos los valores iniciales\n\nf0 = 0  # valor fijo al comienzo de la secuencia\nf1 = 1  # valor fijo al comienzo de la secuencia\nfn = f0+f1  # termino n de la secuencia\n\nwhile contador &lt;= n:\n  if n &lt;=2:\n    if n == 0:\n      print(f0)\n    if n == 1:\n      print(f0,f1)\n    if n == 2:\n      print(f0,f1,fn)\n    break\n  else:\n    f0 = f1\n    f1 = fn\n    fn = f0+f1\n    contador = contador+1\n    print(fn)",
+    "text": "PlanteoSoluciónVersión mejorada\n\n\nEl usuario ingresa un número que representa una temperatura en °C. El programa imprime esa temperatura en F\n\n\nprint(\"ingrese la temperatura en C\") # se imprime un mensaje\nC = float(input()) # se pide un valor por teclado y se lo convierte en número\nF =(C*1.80+32)\nprint(f\"La temperatura es {F} F\")\n\n\n¿Cómo hacer para tratar con un dato erróneo? Por ejemplo, un usuario ingresa un valor no númerico. En tal caso, el programa anterior arrojaría un error. Pruebe correr el programa anterior ingresando un valor no numérico.\ndef caf():\n  c = input()\n\n  try:\n    C = float(c)\n    F =(C*1.80+32)\n    print(f\"La temperatura es {F} F\")\n\n  except:\n    print(\"ingrese un valor númerico como temperatura\")\n    caf()",
     "crumbs": [
       "trabajos practicos",
-      "TP 02"
+      "TP 01"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 02.html#fibonacci-y-la-proporción-aurea",
-    "href": "trabajos practicos/TP 02.html#fibonacci-y-la-proporción-aurea",
-    "title": "TP 02",
+    "objectID": "trabajos practicos/TP 01.html#superficie-de-un-triángulo",
+    "href": "trabajos practicos/TP 01.html#superficie-de-un-triángulo",
+    "title": "TP 01",
     "section": "",
-    "text": "PlanteoPista\n\n\nRealizar un programa que imprima términos de la sucesión de fibonacci hasta que la razón entre un número y su número anterior de como resultado, con una incerteza de una diez millonésima parte, el número áureo.\n\n\nUsando lo que vimos sobre funciones y listas, la clave está en como detener el bucle que usen para controlar la ejecución: el programa debería detenerse cuando: \\[\n\\left|\\frac{1+\\sqrt{5}}{2}-\\frac{f(n+1)}{f(n)}\\right|&lt;1\\cdot 10^{-7}\n\\]",
+    "text": "PlanteoPista\n\n\nRealizar un programa en el que se ingrese la base y la altura de un triángulo e informe su superficie. El programa debe imprimir una leyenda que incluya los datos de entrada y el resultado.\nIngrese la base del triángulo: 8\nIngrese la altura del triángulo: 5\nLa superficie del triángulo de base 7 y altura 5 es 17.50\n\n\nCon lo hecho en el problema anterior se puede resolver. Recordar que la potenciación es una multipliación repetida, por lo que en pyhton el operador es **.",
     "crumbs": [
       "trabajos practicos",
-      "TP 02"
+      "TP 01"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 02.html#apéndice",
-    "href": "trabajos practicos/TP 02.html#apéndice",
-    "title": "TP 02",
+    "objectID": "trabajos practicos/TP 01.html#dígitos-de-un-número",
+    "href": "trabajos practicos/TP 01.html#dígitos-de-un-número",
+    "title": "TP 01",
     "section": "",
-    "text": "División entera\n\n\n123//100\n\n\n\n\nMódulo y división entera\n\n\n(123%100)//10\n\n\n\n\nUso de if, `else y elif\n\n\nn = 8 #@param {type:\"integer\"}\nif n == 8:\n  print('ocho')\nelif n ==9:\n  print('nueve')\nelse:\n  print('no es ni ocho ni nueve')",
+    "text": "PlanteoPista\n\n\nDesarrollar un programa en el que se ingrese un número de 5 dígitos y que como salida se muestre:\n\ncada dígito separado por un guión\nla suma de todos los dígitos\n\n\n\nUna forma de encontrar el primer dígito de un número es dividirlo por \\(10^n\\) donde n es el orden de magnitud del número y quedarse con la parte entera. Por ejemplo: Si tenemos el número 1450 y lo dividimos por 1000 el primer dígito es la parte entera del resultado de la división, usando la operación división entera // y módulo % podemos obtener los elementos necesarios para resolver este problema. Para el resto de los dígitos, usando el operador módulo en potencias de diez decrecientes, obtenemos los “restos” usamos para reiterar el proceso de obtener el primer dígito.\nprint(1450//1000)\n\nprint(1450%1000)\n\n450//100\n\n450%100\nOtra forma es tratar al número como texto y acceder a cada elmento por separado. Para los cálculos habría que convertir nuevamente el dato a número para operar.",
     "crumbs": [
       "trabajos practicos",
-      "TP 02"
+      "TP 01"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 02.html#entrega",
-    "href": "trabajos practicos/TP 02.html#entrega",
-    "title": "TP 02",
+    "objectID": "trabajos practicos/TP 01.html#perímetro-de-un-triángulo",
+    "href": "trabajos practicos/TP 01.html#perímetro-de-un-triángulo",
+    "title": "TP 01",
     "section": "",
-    "text": "Vía campus virtual en la sección trabajos prácticos. Un archivo .py con todos los ejercicios juntos, pueden estar separados por el comando de celda #%% o por comentarios, que pueden usar también para explicar sus desarrollos.",
+    "text": "PlanteoPista\n\n\nHacer un programa en el que se ingrese la medida de los catetos de un triángulo rectángulo y que se calcule y muestre el perímetro de dicho triángulo. Incluir math a fin de utilizar la función sqrt(expresión) que calcula la raíz cuadrada de un número.\nPara usar la función, tenemos que importarla desde el módulo math. Para ello hacemos\nimport math\no\nimport math.sqrt as sqrt\nLa diferencia es qe en el primer caso tendremos que llamarla usando el nombre completo math.sqrt(num) mientras que en el segundo caso no. Como opción, también se puede prescindir de la raíz cuadrada y elevar a \\(\\frac{1}{2}\\).\n\n\nUsar pitágoras para conocer el lado restante.",
     "crumbs": [
       "trabajos practicos",
-      "TP 02"
+      "TP 01"
     ]
   },
   {
-    "objectID": "programa.html",
-    "href": "programa.html",
-    "title": "Programa de la materia",
+    "objectID": "trabajos practicos/TP 01.html#conversiones-de-tiempo",
+    "href": "trabajos practicos/TP 01.html#conversiones-de-tiempo",
+    "title": "TP 01",
     "section": "",
-    "text": "🔗 Programa de la materia",
+    "text": "PlanteoPista\n\n\nElaborar un programa en el que se ingrese una cantidad expresada en segundos y luego la exprese en días, horas, minutos y segundos.\nEjemplo: Ingrese tiempo en segundos: 93714.\n1 dia(s), 2 hora(s), 1 minuto(s), 54 segundo(s)\n\n\nSimilar al problema de los dígitos, solo que el resto no resulta de dividir por potencias de diez, sino de 60.",
     "crumbs": [
-      "Info Cursada",
-      "Programa de la materia"
+      "trabajos practicos",
+      "TP 01"
     ]
   },
   {
-    "objectID": "presentaciones/Clase-03.html#repaso-sobre-funciones-y-listas",
-    "href": "presentaciones/Clase-03.html#repaso-sobre-funciones-y-listas",
-    "title": "Clase 03",
-    "section": "Repaso sobre funciones y listas",
-    "text": "Repaso sobre funciones y listas\nPodemos usar el problema de Fibonacci de la práctica para repasar las funciones y algunas propiedades de las listas en python. Ya que los valores de \\(f_n\\) se calculan una y otra vez, quizás podríamos guardar éstos mismos en algun listado. Una lista en python es cualquier cosa encerrada entre corchetes."
-  },
-  {
-    "objectID": "presentaciones/Clase-03.html#funciones",
-    "href": "presentaciones/Clase-03.html#funciones",
-    "title": "Clase 03",
-    "section": "Funciones",
-    "text": "Funciones\nLas definimos tal como en matemática\ndef f(x):\n  y=2*x\n  return y"
-  },
-  {
-    "objectID": "presentaciones/Clase-03.html#para-fibonacci",
-    "href": "presentaciones/Clase-03.html#para-fibonacci",
-    "title": "Clase 03",
-    "section": "Para Fibonacci",
-    "text": "Para Fibonacci\ndef fibo(n):\n  serie = [0,1]\n  ratio = [\"-\",1]\n  if n &lt;= 2:\n    print(serie[0:n]) # imprime desde las posiciones 0 a la n de la lista serie\n    print(ratio[0:n]) # imprime desde las posiciones 0 a la n de la lista ratio\n  else:\n\n    for i in range(1,n):\n      serie.append(serie[i]+serie[i-1])\n      ratio.append(serie[i+1]/serie[i])\n\n    print(serie)\n    print(ratio)"
-  },
-  {
-    "objectID": "presentaciones/Clase-03.html#una-versión-mas-sencilla",
-    "href": "presentaciones/Clase-03.html#una-versión-mas-sencilla",
-    "title": "Clase 03",
-    "section": "Una versión mas sencilla",
-    "text": "Una versión mas sencilla\nAunque también un poco críptica, sería algo así:\ndef fib(n):\n    f_n = 0  # posición n\n    fn_1 = 1  # posición n+1\n\n1    for k in range(n):\n2        fn_2 = fn_1+ f_n\n3        f_n = fn_1\n4        fn_1 = fn_2\n\n        # para n=1\n        # fn_2 = 1+1\n        # f_n = 1\n        # f_n1 =2\n\n        # para n=2\n        # fn_2 = 2+1 =3\n        # f_n = 2\n        #fn_1 = 3\n\n        # para n=3\n        # fn_2 = 3+2= 5\n        # fn = 3\n        # fn_1 = 3\n\n    return f_n\n\nfor i in range(8):\n  print(fib(i))\n\n1\n\nrecorro de 0 a n calculando los valores\n\n2\n\nposición n+2, para n=0 fn_2 =&gt; vale 1=1+0\n\n3\n\nahora la posición n, que es la que se va a imprimir, se redefine como la posición siguiente f_n=1\n\n4\n\nla posiciión n+1 se define como lo que se obtuvo para n+2 y volvemos al inicio del bucle fn_1 = 1"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "C2-661",
+    "objectID": "trabajos practicos/TP 01.html#tiro-vertical",
+    "href": "trabajos practicos/TP 01.html#tiro-vertical",
+    "title": "TP 01",
     "section": "",
-    "text": "Profesor\n\n Prof. Federico Arabolaza\n federico.arabolaza@inspt.utn.edu.ar\n INSPT UTN\n\n\n\nCursada\n\n Triunvirato 3174\n Miércoles de 19:00 a 20:20\n\n\n\nSecciones\n\n Programa de la materia\n Calendario de clases\n Trabajos prácticos\n Clases\n Bibliografía\n Descargas"
+    "text": "PlanteoPista\n\n\n\nEl usuario ingresa un instante de tiempo (t) y el programa calcula e imprime la posición de un móvil arrojado a 20 m/s hacia arriba en el planeta tierra para ese instante de tiempo.\nCree otra versión en donde el usuario también ingresa la velocidad inicial.\n\n\n\nEscribir una ecuación para la la posición en función del tiempo con los datos del problema y crear la variable t como dato de entrada.",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 01"
+    ]
   },
   {
-    "objectID": "clases.html",
-    "href": "clases.html",
-    "title": "Clases",
+    "objectID": "trabajos practicos/TP 01.html#comparación-de-números",
+    "href": "trabajos practicos/TP 01.html#comparación-de-números",
+    "title": "TP 01",
     "section": "",
-    "text": "Ordenar por\n       Por defecto\n         \n          Título\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTítulo\n\n\nSubtítulo\n\n\nDescripción\n\n\n\n\n\n\nPython 01\n\n\nIntroducción a la programación en Python\n\n\n\n\n\n\n\nPython 02\n\n\nContenedores, estructuras lógicas y funciones\n\n\n\n\n\n\n\nPython 03\n\n\nAlgo más sobre funciones y listas\n\n\n\n\n\n\n\nPython 04\n\n\nIntroducción a Numpy\n\n\n\n\n\n\n\nPython 05\n\n\nMatplotlib (introducción)\n\n\n\n\n\n\n\n\nNo hay resultados"
+    "text": "PlanteoPista\n\n\nRealizar un programa en el que se ingresen dos números enteros positivos. Luego deberá restar el mayor del menor e indicar si dicha diferencia es un valor que está entre ambos números (es decir, es mayor que el más chico y menor que el más grande de los ingresados).\n\n\nSe almacenan los dos números a comparar, se efectúan los cálculos, se devuelve el resultado condicionalmente usando if para cada caso.",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 01"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/TP 01.html#aprobación-con-condiciones",
+    "href": "trabajos practicos/TP 01.html#aprobación-con-condiciones",
+    "title": "TP 01",
+    "section": "",
+    "text": "PlanteoPistaOtra pista\n\n\nRealizar un programa que solicite 3 notas de parciales obtenidas por un alumno. A continuación se mostrará por pantalla un mensaje que indique la situación del alumno:\n\nSi el alumno aprobó los 3 parciales (nota 6 o más) y su promedio es mayor o igual a 8, promociona la materia con la nota promedio.\nSi el alumno aprobó los 3 parciales pero su promedio no supera los 8 puntos, debe rendir examen final.\nSi el alumno no aprobó uno o más parciales, se solicitará que se ingrese la nota de un recuperatorio. Si éste hubiera sido aprobado, se informará el promedio general (3 parciales + el recuperatorio) y su condición de aprobado (aún cuando el promedio no supere los 6 puntos).\nSi no hubiera aprobado el recuperatorio se informará que el alumno fue aplazado.\n\n\n\nEste código no resuelve todo el problema pero presenta algunas herramientas útiles, como limitar los dígitos que se muestran al imprimir una variable o el uso de la funcion suma sobre los elementos de una lista. Lea atentamente cada línea y asegúrese de que comprende qué hace en cada caso. El problema requiere evaluar los escenarios posibles por lo que quizás le resulte útil hacer un bosquejo en papel sobre los posibles casos para luego pasarlos a código.\n\n\ndef calif(n=3):\n  \"\"\"\n  Función que hace lo que se pide\n  \"\"\"\n  notas = []\n  for i in range(n):\n    print(f\"ingrese la {i+1} nota\")\n    nota = float(input())\n    notas.append(nota)\n\n  prom = (sum(notas))/n\n  return f\"{prom:.2f}\"",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 01"
+    ]
+  },
+  {
+    "objectID": "presentaciones/test.html",
+    "href": "presentaciones/test.html",
+    "title": "C2-661 2026",
+    "section": "",
+    "text": "¡Claro! Aquí tienes la explicación al estilo Feynman sobre la deducción de la aceleración centrípeta convertida a formato Markdown:\n# Deducir la aceleración centrípeta al estilo Feynman\n\n¡Ja! Bueno, me pongo las zapatillas de Richard Feynman, me ajusto la camisa desabotonada y vamos a divertirnos un poco con esto, como si estuviéramos garabateando en una pizarra en Caltech. Querés saber cómo llegamos a la fórmula de la **aceleración centrípeta** en un **movimiento circular uniforme**, ¿eh? Vamos a deducirla paso a paso, con un poco de intuición y sin enredarnos demasiado, porque, como siempre digo, *si no lo entendés de manera simple, no lo entendés del todo*.\n\n---\n\nImaginemos una partícula dando vueltas en un círculo, como un auto en una pista redonda, a velocidad constante. \"Uniforme\" significa que el *módulo* de la velocidad no cambia, pero ojo, la *dirección* sí cambia, porque siempre está girando hacia el centro del círculo. Y si la velocidad cambia de dirección, hay **aceleración**, ¿no? Eso es lo primero que tenemos que tener claro: la aceleración centrípeta no se trata de ir más rápido o más lento, sino de *cambiar la dirección* de la velocidad.\n\nAhora, vamos a ponernos un poquito matemáticos, pero tranqui, lo vamos a hacer con estilo. Supongamos que la partícula se mueve en un círculo de radio \\( r \\), y su velocidad tangencial es \\( v \\). En un movimiento circular uniforme, la partícula recorre el círculo con una rapidez constante, así que en un tiempo \\( t \\), el ángulo que barre es \\( \\theta = \\omega t \\), donde \\( \\omega \\) es la velocidad angular, y sabemos que \\( v = \\omega r \\). Pero no nos adelantemos, vamos al grano: queremos la aceleración.\n\n## Paso 1: ¿Qué es la aceleración?\n\nLa aceleración es la tasa de cambio de la velocidad, o sea, \\( \\vec{a} = \\frac{d\\vec{v}}{dt} \\). En el movimiento circular, la velocidad \\( \\vec{v} \\) es un vector que siempre es tangente al círculo, y su magnitud es constante (\\( v \\)), pero su dirección gira. Para entender cómo cambia, pensemos en el vector velocidad en dos instantes cercanos.\n\nImagina la partícula en un punto del círculo en el tiempo \\( t \\), con velocidad \\( \\vec{v}_1 \\). Un poquito después, en el tiempo \\( t + \\Delta t \\), está en otro punto, con velocidad \\( \\vec{v}_2 \\). Ambas velocidades tienen la misma magnitud (\\( v \\)), pero están en direcciones diferentes, separadas por un pequeño ángulo \\( \\Delta \\theta \\). Queremos saber cómo cambia \\( \\vec{v} \\) en ese pequeño intervalo \\( \\Delta t \\).\n\n## Paso 2: El cambio en la velocidad\n\nPara encontrar la aceleración, necesitamos el cambio en el vector velocidad: \\( \\Delta \\vec{v} = \\vec{v}_2 - \\vec{v}_1 \\). Dibujemos esto en nuestra mente (o en una pizarra imaginaria). Los vectores \\( \\vec{v}_1 \\) y \\( \\vec{v}_2 \\) tienen longitud \\( v \\), y están separados por un ángulo \\( \\Delta \\theta \\). Si \\( \\Delta \\theta \\) es pequeño, el vector \\( \\Delta \\vec{v} \\) (la diferencia) forma un arco de una \"circunferencia\" cuya longitud depende de \\( v \\) y \\( \\Delta \\theta \\).\n\nAquí viene un truco geométrico que me encanta. La longitud del arco \\( \\Delta \\vec{v} \\) (el cambio en la velocidad) es parecida a la longitud de un arco en el círculo del movimiento. Para un ángulo pequeño \\( \\Delta \\theta \\), la longitud del arco que barre la velocidad es aproximadamente:\n\n\\[ |\\Delta \\vec{v}| \\approx v \\Delta \\theta, \\]\n\nporque el vector velocidad está trazando un círculo en el \"espacio de velocidades\", y el radio de ese círculo es \\( v \\). Ahora, la aceleración es:\n\n\\[ \\vec{a} = \\lim_{\\Delta t \\to 0} \\frac{\\Delta \\vec{v}}{\\Delta t}. \\]\n\nEntonces, necesitamos saber cómo es \\( \\Delta \\theta / \\Delta t \\). En el movimiento circular uniforme, el ángulo \\( \\theta \\) cambia a una tasa constante, y esa tasa es la velocidad angular \\( \\omega \\):\n\n\\[ \\omega = \\frac{\\Delta \\theta}{\\Delta t}. \\]\n\nPor lo tanto:\n\n\\[ |\\Delta \\vec{v}| \\approx v \\Delta \\theta, \\]\n\ny dividiendo por \\( \\Delta t \\):\n\n\\[ \\frac{|\\Delta \\vec{v}|}{\\Delta t} \\approx v \\frac{\\Delta \\theta}{\\Delta t} = v \\omega. \\]\n\nEn el límite, la magnitud de la aceleración es:\n\n\\[ a = v \\omega. \\]\n\n## Paso 3: Relacionemos con el radio\n\nSabemos que en el movimiento circular, la velocidad tangencial \\( v \\), la velocidad angular \\( \\omega \\), y el radio \\( r \\) están relacionados por:\n\n\\[ v = \\omega r. \\]\n\nSi sustituimos \\( \\omega = \\frac{v}{r} \\) en la expresión de la aceleración:\n\n\\[ a = v \\cdot \\frac{v}{r} = \\frac{v^2}{r}. \\]\n\n¡Y ahí lo tenés! La magnitud de la **aceleración centrípeta** es:\n\n\\[ a_c = \\frac{v^2}{r}. \\]\n\n## Paso 4: La dirección\n\nPero espera, también tenemos que hablar de la dirección. La aceleración centrípeta **siempre apunta hacia el centro del círculo**, porque el cambio en la velocidad \\( \\Delta \\vec{v} \\) está en la dirección radial hacia el centro. ¿Por qué? Porque el vector \\( \\Delta \\vec{v} \\) es perpendicular a las velocidades \\( \\vec{v}_1 \\) y \\( \\vec{v}_2 \\) cuando \\( \\Delta \\theta \\) es pequeño, y esa dirección es hacia el centro del círculo.\n\n## Intuición final\n\nPensá en esto como un juego de tirar de una cuerda. Si estás girando una piedra atada a una cuerda, tenés que jalar constantemente hacia el centro para que la piedra no salga volando en línea recta. Esa \"jalada\" es la aceleración centrípeta, y su magnitud depende de qué tan rápido va la piedra (\\( v \\)) y de qué tan apretado es el círculo (\\( r \\)). Si vas más rápido, necesitas jalar más fuerte; si el círculo es más pequeño, también.\n\nEntonces, la fórmula \\( a_c = \\frac{v^2}{r} \\) nos dice cuánto tenés que \"jalar\" para mantener la partícula en su órbita circular. Simple, elegante, y describe el universo en un garabato.\n\n---\n\n¿Te quedó claro o querés que le demos otra vuelta? *guiño* ¡Esto es como tocar el bongó, hay que encontrarle el ritmo!\nEspero que te sea útil este formato. ¿Querés que ajuste algo más?"
+  },
+  {
+    "objectID": "presentaciones/Clase-02.html#condicional-if",
+    "href": "presentaciones/Clase-02.html#condicional-if",
+    "title": "Presentación Clase 02",
+    "section": "Condicional if",
+    "text": "Condicional if\nEn python las secuencias se encierran en bloques indentados, con tabulaciones\nSintaxis (ver los espacios):\nif condicion:\n    hace_algo\nelif condicion:\n    hace_esta_otra_cosa\nelse:\n    haga_esto_otro # se suele usar para errores\n                 # luego de una lista de opciones\nn = 2\n\nif n:\n    print(\"n no es cero o no es null\")\n\nif n is None:\n    print(\"n es None\")\n\nif n is not str:\n    print(\"n no es una cadena de texto\")"
+  },
+  {
+    "objectID": "presentaciones/Clase-02.html#bucle-for",
+    "href": "presentaciones/Clase-02.html#bucle-for",
+    "title": "Presentación Clase 02",
+    "section": "Bucle for",
+    "text": "Bucle for\nEl bucle for es quizás la construcción más habitual en python. Su sintaxis es\nfor elemento in secuencia:\n    haga_esto"
+  },
+  {
+    "objectID": "presentaciones/Clase-02.html#estructura-while",
+    "href": "presentaciones/Clase-02.html#estructura-while",
+    "title": "Presentación Clase 02",
+    "section": "Estructura while",
+    "text": "Estructura while\nSe puede usar también un bucle while para iterar mientras una condición sea verdadera:\nwhile condción :\n    hacer_esto"
+  },
+  {
+    "objectID": "presentaciones/Clase-02.html#estructura-try-except",
+    "href": "presentaciones/Clase-02.html#estructura-try-except",
+    "title": "Presentación Clase 02",
+    "section": "Estructura try-except",
+    "text": "Estructura try-except\nSe puede atrapar o “atajar” errores usando esta estructura. Cada vez que el programa de como resultado un error (un dato mal ingresado o no válido) podremos especificar que hacer. Se puede indicar incluso una respuesta diferente para errores de distinto tipo.\n\ntry:\n    acción_a_intentar\nexcept:\n    que_hacer_si_ocurre_un_error"
+  },
+  {
+    "objectID": "presentaciones/Clase-02.html#listas",
+    "href": "presentaciones/Clase-02.html#listas",
+    "title": "Presentación Clase 02",
+    "section": "Listas",
+    "text": "Listas\nUna lista es una arreglo mutable. Lo que quiere decir que podemos redefinir y alterar sus valores - Cada valor en la lista es un elemento o item - Los elementos pueden ser cualquier objeto - Las listas pueden contener objetos de diferente tipo - Una lista vaciía se define como [] o como list()"
+  },
+  {
+    "objectID": "presentaciones/Clase-02.html#diccionarios",
+    "href": "presentaciones/Clase-02.html#diccionarios",
+    "title": "Presentación Clase 02",
+    "section": "Diccionarios",
+    "text": "Diccionarios\n\nUn diccionario (dict) es un mapeo entre un conjunto de índices (keys) y otro de valores (values)\nCada objeto de un diccionario es un par índice-valor (key-value)\nLas claves pueden ser cualquier tipo de dato\nLos diccionarios no tienen un orden prestablecido"
+  },
+  {
+    "objectID": "presentaciones/Clase-02.html#una-función",
+    "href": "presentaciones/Clase-02.html#una-función",
+    "title": "Presentación Clase 02",
+    "section": "Una función",
+    "text": "Una función\n\nEntre paréntesis están los argumentos.\nSe puede decir que una función “toma” un argumento y “devuelve” un resultado.\nAl resultado se lo suele llamar valor de retorno.\nNo es necesario que una función retorne un valor\n\nLa primera línea de la función se la llama encabezado (header) y a las restantes el cuerpo (body).\nEl ebcabezado va encerrado entre comillas y el cuerpo tiene que estar indentado. La indentación común es de 4 espacios y un error común es que el software que se usa confunda tabulaciones con indentación. Apretar la tecla tab, si el software está bien configurado, debería hacer los 4 espacios y no una tabulación. Esto parece una aclaración contradictoria y poco relevante, pero como se dijo más arriba, es una fuente común de errores en la ejecución de código: si hay tabulaciones en donde deberían estar los 4 espacios de la indentación, el código no se ejecuta.\nEl cuerpo de una función termina cuando se vuelve al nivel anterior de indentación.\nPara consultar más acerca de funciones, pueden visitar la ayuda de Python oficial"
+  },
+  {
+    "objectID": "presentaciones/Clase-02.html#funciones-para-recibir-entradas-del-usuario",
+    "href": "presentaciones/Clase-02.html#funciones-para-recibir-entradas-del-usuario",
+    "title": "Presentación Clase 02",
+    "section": "Funciones para recibir entradas del usuario",
+    "text": "Funciones para recibir entradas del usuario\nUna función para permitir al usuario interactuar con el código ingresando valores es la función input() cuyo funcionamiento se ejemplifica a continuación:\nuser_input = input(\"Ingrese algo: \")\nprint(f\"Usted ha ingresado: {user_input}\")\nHay que tener en cuenta que la función input entiende todo lo que ingresemos a ella como si fuera texto, por lo que si deseamos recibir valores numéricos debemos convertir lo que recibamos. Por ejemplo:\n1price = float(input(\"Ingrese el precio: \"))\nprint(f\"El precio es {price}\")\n\n2age = int(input(\"Ingrese su edad: \"))\nprint(f\"Usted tiene {age} años\")\n\n1\n\nSe convierte a un número float\n\n2\n\nSe convierte a un número entero int\n\n\nEjemplo\nPara interrumpir la ejecución podemos usar una combinación de while, try- except como se muestra en este ejemplo que saqué de esta web:\nwhile True:\n    try:\n1        number = int(input(\"Enter an integer: \"))\n2        break\n3    except ValueError:\n4        print(\"Invalid input! Please enter a valid integer.\")\n\n1\n\nConvierte la entrada a un entero\n\n2\n\nSi tiene éxito interrumpe el programa ahí mismo\n\n3\n\nEn caso de recibir una excepción del tipo ValueError\n\n4\n\nImprime un texto de referencia."
+  },
+  {
+    "objectID": "clases/Clase-06.html",
+    "href": "clases/Clase-06.html",
+    "title": "Python 06",
+    "section": "",
+    "text": "Como vimos la clase anterior, se pueden configurar todos los elementos de una gráfica accediendo a las propiedades de los ejes mediante la operación set_nombre_de_la_proiedad(valor) o a través de la función set(nombre_dela_propiedad='valor').\nSi solemos hacer gráficas con un estilo que requiere modificar sustancialmente los parámetros visuales sería bueno contar con una manera de traer estas configuraciones sin tener que escribirlas o copiarlas de otro documento existente.\nPara eso contamos con las hojas de estilos, o stylesheets que nos permiten aplicar todas estas configuraciones a través de un archivo externo que se carga cuando importamos el módulo.\nLa lista de parámetros configurables es bastante larga. Podemos acceder a ella si hacemos lo siguiente\nimport matplotlib\n\nmatplotlib.rcParams\n\n\n\nEstilos Integrados: Matplotlib incluye estilos predefinidos ('ggplot', 'seaborn', 'dark_background', etc.) &gt; los vimos en la clase anterior\nEstilos Personalizados: Archivos .mplstyle con configuraciones personalizadas\nAplicación Temporal: Uso de administradores de contexto para aplicar estilos temporalmente\nControl Orientado a Objetos: Los estilos afectan todos los gráficos creados después de su activación\n\n\n\n\nPara aplicar un estilo debemos cargar la hoja de estilos al momento de usarlo haciendo plt.style.use('nombre_del_estilo') y podemos conocer los disponibles por defecto haciendo plt.style.available. Puede ser útil ubicar los estilos personalizados en la carpeta que mismo matplotlib usa haciendo:\nimport matplotlib \nmatplotlib.get_configdir()\nSi no lo hacemos, deberemos escribir la ruta completa al archivo en cuestión, por ejemplo: plt.style.use('C:/Users/usuario/estilo_cientifico.mplstyle').\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Datos de ejemplo\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\nz = np.exp(-x/5)\n\n# Crear figura usando interfaz orientada a objetos\nfig, axs = plt.subplots(1, 2, figsize=(10, 4))\n\n# Estilo por defecto\naxs[0].plot(x, y, label='sen(x)')\naxs[0].plot(x, z, label='exp(-x/5)')\naxs[0].set_title('Estilo por Defecto')\naxs[0].set_xlabel('Tiempo (s)')\naxs[0].set_ylabel('Amplitud')\naxs[0].legend()\naxs[0].grid(True)\n\n# Aplicar estilo científico\nplt.style.use('seaborn-v0_8-poster')\n\n# El estilo afecta todos los gráficos posteriores\naxs[1].plot(x, y, label='sen(x)')\naxs[1].plot(x, z, label='exp(-x/5)')\naxs[1].set_title('Estilo Seaborn Poster')\naxs[1].set_xlabel('Tiempo (s)')\naxs[1].set_ylabel('Amplitud')\naxs[1].legend()\n\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nPueden descargar, mirar y usar algunas de estas hojas de estilos - Estilo 1 - Estilo 2 - Estilo 3\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n# Aplicar estilo personalizado\nplt.style.use('C:/Users/feder/Desktop/quarto/C2/2025/assets/estilo_cientifico.mplstyle')\n\n# Crear figura y ejes\nfig, ax = plt.subplots(figsize=(4,4))\n\n# Datos científicos\nt = np.linspace(0, 20, 500)\nsignal = np.sin(t) * np.exp(-t/10) + np.random.normal(0, 0.05, 500)\nmodel = np.sin(t) * np.exp(-t/10)\n\n# Graficar datos y modelo\nax.plot(t, signal, 'o', alpha=0.6, label='Datos experimentales', markersize=4)\nax.plot(t, model, 'r-', linewidth=2.5, label='Modelo teórico')\n\n# Elementos adicionales\nax.set_title('Decaimiento Oscilatorio', pad=15)\nax.set_xlabel('Tiempo (s)')\nax.set_ylabel('Amplitud (V)')\nax.legend(loc='upper right')\n\n# Mostrar figura\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nSi sólo queremos aplicar un estilo a un gráfico puntual podemos usar la siguiente construcción para lograrlo:\n\nimport numpy as np\nimport matplotlib.pyplot as plt \n\n# Crear datos\nx = np.random.normal(size=1000)\n\n# Recargo la libreria de estilos\nplt.style.reload_library()\n\n# Usar estilo temporal para histograma\nwith plt.style.context(['seaborn-v0_8-colorblind', 'seaborn-v0_8-poster']):\n    fig, ax = plt.subplots(figsize=(5, 3))\n    ax.hist(x, bins=30, density=True, alpha=0.7, edgecolor='black')\n    ax.set_title('Distribución Normal (Estilo Temporal)', pad=15)\n    ax.set_xlabel('Valor')\n    ax.set_ylabel('Densidad')\n    ax.grid(True, linestyle=':', alpha=0.7)\n    \n    # Añadir distribución teórica\n    xmin, xmax = ax.get_xlim()\n    x_teorico = np.linspace(xmin, xmax, 100)\n    ax.plot(x_teorico, 1/(1*np.sqrt(2*np.pi)) * np.exp(-(x_teorico)**2/2), \n            'r-', linewidth=3)\n    \nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n# Combinar estilos (el último tiene prioridad)\nplt.style.use(['seaborn-v0_8-darkgrid', 'C:/Users/feder/Desktop/quarto/C2/2025/assets/estilo_cientifico.mplstyle'])\n\nfig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))\n\n# Gráfico 1: Datos categóricos\ncategorias = ['A', 'B', 'C', 'D']\nvalores = [23, 45, 56, 12]\nax1.bar(categorias, valores, color='#2ca02c', edgecolor='black')\nax1.set_title('Datos Categóricos')\nax1.set_ylabel('Conteo')\n\n# Gráfico 2: Superficie 3D\nfrom mpl_toolkits.mplot3d import Axes3D\nX = np.linspace(-5, 5, 100)\nY = np.linspace(-5, 5, 100)\nX, Y = np.meshgrid(X, Y)\nZ = np.sin(np.sqrt(X**2 + Y**2))\n\nax2 = fig.add_subplot(122, projection='3d')\nsurf = ax2.plot_surface(X, Y, Z, cmap='viridis', edgecolor='none', alpha=0.9)\nax2.set_title('Superficie 3D')\nfig.colorbar(surf, ax=ax2, shrink=0.6)\n\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n# Ejemplo final: Gráfico científico completo\nplt.style.use('../assets/estilo_cientifico.mplstyle')\n\n# Preparar datos\nt = np.linspace(0, 4*np.pi, 500)\ny1 = np.sin(t)\ny2 = np.cos(2*t)\ny3 = 0.5*np.sin(3*t + np.pi/4)\n\n# Crear figura con subgráficos\nfig = plt.figure(figsize=(7, 5))\ngs = fig.add_gridspec(2, 2)\n\nax1 = fig.add_subplot(gs[0, :])\nax2 = fig.add_subplot(gs[1, 0])\nax3 = fig.add_subplot(gs[1, 1])\n\n# Gráfico principal (series temporales)\nax1.plot(t, y1, label='sen(t)')\nax1.plot(t, y2, label='cos(2t)')\nax1.plot(t, y3, label='0.5*sen(3t + π/4)')\nax1.set_title('Oscilaciones Acopladas')\nax1.set_xlabel('Tiempo (s)')\nax1.set_ylabel('Amplitud')\nax1.legend(loc='upper right', framealpha=0.95)\nax1.axhline(0, color='black', linewidth=0.8, linestyle='--', alpha=0.7)\n\n# Gráfico de fase\nax2.plot(y1, y2, 'g-')\nax2.set_title('Espacio de Fases')\nax2.set_xlabel('sen(t)')\nax2.set_ylabel('cos(2t)')\nax2.grid(True, linestyle=':', alpha=0.6)\n\n# Histograma de amplitudes\namplitudes = np.concatenate([y1, y2, y3])\nax3.hist(amplitudes, bins=30, density=True, orientation='horizontal', \n         color='purple', alpha=0.7, edgecolor='black')\nax3.set_title('Distribución de Amplitudes')\nax3.set_xlabel('Densidad')\nax3.set_ylabel('Amplitud')\n\n# Ajustar layout y guardar\nplt.tight_layout(pad=2.0)\nplt.savefig('grafico_cientifico.pdf', dpi=300, bbox_inches='tight')\nplt.show()\n\n\n\n\nHoja de estilos personalizada\n\n\n\n\n\n\n\nPodemos recuperar o reiniciar los estilos de varias formas, una de ellas es asi:\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom scipy.special import jv\nimport matplotlib as mpl\n\n# PONER LOS VALORES POR DEFECTO\nmpl.rcParams.update(mpl.rcParamsDefault)\n\n# ELEGIR UN NUEVO ESTILO\nplt.style.use(\"ggplot\")\n\n\n# GRAFICAR ALGO\nfig, ax = plt.subplots()\nx = np.linspace(-10, 10, 100)\n\nfor i in range(0, 3):\n  J = jv(i, x)\n  ax.plot(x, J)\n\nplt.show()",
+    "crumbs": [
+      "Clases",
+      "Python 06"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-06.html#hojas-de-estilo",
+    "href": "clases/Clase-06.html#hojas-de-estilo",
+    "title": "Python 06",
+    "section": "",
+    "text": "Como vimos la clase anterior, se pueden configurar todos los elementos de una gráfica accediendo a las propiedades de los ejes mediante la operación set_nombre_de_la_proiedad(valor) o a través de la función set(nombre_dela_propiedad='valor').\nSi solemos hacer gráficas con un estilo que requiere modificar sustancialmente los parámetros visuales sería bueno contar con una manera de traer estas configuraciones sin tener que escribirlas o copiarlas de otro documento existente.\nPara eso contamos con las hojas de estilos, o stylesheets que nos permiten aplicar todas estas configuraciones a través de un archivo externo que se carga cuando importamos el módulo.\nLa lista de parámetros configurables es bastante larga. Podemos acceder a ella si hacemos lo siguiente\nimport matplotlib\n\nmatplotlib.rcParams\n\n\n\nEstilos Integrados: Matplotlib incluye estilos predefinidos ('ggplot', 'seaborn', 'dark_background', etc.) &gt; los vimos en la clase anterior\nEstilos Personalizados: Archivos .mplstyle con configuraciones personalizadas\nAplicación Temporal: Uso de administradores de contexto para aplicar estilos temporalmente\nControl Orientado a Objetos: Los estilos afectan todos los gráficos creados después de su activación\n\n\n\n\nPara aplicar un estilo debemos cargar la hoja de estilos al momento de usarlo haciendo plt.style.use('nombre_del_estilo') y podemos conocer los disponibles por defecto haciendo plt.style.available. Puede ser útil ubicar los estilos personalizados en la carpeta que mismo matplotlib usa haciendo:\nimport matplotlib \nmatplotlib.get_configdir()\nSi no lo hacemos, deberemos escribir la ruta completa al archivo en cuestión, por ejemplo: plt.style.use('C:/Users/usuario/estilo_cientifico.mplstyle').\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n# Datos de ejemplo\nx = np.linspace(0, 10, 100)\ny = np.sin(x)\nz = np.exp(-x/5)\n\n# Crear figura usando interfaz orientada a objetos\nfig, axs = plt.subplots(1, 2, figsize=(10, 4))\n\n# Estilo por defecto\naxs[0].plot(x, y, label='sen(x)')\naxs[0].plot(x, z, label='exp(-x/5)')\naxs[0].set_title('Estilo por Defecto')\naxs[0].set_xlabel('Tiempo (s)')\naxs[0].set_ylabel('Amplitud')\naxs[0].legend()\naxs[0].grid(True)\n\n# Aplicar estilo científico\nplt.style.use('seaborn-v0_8-poster')\n\n# El estilo afecta todos los gráficos posteriores\naxs[1].plot(x, y, label='sen(x)')\naxs[1].plot(x, z, label='exp(-x/5)')\naxs[1].set_title('Estilo Seaborn Poster')\naxs[1].set_xlabel('Tiempo (s)')\naxs[1].set_ylabel('Amplitud')\naxs[1].legend()\n\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nPueden descargar, mirar y usar algunas de estas hojas de estilos - Estilo 1 - Estilo 2 - Estilo 3\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n# Aplicar estilo personalizado\nplt.style.use('C:/Users/feder/Desktop/quarto/C2/2025/assets/estilo_cientifico.mplstyle')\n\n# Crear figura y ejes\nfig, ax = plt.subplots(figsize=(4,4))\n\n# Datos científicos\nt = np.linspace(0, 20, 500)\nsignal = np.sin(t) * np.exp(-t/10) + np.random.normal(0, 0.05, 500)\nmodel = np.sin(t) * np.exp(-t/10)\n\n# Graficar datos y modelo\nax.plot(t, signal, 'o', alpha=0.6, label='Datos experimentales', markersize=4)\nax.plot(t, model, 'r-', linewidth=2.5, label='Modelo teórico')\n\n# Elementos adicionales\nax.set_title('Decaimiento Oscilatorio', pad=15)\nax.set_xlabel('Tiempo (s)')\nax.set_ylabel('Amplitud (V)')\nax.legend(loc='upper right')\n\n# Mostrar figura\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nSi sólo queremos aplicar un estilo a un gráfico puntual podemos usar la siguiente construcción para lograrlo:\n\nimport numpy as np\nimport matplotlib.pyplot as plt \n\n# Crear datos\nx = np.random.normal(size=1000)\n\n# Recargo la libreria de estilos\nplt.style.reload_library()\n\n# Usar estilo temporal para histograma\nwith plt.style.context(['seaborn-v0_8-colorblind', 'seaborn-v0_8-poster']):\n    fig, ax = plt.subplots(figsize=(5, 3))\n    ax.hist(x, bins=30, density=True, alpha=0.7, edgecolor='black')\n    ax.set_title('Distribución Normal (Estilo Temporal)', pad=15)\n    ax.set_xlabel('Valor')\n    ax.set_ylabel('Densidad')\n    ax.grid(True, linestyle=':', alpha=0.7)\n    \n    # Añadir distribución teórica\n    xmin, xmax = ax.get_xlim()\n    x_teorico = np.linspace(xmin, xmax, 100)\n    ax.plot(x_teorico, 1/(1*np.sqrt(2*np.pi)) * np.exp(-(x_teorico)**2/2), \n            'r-', linewidth=3)\n    \nplt.show()\n\n\n\n\n\n\n\n\n\n\n\n\n# Combinar estilos (el último tiene prioridad)\nplt.style.use(['seaborn-v0_8-darkgrid', 'C:/Users/feder/Desktop/quarto/C2/2025/assets/estilo_cientifico.mplstyle'])\n\nfig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))\n\n# Gráfico 1: Datos categóricos\ncategorias = ['A', 'B', 'C', 'D']\nvalores = [23, 45, 56, 12]\nax1.bar(categorias, valores, color='#2ca02c', edgecolor='black')\nax1.set_title('Datos Categóricos')\nax1.set_ylabel('Conteo')\n\n# Gráfico 2: Superficie 3D\nfrom mpl_toolkits.mplot3d import Axes3D\nX = np.linspace(-5, 5, 100)\nY = np.linspace(-5, 5, 100)\nX, Y = np.meshgrid(X, Y)\nZ = np.sin(np.sqrt(X**2 + Y**2))\n\nax2 = fig.add_subplot(122, projection='3d')\nsurf = ax2.plot_surface(X, Y, Z, cmap='viridis', edgecolor='none', alpha=0.9)\nax2.set_title('Superficie 3D')\nfig.colorbar(surf, ax=ax2, shrink=0.6)\n\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\n\n# Ejemplo final: Gráfico científico completo\nplt.style.use('../assets/estilo_cientifico.mplstyle')\n\n# Preparar datos\nt = np.linspace(0, 4*np.pi, 500)\ny1 = np.sin(t)\ny2 = np.cos(2*t)\ny3 = 0.5*np.sin(3*t + np.pi/4)\n\n# Crear figura con subgráficos\nfig = plt.figure(figsize=(7, 5))\ngs = fig.add_gridspec(2, 2)\n\nax1 = fig.add_subplot(gs[0, :])\nax2 = fig.add_subplot(gs[1, 0])\nax3 = fig.add_subplot(gs[1, 1])\n\n# Gráfico principal (series temporales)\nax1.plot(t, y1, label='sen(t)')\nax1.plot(t, y2, label='cos(2t)')\nax1.plot(t, y3, label='0.5*sen(3t + π/4)')\nax1.set_title('Oscilaciones Acopladas')\nax1.set_xlabel('Tiempo (s)')\nax1.set_ylabel('Amplitud')\nax1.legend(loc='upper right', framealpha=0.95)\nax1.axhline(0, color='black', linewidth=0.8, linestyle='--', alpha=0.7)\n\n# Gráfico de fase\nax2.plot(y1, y2, 'g-')\nax2.set_title('Espacio de Fases')\nax2.set_xlabel('sen(t)')\nax2.set_ylabel('cos(2t)')\nax2.grid(True, linestyle=':', alpha=0.6)\n\n# Histograma de amplitudes\namplitudes = np.concatenate([y1, y2, y3])\nax3.hist(amplitudes, bins=30, density=True, orientation='horizontal', \n         color='purple', alpha=0.7, edgecolor='black')\nax3.set_title('Distribución de Amplitudes')\nax3.set_xlabel('Densidad')\nax3.set_ylabel('Amplitud')\n\n# Ajustar layout y guardar\nplt.tight_layout(pad=2.0)\nplt.savefig('grafico_cientifico.pdf', dpi=300, bbox_inches='tight')\nplt.show()\n\n\n\n\nHoja de estilos personalizada\n\n\n\n\n\n\n\nPodemos recuperar o reiniciar los estilos de varias formas, una de ellas es asi:\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nfrom scipy.special import jv\nimport matplotlib as mpl\n\n# PONER LOS VALORES POR DEFECTO\nmpl.rcParams.update(mpl.rcParamsDefault)\n\n# ELEGIR UN NUEVO ESTILO\nplt.style.use(\"ggplot\")\n\n\n# GRAFICAR ALGO\nfig, ax = plt.subplots()\nx = np.linspace(-10, 10, 100)\n\nfor i in range(0, 3):\n  J = jv(i, x)\n  ax.plot(x, J)\n\nplt.show()",
+    "crumbs": [
+      "Clases",
+      "Python 06"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-06.html#histogramas",
+    "href": "clases/Clase-06.html#histogramas",
+    "title": "Python 06",
+    "section": "Histogramas",
+    "text": "Histogramas\nSi nos encontramos con datos cuyo procesamiento requiere contar ocurrencias de un evento, es probable que necesitemos crear histogramas como forma de representación, para ello tenemos varias opciones dentro de matplotlib\n\nimport matplotlib.pyplot as plt\nimport numpy as np\n\nres = np.random.randn(1000)*0.2 + 0.4\n\nplt.figure(figsize=(8,3))\nplt.hist(res)\nplt.show()\n\n\n\n\nUn histograma\n\n\n\n\n\nplt.figure(figsize=(8,3))\nplt.hist(res, bins=30)\nplt.show()\n\n\n\n\nUn histograma con más clases (intervalos)\n\n\n\n\n\nplt.figure(figsize=(8,3))\nplt.hist(res, bins=30, density=True)\nplt.show()\n\n\n\n\nDensidad activada, por lo que el área bajo la curva es 1\n\n\n\n\n\nres2 = np.random.randn(1000)*0.2 + 0.4\nplt.figure(figsize=(8,3))\nplt.hist(res, bins=30, density=True, histtype='step')\nplt.hist(res2, bins=30, density=True, histtype='step')\nplt.xlabel('$\\hat{E}-E$', fontsize=20)\nplt.ylabel('Frequency')\nplt.show()",
+    "crumbs": [
+      "Clases",
+      "Python 06"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-06.html#superficies-de-nivel",
+    "href": "clases/Clase-06.html#superficies-de-nivel",
+    "title": "Python 06",
+    "section": "Superficies de nivel",
+    "text": "Superficies de nivel\n\nCon relleno de color (heatmap)\nLa función de numpy meshgrid() nos ayuda a crear una “malla” donde podremos ubicar los puntos en dos dimensiones.\n\nimport matplotlib as mpl\nmpl.rcParams.update(mpl.rcParamsDefault) # reinicio el estilo visual\n_ = np.linspace(-1, 1, 100)\n1x, y = np.meshgrid(_,_)\nz = x**2+x*y\n\n\n1\n\nla función meshgrid genera una matriz de valores para ubicar los vectores o puntos de la superficie\n\n\n\n\nPara crear una superficie de nivel usamos la función contour()\n\n_ = np.linspace(-1, 1, 100)\nx, y = np.meshgrid(_,_)\nz = x**2+x*y\nplt.contourf(x,y,z)\nplt.show()\n\n\n\n\n\n\n\n\nSe pueden cambiar varias cosas de éste gráfico, consultar acá:\n\nver https://matplotlib.org/stable/tutorials/colors/colormaps.html#sphx-glr-tutorials-colors-colormaps-py\n\nUsando vmin y vmax ajustamos el rango de los colores\n\nver https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.contour.html para todas las opciones\n\n\nplt.contourf(x,y,z, levels=50, cmap='plasma')\nplt.colorbar(label='Temperatura [$^\\circ C$]')\nplt.xlabel('Posición horizontal [m]')\nplt.ylabel('Posición vertical [m]')\nplt.show()\n\n\n\n\n\n\n\n\n\n\nSin relleno (con iso-valores)\nA veces nos interesa ver los valores de casda iso-curva por lo que usamos la función clabel y le pasamos el gráfico entero para que agregue los valores\n\ncs = plt.contour(x,y,z, levels=20) # ajustando la cantidad de levels podemos tener mas líneas\nplt.clabel(cs, fontsize=8)\nplt.show()",
+    "crumbs": [
+      "Clases",
+      "Python 06"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-06.html#gráficos-de-flujo-campos-vectoriales",
+    "href": "clases/Clase-06.html#gráficos-de-flujo-campos-vectoriales",
+    "title": "Python 06",
+    "section": "Gráficos de flujo: Campos vectoriales",
+    "text": "Gráficos de flujo: Campos vectoriales\nUsamos otra vez meshgrid para generar los puntos del espacio vectorial\n\nw = 3\n_ = np.linspace(-3,3,100)\nX, Y = np.meshgrid(_,_)\nU = -1 - X**2 + Y\nV = 1 + X - Y**2\nspeed = np.sqrt(U**2 + V**2)\n\nCreamos las figuras\n\nfig, axes = plt.subplots(2,2,figsize=(5,5))\nax = axes[0][0]\nax.streamplot(X, Y, U, V)\nax = axes[0][1]\nax.streamplot(X, Y, U, V, color=speed)\nax = axes[1][0]\nlw = 5*speed / speed.max()\nax.streamplot(X, Y, U, V, linewidth=lw)\nax = axes[1][1]\nseed_points = np.array([[0,1], [1,0]])\nax.streamplot(X, Y, U, V, color=U, linewidth=2,\n                      cmap='autumn', start_points=seed_points)\nax.grid()\nplt.show()",
+    "crumbs": [
+      "Clases",
+      "Python 06"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-06.html#animaciones",
+    "href": "clases/Clase-06.html#animaciones",
+    "title": "Python 06",
+    "section": "Animaciones",
+    "text": "Animaciones\nPara hacer una animación tenemos que tener una ‘foto’ de cada frame (cuadro) que queramos graficar, y además decirle cuantos frames por segundo vamos a querer ver.\nExisten varias maneras de configurar el motor visual de las animaciones y su salida. Acá vemos una:\n\nfrom matplotlib import animation\nfrom matplotlib.animation import PillowWriter\nfrom matplotlib import rc\nrc('animation', html='jshtml')\n\nSi estamos usando un etorno tipo colab podemos guiarnos acá\n\nEjemplo: Comparación de trayectorias\nVamos a comparar dos trayectorias en caída libre pero con diferente velocidad inicial\n\nfrom matplotlib import animation\nfrom matplotlib.animation import PillowWriter # esto no es necesario en vsco\nfrom matplotlib import rc # esto no es necesario en vscode\nfrom IPython.display import HTML # esto no es necesario en vscode\nrc('animation', html='jshtml') # esto tampoco es necesario en vscode\n\nfig, ax = plt.subplots()\nt = np.linspace(0, 3, 40)\ng = -9.81\nv0 = 12\nz = g * t**2 / 2 + v0 * t\n\nv02 = 5\nz2 = g * t**2 / 2 + v02 * t\n\nscat = ax.scatter(t[0], z[0], c=\"b\", s=5, label=f'v0 = {v0} m/s')\nline2 = ax.plot(t[0], z2[0], label=f'v0 = {v02} m/s')[0]\nax.set(xlim=[0, 3], ylim=[-4, 10], xlabel='Time [s]', ylabel='Z [m]')\nax.legend()\n\n\ndef update(frame):\n    # pasar cuadro a cuadro acumulando del inicio hasta el actual\n    x = t[:frame]\n    y = z[:frame]\n    # actualizar el plot de dispersion\n    data = np.stack([x, y]).T\n    scat.set_offsets(data)\n    # actualizar el gráfico de linea:\n    line2.set_xdata(t[:frame])\n    line2.set_ydata(z2[:frame])\n    return (scat, line2)\n\n\nani = animation.FuncAnimation(fig=fig, func=update, frames=40, interval=30)\ndisplay(ani) # no es necesario llamar a display si estamos en vscode\n\n\n\n\n\n\n\n\n  \n  \n    \n    \n      \n          \n      \n        \n      \n          \n      \n          \n      \n          \n      \n          \n      \n          \n      \n          \n      \n          \n    \n    \n      \n      Once\n      \n      Loop\n      \n      Reflect\n    \n  \n\n\n\n\n\n\n\n\nFunción sinusoidal en x y t\nVeamos una onda \\(\\sin\\) moviéndose a 3m/s. Para convertirlo en una animación primero creamos una función\n\ndef f(x,t):\n    return np.sin(x-3*t)\n\nx = np.linspace(0, 10*np.pi, 1000) # mil puntos entre 0 y 10pi\nt = np.arange(0, 24, 1/60) # puntos entre cero y 24 con un paso de 1/60\nX, T = np.meshgrid(x, t) # una grilla en 2D de los valores de x y t\nF = f(X, T) # usamos la funcion f para crear la función\n\nUsar linspace y arange según convenga es una buena práctica, en vez de centrarse sólo en una de las dos.\n\nplt.clf() # si estoy usando la interfaz matlab debo limpiar la figura para que no me aparezca lo anterior\nplt.plot(x, F[1])\nplt.show()\n# la función en el pimer estado (t=0 y x=0) - para eso usamos meshgrid para no tener que pasar los dos valores por separado\n\n\n\n\n\n\n\n\nLa animación\n\nfig, ax = plt.subplots(1,1, figsize=(8,4))\nln1, = plt.plot([], []) # un plot vacío para ir llenándolo paso a paso\ntime_text = ax.text(0.65, 0.95, '', fontsize=15,\n                    bbox=dict(facecolor='white', edgecolor='black'),\n                    transform=ax.transAxes) # texto que se irá animando\nax.set_xlim(0,10*np.pi)\nax.set_ylim(-1.5, 1.5)\n\n# creamos una función para animar nuestros valores\ndef animate(i):\n    ln1.set_data(x, F[i])\n    time_text.set_text('t={:.2f}'.format(i/60))\n\nani = animation.FuncAnimation(fig, animate, frames=240, interval=50)\ndisplay(ani)\n\n\n\n\n\n\n\n\n  \n  \n    \n    \n      \n          \n      \n        \n      \n          \n      \n          \n      \n          \n      \n          \n      \n          \n      \n          \n      \n          \n    \n    \n      \n      Once\n      \n      Loop\n      \n      Reflect\n    \n  \n\n\n\n\n\n\n\n\nUna animación en 3d\n\n_ = np.linspace(-1, 1, 100)\nx, y = np.meshgrid(_,_)\nz = x**2+x*y\n\nfig, ax = plt.subplots(subplot_kw={\"projection\": \"3d\"})\nax.plot_surface(x,y,z, cmap='coolwarm',\n                       linewidth=0, antialiased=False)\nax.view_init(elev=10, azim=0)\n\ndef animate(i):\n    ax.view_init(elev=10, azim=3*i)\n\nani = animation.FuncAnimation(fig, animate, frames=120, interval=50)\n# ani.save('images/ani2.gif',writer='pillow',fps=30,dpi=100)\n\ndisplay(ani)\n\n\n\n\n\n\n\n\n  \n  \n    \n    \n      \n          \n      \n        \n      \n          \n      \n          \n      \n          \n      \n          \n      \n          \n      \n          \n      \n          \n    \n    \n      \n      Once\n      \n      Loop\n      \n      Reflect\n    \n  \n\n\n\n\n\n\n\n\nBarras animadas\nPuede que necesitemos conocer como crece una cantidad y representarlo con una barra animada.\n\nfig, ax = plt.subplots()\nrng = np.random.default_rng(19680801) # semilla para los aleatorios\ndata = np.array([20, 20, 20, 20])\nx = np.array([1, 2, 3, 4])\n\nartists = []\ncolors = ['tab:blue', 'tab:red', 'tab:green', 'tab:purple']\nfor i in range(20):\n    data += rng.integers(low=0, high=10, size=data.shape) # crear enteros aleatorios\n    container = ax.barh(x, data, color=colors)\n    artists.append(container)\n\n\nani = animation.ArtistAnimation(fig=fig, artists=artists, interval=400)\ndisplay(ani)\n\n\n\n\n\n\n\n\n  \n  \n    \n    \n      \n          \n      \n        \n      \n          \n      \n          \n      \n          \n      \n          \n      \n          \n      \n          \n      \n          \n    \n    \n      \n      Once\n      \n      Loop\n      \n      Reflect",
+    "crumbs": [
+      "Clases",
+      "Python 06"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-06.html#guardar-las-animaciones",
+    "href": "clases/Clase-06.html#guardar-las-animaciones",
+    "title": "Python 06",
+    "section": "Guardar las animaciones",
+    "text": "Guardar las animaciones\nLas animaciones pueden guardarse en varios formatos. Los más usuales son gif (una secuencia de imágenes) o formatos de video.\nPara exportar las animaciones, usamos la función save sobre el objeto de la animación y elegimos alguno de los formatos disponibles.\nSi tenemos una animación llamada ani, dentro del argumento filename elegimos la ruta de destino (recordar que si estamos trabajando en Colab debemos tener montada una unidad de drive y especificar la ruta) junto al nombre del archivo.\n#Pillow\nani.save(filename=\"/tmp/pillow_example.gif\", writer=\"pillow\")\nani.save(filename=\"/tmp/pillow_example.apng\", writer=\"pillow\")\n\n#HTML\nani.save(filename=\"/tmp/html_example.html\", writer=\"html\")\nani.save(filename=\"/tmp/html_example.png\", writer=\"html\")\n\n#FFMpeg\nani.save(filename=\"/tmp/ffmpeg_example.mkv\", writer=\"ffmpeg\")\nani.save(filename=\"/tmp/ffmpeg_example.mp4\", writer=\"ffmpeg\")\nani.save(filename=\"/tmp/ffmpeg_example.mjpeg\", writer=\"ffmpeg\")\n\n#Imagemagick\nani.save(filename=\"/tmp/imagemagick_example.gif\", writer=\"imagemagick\")\nani.save(filename=\"/tmp/imagemagick_example.webp\", writer=\"imagemagick\")\nPor ejemplo, podemos guardar la animación que hicimos en el último ejemplo como un gif\n\nani.save('../assets/barras.gif',writer=\"pillow\")\n\nY podemos inlcuir la animáción en donde queramos\n\n\n\nanimación",
+    "crumbs": [
+      "Clases",
+      "Python 06"
+    ]
+  },
+  {
+    "objectID": "clases/Clase-06.html#referencias",
+    "href": "clases/Clase-06.html#referencias",
+    "title": "Python 06",
+    "section": "Referencias",
+    "text": "Referencias\n\n✏️ Inerfaz orientada a objetos\n:pendil2: Tutorial de Matplotlib\n✏️ Métodos de la clase Axes\n✏️ Estilos de science-plots\n🔗 Animación péndulo doble (mpl oficial)\n🔗 Hojas de estilo\n🔗 Repositorio de estilos\n🔗 Animaciones de matplotlib en Quarto",
+    "crumbs": [
+      "Clases",
+      "Python 06"
+    ]
   },
   {
     "objectID": "clases/Clase-04.html",
@@ -599,220 +741,232 @@
     ]
   },
   {
-    "objectID": "presentaciones/Clase-02.html#condicional-if",
-    "href": "presentaciones/Clase-02.html#condicional-if",
-    "title": "Presentación Clase 02",
-    "section": "Condicional if",
-    "text": "Condicional if\nEn python las secuencias se encierran en bloques indentados, con tabulaciones\nSintaxis (ver los espacios):\nif condicion:\n    hace_algo\nelif condicion:\n    hace_esta_otra_cosa\nelse:\n    haga_esto_otro # se suele usar para errores\n                 # luego de una lista de opciones\nn = 2\n\nif n:\n    print(\"n no es cero o no es null\")\n\nif n is None:\n    print(\"n es None\")\n\nif n is not str:\n    print(\"n no es una cadena de texto\")"
-  },
-  {
-    "objectID": "presentaciones/Clase-02.html#bucle-for",
-    "href": "presentaciones/Clase-02.html#bucle-for",
-    "title": "Presentación Clase 02",
-    "section": "Bucle for",
-    "text": "Bucle for\nEl bucle for es quizás la construcción más habitual en python. Su sintaxis es\nfor elemento in secuencia:\n    haga_esto"
-  },
-  {
-    "objectID": "presentaciones/Clase-02.html#estructura-while",
-    "href": "presentaciones/Clase-02.html#estructura-while",
-    "title": "Presentación Clase 02",
-    "section": "Estructura while",
-    "text": "Estructura while\nSe puede usar también un bucle while para iterar mientras una condición sea verdadera:\nwhile condción :\n    hacer_esto"
-  },
-  {
-    "objectID": "presentaciones/Clase-02.html#estructura-try-except",
-    "href": "presentaciones/Clase-02.html#estructura-try-except",
-    "title": "Presentación Clase 02",
-    "section": "Estructura try-except",
-    "text": "Estructura try-except\nSe puede atrapar o “atajar” errores usando esta estructura. Cada vez que el programa de como resultado un error (un dato mal ingresado o no válido) podremos especificar que hacer. Se puede indicar incluso una respuesta diferente para errores de distinto tipo.\n\ntry:\n    acción_a_intentar\nexcept:\n    que_hacer_si_ocurre_un_error"
-  },
-  {
-    "objectID": "presentaciones/Clase-02.html#listas",
-    "href": "presentaciones/Clase-02.html#listas",
-    "title": "Presentación Clase 02",
-    "section": "Listas",
-    "text": "Listas\nUna lista es una arreglo mutable. Lo que quiere decir que podemos redefinir y alterar sus valores - Cada valor en la lista es un elemento o item - Los elementos pueden ser cualquier objeto - Las listas pueden contener objetos de diferente tipo - Una lista vaciía se define como [] o como list()"
-  },
-  {
-    "objectID": "presentaciones/Clase-02.html#diccionarios",
-    "href": "presentaciones/Clase-02.html#diccionarios",
-    "title": "Presentación Clase 02",
-    "section": "Diccionarios",
-    "text": "Diccionarios\n\nUn diccionario (dict) es un mapeo entre un conjunto de índices (keys) y otro de valores (values)\nCada objeto de un diccionario es un par índice-valor (key-value)\nLas claves pueden ser cualquier tipo de dato\nLos diccionarios no tienen un orden prestablecido"
-  },
-  {
-    "objectID": "presentaciones/Clase-02.html#una-función",
-    "href": "presentaciones/Clase-02.html#una-función",
-    "title": "Presentación Clase 02",
-    "section": "Una función",
-    "text": "Una función\n\nEntre paréntesis están los argumentos.\nSe puede decir que una función “toma” un argumento y “devuelve” un resultado.\nAl resultado se lo suele llamar valor de retorno.\nNo es necesario que una función retorne un valor\n\nLa primera línea de la función se la llama encabezado (header) y a las restantes el cuerpo (body).\nEl ebcabezado va encerrado entre comillas y el cuerpo tiene que estar indentado. La indentación común es de 4 espacios y un error común es que el software que se usa confunda tabulaciones con indentación. Apretar la tecla tab, si el software está bien configurado, debería hacer los 4 espacios y no una tabulación. Esto parece una aclaración contradictoria y poco relevante, pero como se dijo más arriba, es una fuente común de errores en la ejecución de código: si hay tabulaciones en donde deberían estar los 4 espacios de la indentación, el código no se ejecuta.\nEl cuerpo de una función termina cuando se vuelve al nivel anterior de indentación.\nPara consultar más acerca de funciones, pueden visitar la ayuda de Python oficial"
-  },
-  {
-    "objectID": "presentaciones/Clase-02.html#funciones-para-recibir-entradas-del-usuario",
-    "href": "presentaciones/Clase-02.html#funciones-para-recibir-entradas-del-usuario",
-    "title": "Presentación Clase 02",
-    "section": "Funciones para recibir entradas del usuario",
-    "text": "Funciones para recibir entradas del usuario\nUna función para permitir al usuario interactuar con el código ingresando valores es la función input() cuyo funcionamiento se ejemplifica a continuación:\nuser_input = input(\"Ingrese algo: \")\nprint(f\"Usted ha ingresado: {user_input}\")\nHay que tener en cuenta que la función input entiende todo lo que ingresemos a ella como si fuera texto, por lo que si deseamos recibir valores numéricos debemos convertir lo que recibamos. Por ejemplo:\n1price = float(input(\"Ingrese el precio: \"))\nprint(f\"El precio es {price}\")\n\n2age = int(input(\"Ingrese su edad: \"))\nprint(f\"Usted tiene {age} años\")\n\n1\n\nSe convierte a un número float\n\n2\n\nSe convierte a un número entero int\n\n\nEjemplo\nPara interrumpir la ejecución podemos usar una combinación de while, try- except como se muestra en este ejemplo que saqué de esta web:\nwhile True:\n    try:\n1        number = int(input(\"Enter an integer: \"))\n2        break\n3    except ValueError:\n4        print(\"Invalid input! Please enter a valid integer.\")\n\n1\n\nConvierte la entrada a un entero\n\n2\n\nSi tiene éxito interrumpe el programa ahí mismo\n\n3\n\nEn caso de recibir una excepción del tipo ValueError\n\n4\n\nImprime un texto de referencia."
-  },
-  {
-    "objectID": "presentaciones/test.html",
-    "href": "presentaciones/test.html",
-    "title": "C2-661 2026",
+    "objectID": "clases.html",
+    "href": "clases.html",
+    "title": "Clases",
     "section": "",
-    "text": "¡Claro! Aquí tienes la explicación al estilo Feynman sobre la deducción de la aceleración centrípeta convertida a formato Markdown:\n# Deducir la aceleración centrípeta al estilo Feynman\n\n¡Ja! Bueno, me pongo las zapatillas de Richard Feynman, me ajusto la camisa desabotonada y vamos a divertirnos un poco con esto, como si estuviéramos garabateando en una pizarra en Caltech. Querés saber cómo llegamos a la fórmula de la **aceleración centrípeta** en un **movimiento circular uniforme**, ¿eh? Vamos a deducirla paso a paso, con un poco de intuición y sin enredarnos demasiado, porque, como siempre digo, *si no lo entendés de manera simple, no lo entendés del todo*.\n\n---\n\nImaginemos una partícula dando vueltas en un círculo, como un auto en una pista redonda, a velocidad constante. \"Uniforme\" significa que el *módulo* de la velocidad no cambia, pero ojo, la *dirección* sí cambia, porque siempre está girando hacia el centro del círculo. Y si la velocidad cambia de dirección, hay **aceleración**, ¿no? Eso es lo primero que tenemos que tener claro: la aceleración centrípeta no se trata de ir más rápido o más lento, sino de *cambiar la dirección* de la velocidad.\n\nAhora, vamos a ponernos un poquito matemáticos, pero tranqui, lo vamos a hacer con estilo. Supongamos que la partícula se mueve en un círculo de radio \\( r \\), y su velocidad tangencial es \\( v \\). En un movimiento circular uniforme, la partícula recorre el círculo con una rapidez constante, así que en un tiempo \\( t \\), el ángulo que barre es \\( \\theta = \\omega t \\), donde \\( \\omega \\) es la velocidad angular, y sabemos que \\( v = \\omega r \\). Pero no nos adelantemos, vamos al grano: queremos la aceleración.\n\n## Paso 1: ¿Qué es la aceleración?\n\nLa aceleración es la tasa de cambio de la velocidad, o sea, \\( \\vec{a} = \\frac{d\\vec{v}}{dt} \\). En el movimiento circular, la velocidad \\( \\vec{v} \\) es un vector que siempre es tangente al círculo, y su magnitud es constante (\\( v \\)), pero su dirección gira. Para entender cómo cambia, pensemos en el vector velocidad en dos instantes cercanos.\n\nImagina la partícula en un punto del círculo en el tiempo \\( t \\), con velocidad \\( \\vec{v}_1 \\). Un poquito después, en el tiempo \\( t + \\Delta t \\), está en otro punto, con velocidad \\( \\vec{v}_2 \\). Ambas velocidades tienen la misma magnitud (\\( v \\)), pero están en direcciones diferentes, separadas por un pequeño ángulo \\( \\Delta \\theta \\). Queremos saber cómo cambia \\( \\vec{v} \\) en ese pequeño intervalo \\( \\Delta t \\).\n\n## Paso 2: El cambio en la velocidad\n\nPara encontrar la aceleración, necesitamos el cambio en el vector velocidad: \\( \\Delta \\vec{v} = \\vec{v}_2 - \\vec{v}_1 \\). Dibujemos esto en nuestra mente (o en una pizarra imaginaria). Los vectores \\( \\vec{v}_1 \\) y \\( \\vec{v}_2 \\) tienen longitud \\( v \\), y están separados por un ángulo \\( \\Delta \\theta \\). Si \\( \\Delta \\theta \\) es pequeño, el vector \\( \\Delta \\vec{v} \\) (la diferencia) forma un arco de una \"circunferencia\" cuya longitud depende de \\( v \\) y \\( \\Delta \\theta \\).\n\nAquí viene un truco geométrico que me encanta. La longitud del arco \\( \\Delta \\vec{v} \\) (el cambio en la velocidad) es parecida a la longitud de un arco en el círculo del movimiento. Para un ángulo pequeño \\( \\Delta \\theta \\), la longitud del arco que barre la velocidad es aproximadamente:\n\n\\[ |\\Delta \\vec{v}| \\approx v \\Delta \\theta, \\]\n\nporque el vector velocidad está trazando un círculo en el \"espacio de velocidades\", y el radio de ese círculo es \\( v \\). Ahora, la aceleración es:\n\n\\[ \\vec{a} = \\lim_{\\Delta t \\to 0} \\frac{\\Delta \\vec{v}}{\\Delta t}. \\]\n\nEntonces, necesitamos saber cómo es \\( \\Delta \\theta / \\Delta t \\). En el movimiento circular uniforme, el ángulo \\( \\theta \\) cambia a una tasa constante, y esa tasa es la velocidad angular \\( \\omega \\):\n\n\\[ \\omega = \\frac{\\Delta \\theta}{\\Delta t}. \\]\n\nPor lo tanto:\n\n\\[ |\\Delta \\vec{v}| \\approx v \\Delta \\theta, \\]\n\ny dividiendo por \\( \\Delta t \\):\n\n\\[ \\frac{|\\Delta \\vec{v}|}{\\Delta t} \\approx v \\frac{\\Delta \\theta}{\\Delta t} = v \\omega. \\]\n\nEn el límite, la magnitud de la aceleración es:\n\n\\[ a = v \\omega. \\]\n\n## Paso 3: Relacionemos con el radio\n\nSabemos que en el movimiento circular, la velocidad tangencial \\( v \\), la velocidad angular \\( \\omega \\), y el radio \\( r \\) están relacionados por:\n\n\\[ v = \\omega r. \\]\n\nSi sustituimos \\( \\omega = \\frac{v}{r} \\) en la expresión de la aceleración:\n\n\\[ a = v \\cdot \\frac{v}{r} = \\frac{v^2}{r}. \\]\n\n¡Y ahí lo tenés! La magnitud de la **aceleración centrípeta** es:\n\n\\[ a_c = \\frac{v^2}{r}. \\]\n\n## Paso 4: La dirección\n\nPero espera, también tenemos que hablar de la dirección. La aceleración centrípeta **siempre apunta hacia el centro del círculo**, porque el cambio en la velocidad \\( \\Delta \\vec{v} \\) está en la dirección radial hacia el centro. ¿Por qué? Porque el vector \\( \\Delta \\vec{v} \\) es perpendicular a las velocidades \\( \\vec{v}_1 \\) y \\( \\vec{v}_2 \\) cuando \\( \\Delta \\theta \\) es pequeño, y esa dirección es hacia el centro del círculo.\n\n## Intuición final\n\nPensá en esto como un juego de tirar de una cuerda. Si estás girando una piedra atada a una cuerda, tenés que jalar constantemente hacia el centro para que la piedra no salga volando en línea recta. Esa \"jalada\" es la aceleración centrípeta, y su magnitud depende de qué tan rápido va la piedra (\\( v \\)) y de qué tan apretado es el círculo (\\( r \\)). Si vas más rápido, necesitas jalar más fuerte; si el círculo es más pequeño, también.\n\nEntonces, la fórmula \\( a_c = \\frac{v^2}{r} \\) nos dice cuánto tenés que \"jalar\" para mantener la partícula en su órbita circular. Simple, elegante, y describe el universo en un garabato.\n\n---\n\n¿Te quedó claro o querés que le demos otra vuelta? *guiño* ¡Esto es como tocar el bongó, hay que encontrarle el ritmo!\nEspero que te sea útil este formato. ¿Querés que ajuste algo más?"
+    "text": "Ordenar por\n       Por defecto\n         \n          Título\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTítulo\n\n\nSubtítulo\n\n\nDescripción\n\n\n\n\n\n\nPython 01\n\n\nIntroducción a la programación en Python\n\n\n\n\n\n\n\nPython 02\n\n\nContenedores, estructuras lógicas y funciones\n\n\n\n\n\n\n\nPython 03\n\n\nAlgo más sobre funciones y listas\n\n\n\n\n\n\n\nPython 04\n\n\nIntroducción a Numpy\n\n\n\n\n\n\n\nPython 05\n\n\nMatplotlib (introducción)\n\n\n\n\n\n\n\nPython 06\n\n\nMatplotlib (Otros tipos de gráficos y animaciones)\n\n\n\n\n\n\n\n\nNo hay resultados"
   },
   {
-    "objectID": "trabajos practicos/TP 01.html",
-    "href": "trabajos practicos/TP 01.html",
-    "title": "TP 01",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "C2-661",
     "section": "",
-    "text": "Para entregar esta práctica deberá subir al campus el archivo .py que han trabajado.\n\n\n\nPlanteoSoluciónVersión mejorada\n\n\nEl usuario ingresa un número que representa una temperatura en °C. El programa imprime esa temperatura en F\n\n\nprint(\"ingrese la temperatura en C\") # se imprime un mensaje\nC = float(input()) # se pide un valor por teclado y se lo convierte en número\nF =(C*1.80+32)\nprint(f\"La temperatura es {F} F\")\n\n\n¿Cómo hacer para tratar con un dato erróneo? Por ejemplo, un usuario ingresa un valor no númerico. En tal caso, el programa anterior arrojaría un error. Pruebe correr el programa anterior ingresando un valor no numérico.\ndef caf():\n  c = input()\n\n  try:\n    C = float(c)\n    F =(C*1.80+32)\n    print(f\"La temperatura es {F} F\")\n\n  except:\n    print(\"ingrese un valor númerico como temperatura\")\n    caf()\n\n\n\n\n\n\n\nPlanteoPista\n\n\nRealizar un programa en el que se ingrese la base y la altura de un triángulo e informe su superficie. El programa debe imprimir una leyenda que incluya los datos de entrada y el resultado.\nIngrese la base del triángulo: 8\nIngrese la altura del triángulo: 5\nLa superficie del triángulo de base 7 y altura 5 es 17.50\n\n\nCon lo hecho en el problema anterior se puede resolver. Recordar que la potenciación es una multipliación repetida, por lo que en pyhton el operador es **.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nDesarrollar un programa en el que se ingrese un número de 5 dígitos y que como salida se muestre:\n\ncada dígito separado por un guión\nla suma de todos los dígitos\n\n\n\nUna forma de encontrar el primer dígito de un número es dividirlo por \\(10^n\\) donde n es el orden de magnitud del número y quedarse con la parte entera. Por ejemplo: Si tenemos el número 1450 y lo dividimos por 1000 el primer dígito es la parte entera del resultado de la división, usando la operación división entera // y módulo % podemos obtener los elementos necesarios para resolver este problema. Para el resto de los dígitos, usando el operador módulo en potencias de diez decrecientes, obtenemos los “restos” usamos para reiterar el proceso de obtener el primer dígito.\nprint(1450//1000)\n\nprint(1450%1000)\n\n450//100\n\n450%100\nOtra forma es tratar al número como texto y acceder a cada elmento por separado. Para los cálculos habría que convertir nuevamente el dato a número para operar.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nHacer un programa en el que se ingrese la medida de los catetos de un triángulo rectángulo y que se calcule y muestre el perímetro de dicho triángulo. Incluir math a fin de utilizar la función sqrt(expresión) que calcula la raíz cuadrada de un número.\nPara usar la función, tenemos que importarla desde el módulo math. Para ello hacemos\nimport math\no\nimport math.sqrt as sqrt\nLa diferencia es qe en el primer caso tendremos que llamarla usando el nombre completo math.sqrt(num) mientras que en el segundo caso no. Como opción, también se puede prescindir de la raíz cuadrada y elevar a \\(\\frac{1}{2}\\).\n\n\nUsar pitágoras para conocer el lado restante.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nElaborar un programa en el que se ingrese una cantidad expresada en segundos y luego la exprese en días, horas, minutos y segundos.\nEjemplo: Ingrese tiempo en segundos: 93714.\n1 dia(s), 2 hora(s), 1 minuto(s), 54 segundo(s)\n\n\nSimilar al problema de los dígitos, solo que el resto no resulta de dividir por potencias de diez, sino de 60.\n\n\n\n\n\n\n\nPlanteoPista\n\n\n\nEl usuario ingresa un instante de tiempo (t) y el programa calcula e imprime la posición de un móvil arrojado a 20 m/s hacia arriba en el planeta tierra para ese instante de tiempo.\nCree otra versión en donde el usuario también ingresa la velocidad inicial.\n\n\n\nEscribir una ecuación para la la posición en función del tiempo con los datos del problema y crear la variable t como dato de entrada.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nRealizar un programa en el que se ingresen dos números enteros positivos. Luego deberá restar el mayor del menor e indicar si dicha diferencia es un valor que está entre ambos números (es decir, es mayor que el más chico y menor que el más grande de los ingresados).\n\n\nSe almacenan los dos números a comparar, se efectúan los cálculos, se devuelve el resultado condicionalmente usando if para cada caso.\n\n\n\n\n\n\n\nPlanteoPistaOtra pista\n\n\nRealizar un programa que solicite 3 notas de parciales obtenidas por un alumno. A continuación se mostrará por pantalla un mensaje que indique la situación del alumno:\n\nSi el alumno aprobó los 3 parciales (nota 6 o más) y su promedio es mayor o igual a 8, promociona la materia con la nota promedio.\nSi el alumno aprobó los 3 parciales pero su promedio no supera los 8 puntos, debe rendir examen final.\nSi el alumno no aprobó uno o más parciales, se solicitará que se ingrese la nota de un recuperatorio. Si éste hubiera sido aprobado, se informará el promedio general (3 parciales + el recuperatorio) y su condición de aprobado (aún cuando el promedio no supere los 6 puntos).\nSi no hubiera aprobado el recuperatorio se informará que el alumno fue aplazado.\n\n\n\nEste código no resuelve todo el problema pero presenta algunas herramientas útiles, como limitar los dígitos que se muestran al imprimir una variable o el uso de la funcion suma sobre los elementos de una lista. Lea atentamente cada línea y asegúrese de que comprende qué hace en cada caso. El problema requiere evaluar los escenarios posibles por lo que quizás le resulte útil hacer un bosquejo en papel sobre los posibles casos para luego pasarlos a código.\n\n\ndef calif(n=3):\n  \"\"\"\n  Función que hace lo que se pide\n  \"\"\"\n  notas = []\n  for i in range(n):\n    print(f\"ingrese la {i+1} nota\")\n    nota = float(input())\n    notas.append(nota)\n\n  prom = (sum(notas))/n\n  return f\"{prom:.2f}\"",
+    "text": "Profesor\n\n Prof. Federico Arabolaza\n federico.arabolaza@inspt.utn.edu.ar\n INSPT UTN\n\n\n\nCursada\n\n Triunvirato 3174\n Miércoles de 19:00 a 20:20\n\n\n\nSecciones\n\n Programa de la materia\n Calendario de clases\n Trabajos prácticos\n Clases\n Bibliografía\n Descargas"
+  },
+  {
+    "objectID": "presentaciones/Clase-03.html#repaso-sobre-funciones-y-listas",
+    "href": "presentaciones/Clase-03.html#repaso-sobre-funciones-y-listas",
+    "title": "Clase 03",
+    "section": "Repaso sobre funciones y listas",
+    "text": "Repaso sobre funciones y listas\nPodemos usar el problema de Fibonacci de la práctica para repasar las funciones y algunas propiedades de las listas en python. Ya que los valores de \\(f_n\\) se calculan una y otra vez, quizás podríamos guardar éstos mismos en algun listado. Una lista en python es cualquier cosa encerrada entre corchetes."
+  },
+  {
+    "objectID": "presentaciones/Clase-03.html#funciones",
+    "href": "presentaciones/Clase-03.html#funciones",
+    "title": "Clase 03",
+    "section": "Funciones",
+    "text": "Funciones\nLas definimos tal como en matemática\ndef f(x):\n  y=2*x\n  return y"
+  },
+  {
+    "objectID": "presentaciones/Clase-03.html#para-fibonacci",
+    "href": "presentaciones/Clase-03.html#para-fibonacci",
+    "title": "Clase 03",
+    "section": "Para Fibonacci",
+    "text": "Para Fibonacci\ndef fibo(n):\n  serie = [0,1]\n  ratio = [\"-\",1]\n  if n &lt;= 2:\n    print(serie[0:n]) # imprime desde las posiciones 0 a la n de la lista serie\n    print(ratio[0:n]) # imprime desde las posiciones 0 a la n de la lista ratio\n  else:\n\n    for i in range(1,n):\n      serie.append(serie[i]+serie[i-1])\n      ratio.append(serie[i+1]/serie[i])\n\n    print(serie)\n    print(ratio)"
+  },
+  {
+    "objectID": "presentaciones/Clase-03.html#una-versión-mas-sencilla",
+    "href": "presentaciones/Clase-03.html#una-versión-mas-sencilla",
+    "title": "Clase 03",
+    "section": "Una versión mas sencilla",
+    "text": "Una versión mas sencilla\nAunque también un poco críptica, sería algo así:\ndef fib(n):\n    f_n = 0  # posición n\n    fn_1 = 1  # posición n+1\n\n1    for k in range(n):\n2        fn_2 = fn_1+ f_n\n3        f_n = fn_1\n4        fn_1 = fn_2\n\n        # para n=1\n        # fn_2 = 1+1\n        # f_n = 1\n        # f_n1 =2\n\n        # para n=2\n        # fn_2 = 2+1 =3\n        # f_n = 2\n        #fn_1 = 3\n\n        # para n=3\n        # fn_2 = 3+2= 5\n        # fn = 3\n        # fn_1 = 3\n\n    return f_n\n\nfor i in range(8):\n  print(fib(i))\n\n1\n\nrecorro de 0 a n calculando los valores\n\n2\n\nposición n+2, para n=0 fn_2 =&gt; vale 1=1+0\n\n3\n\nahora la posición n, que es la que se va a imprimir, se redefine como la posición siguiente f_n=1\n\n4\n\nla posiciión n+1 se define como lo que se obtuvo para n+2 y volvemos al inicio del bucle fn_1 = 1"
+  },
+  {
+    "objectID": "programa.html",
+    "href": "programa.html",
+    "title": "Programa de la materia",
+    "section": "",
+    "text": "🔗 Programa de la materia",
     "crumbs": [
-      "trabajos practicos",
-      "TP 01"
+      "Info Cursada",
+      "Programa de la materia"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 01.html#conversión-de-temperatura",
-    "href": "trabajos practicos/TP 01.html#conversión-de-temperatura",
-    "title": "TP 01",
+    "objectID": "trabajos practicos/TP 02.html",
+    "href": "trabajos practicos/TP 02.html",
+    "title": "TP 02",
     "section": "",
-    "text": "PlanteoSoluciónVersión mejorada\n\n\nEl usuario ingresa un número que representa una temperatura en °C. El programa imprime esa temperatura en F\n\n\nprint(\"ingrese la temperatura en C\") # se imprime un mensaje\nC = float(input()) # se pide un valor por teclado y se lo convierte en número\nF =(C*1.80+32)\nprint(f\"La temperatura es {F} F\")\n\n\n¿Cómo hacer para tratar con un dato erróneo? Por ejemplo, un usuario ingresa un valor no númerico. En tal caso, el programa anterior arrojaría un error. Pruebe correr el programa anterior ingresando un valor no numérico.\ndef caf():\n  c = input()\n\n  try:\n    C = float(c)\n    F =(C*1.80+32)\n    print(f\"La temperatura es {F} F\")\n\n  except:\n    print(\"ingrese un valor númerico como temperatura\")\n    caf()",
+    "text": "PlanteoSoluciónOtra opción\n\n\nElaborar un programa que solicite a un usuario que ingrese un número entero y muestre todos los divisores de ese número (un número al dividirse por sus divisores arroja resto 0).\n\n\nUna opción es usar un bucle while y un contador junto al operador módulo. Si el modulo de dividir al número ingresado con el contador es cero, signiica que el contador es divisor del número. Incrementando el contador desde 1 hasta el número ingresado se usa un condicional para imprimir sólo aquellos resultados donde num%div==0\nnum = int(input(\"ingrese un número entero: \"))\ndiv = 1\nwhile div &lt; num:\n  if num%div == 0:\n    print(div, \"es divisor de \",num)\n  div = div+1\n\n\nOtra opción es usar un bucle for (se pueden almacenar los divisores en una lista usando append)\nnum = int(input(\"ingrese un número entero: \"))\ndivisores = []\n\nfor i in range(num):\n  if num%(i+1) == 0: # uso i+1 porque range va de 0 a n-1. range(4) = 0,1,2,3\n    print(i+1, \"es divisor de \",num)\n    divisores.append(i+1)\nif len(divisores) == 2: # si la lista de divsores tiene dos elementos, el número es primo\n  print (num, \"es primo\")\nelse:\n  print(num, \"no es primo\")\nprint(\"divores de \",num, \": \" ,divisoresf()\n\n\n\n\n\n\n\nPlanteoPista\n\n\nElaborar un programa que solicite al usuario que ingrese un número entero y determine si el mismo es un número primo. Un número primo es un número que solo es divisible por 1 y por sí mismo.\n\n\nLa solución del problema anterior tiene las pistas para poder hacerl\n\n\n\n\n\n\n\nPlanteoPista\n\n\nHacer un programa que encuentre e imprima un listado con todos los números de 4 cifras que cumplan la condición de que la suma de las cifras de orden impar es igual a la suma de las cifras de orden par. Por ejemplo, el número \\(7821\\) cumple esta condición ya que \\(7 + 2 = 8 + 1\\).\n\n\nMás adelante veremos como se puede resolver este mismo problema mucho más fácil si se trata al número como un string y se acceden a las posiciones decimales de forma sistemática.\nif una suma == otra suma:\n  print( num, 'cumple con la condición')\nPodemos volver a usar el operador módulo para recuperar las cifras y usar una condicion para evaluar lo que se pide. Como debemos conseguir todos los números de cuatro cifras, nuestra condición deberá ser recorrida en un bucle while o for\n\n\n\n\n\n\n\nPlanteoPista\n\n\nEscribir un programa que encuentre los primeros 4 números perfectos. Un número perfecto es un entero positivo, que es igual a la suma de todos los enteros positivos (excluido él mismo) que son divisores del número. Por ejemplo, el primer número perfecto es \\(6\\), ya que los divisores de \\(6\\) son $1, 2, 3 , $ y \\(1 + 2 + 3 = 6\\).\n\n\nEs muy similar al problema anterior, sólo que tenemos que agregar un contador que al llegar a 4 detenga la ejecución del bucle.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nEscribir un programa que reciba una cantidad indefinida de números enteros positivos hasta que se ingresa el 0. A continuación el programa debe indicar cuál fue el mayor y cuál el menor.\n\n\nDebemos tener dos variables, una que registre el número mínimo y otra para guardar el máximo. Este bucle se ejecuta hasta que el usuario ingresa el cero, y luego nos devuelve los dos resultados almacenados en nusestras variables. Una pista\nmenor = 0\nmayor = 0\nwhile n !=0:\n  if n&gt;mayor:\n    mayor = n\n  if n&lt;menor:\n    menor = n\n\n\n\n\n\n\n\nPlanteoPistaPista 2\n\n\nRealizar un programa que aproxime el cálculo de una serie armónica calculando e imprimiendo los primeros N términos y su sumatoria donde N es un valor ingresado por teclado. La serie armónica es:\n\\[\n\\sum_{n=1}^{∞} \\frac{1}{x}\n\\]\nPruebe también con la serie\n\\[\n\\sum_{n=1}^{∞} \\frac{1}{x^2}\n\\]\n¿Qué diferencia se observa?\n[wikipedia de la serie armónica](https://es.wikipedia.org/wiki/Serie_arm%C3%B3nica_(matem%C3%A1tica)\n\n\nUn enfoque sería acumular el resultado iterativamente, es decir, que el término siguiente se suma al anterior y el próximo se suma a lo que uno ya tiene calculado y así sucesivamente.\nn1 = 1\nn2 = n1+1/2\nn3 = n2 + 1/3\nSe puede incluir la variable en el cálculo. Un paso intermedio útil puede ser generar una variable que se incremente y nos dé los términos \\(\\frac{1}{n}\\) en un bucle\nn=1\nwhile n &lt; 5:\n  term = 1/n\n  print(term)\n  n=n+1\nOtra opción es usar un bucle for con range().\n\n\nnterm = 3 #@param {type:\"integer\"}\nsuma = 0\nn = 1 # contador comienza en uno (conviene en este caso para evitar dividir por cero)\nwhile n &lt;= nterm:\n  term = 1/n\n  suma = suma + term\n  print(f\"termino: {n}: {term}\")\n  print(f\"suma: {suma}\")\n  n=n+1\n\n\n\n\n\n\n\nPlanteoPistaOtra pista\n\n\nRealizar un programa que imprima los primeros N términos de una sucesión de fibonacci, la que empieza con 0 y 1, y cada término que sigue a estos valores es la suma de los dos valores anteriores. Imprimir la razón entre un número y su número anterior).\n\n\nUna aproximación poco eficiente es calcular todo el árbol cada vez que se nos pide un término: si se nos pide el término “n” se calcular todos los anteriores para luego hacer la suma y obtener el que se nos pide. Esto implica que vamos “Bajando” por un proceso en donde a fin de cuentas sólo calcularemos muchas veces \\(f(0)\\) y \\(f(1)\\)\nmatemáticamente tenemos que:\n\\[\\begin{align}\nf_0 &= 0 \\\\\nf_1 &= 1 \\\\\nf_n &= f_{n-1} + f_{n-2} \\\\\nf_2 &= f_{2-1} + f_{2-2} \\\\\nf_2 &= f_{1} + f_{0} \\\\\nf_2 &= 1 + 0 = 1 \\\\\n\\end{align}\\]\nCalcular \\(f(3)\\) implica calcular \\(f(2)\\) (que incluye a los términos anteriores) y así sucesivamente.\n\n\nn = 2 \ncontador = 0 # el contador controla el bucle\n\n# definimos los valores iniciales\n\nf0 = 0  # valor fijo al comienzo de la secuencia\nf1 = 1  # valor fijo al comienzo de la secuencia\nfn = f0+f1  # termino n de la secuencia\n\nwhile contador &lt;= n:\n  if n &lt;=2:\n    if n == 0:\n      print(f0)\n    if n == 1:\n      print(f0,f1)\n    if n == 2:\n      print(f0,f1,fn)\n    break\n  else:\n    f0 = f1\n    f1 = fn\n    fn = f0+f1\n    contador = contador+1\n    print(fn)\n\n\n\n\n\n\n\nPlanteoPista\n\n\nRealizar un programa que imprima términos de la sucesión de fibonacci hasta que la razón entre un número y su número anterior de como resultado, con una incerteza de una diez millonésima parte, el número áureo.\n\n\nUsando lo que vimos sobre funciones y listas, la clave está en como detener el bucle que usen para controlar la ejecución: el programa debería detenerse cuando: \\[\n\\left|\\frac{1+\\sqrt{5}}{2}-\\frac{f(n+1)}{f(n)}\\right|&lt;1\\cdot 10^{-7}\n\\]\n\n\n\n\n\n\n\n\n\n\n\n\nDivisión entera\n\n\n123//100\n\n\n\n\nMódulo y división entera\n\n\n(123%100)//10\n\n\n\n\nUso de if, `else y elif\n\n\nn = 8 #@param {type:\"integer\"}\nif n == 8:\n  print('ocho')\nelif n ==9:\n  print('nueve')\nelse:\n  print('no es ni ocho ni nueve')\n\n\n\n\n\n\nVía campus virtual en la sección trabajos prácticos. Un archivo .py con todos los ejercicios juntos, pueden estar separados por el comando de celda #%% o por comentarios, que pueden usar también para explicar sus desarrollos.",
     "crumbs": [
       "trabajos practicos",
-      "TP 01"
+      "TP 02"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 01.html#superficie-de-un-triángulo",
-    "href": "trabajos practicos/TP 01.html#superficie-de-un-triángulo",
-    "title": "TP 01",
+    "objectID": "trabajos practicos/TP 02.html#divisores-de-un-número",
+    "href": "trabajos practicos/TP 02.html#divisores-de-un-número",
+    "title": "TP 02",
     "section": "",
-    "text": "PlanteoPista\n\n\nRealizar un programa en el que se ingrese la base y la altura de un triángulo e informe su superficie. El programa debe imprimir una leyenda que incluya los datos de entrada y el resultado.\nIngrese la base del triángulo: 8\nIngrese la altura del triángulo: 5\nLa superficie del triángulo de base 7 y altura 5 es 17.50\n\n\nCon lo hecho en el problema anterior se puede resolver. Recordar que la potenciación es una multipliación repetida, por lo que en pyhton el operador es **.",
+    "text": "PlanteoSoluciónOtra opción\n\n\nElaborar un programa que solicite a un usuario que ingrese un número entero y muestre todos los divisores de ese número (un número al dividirse por sus divisores arroja resto 0).\n\n\nUna opción es usar un bucle while y un contador junto al operador módulo. Si el modulo de dividir al número ingresado con el contador es cero, signiica que el contador es divisor del número. Incrementando el contador desde 1 hasta el número ingresado se usa un condicional para imprimir sólo aquellos resultados donde num%div==0\nnum = int(input(\"ingrese un número entero: \"))\ndiv = 1\nwhile div &lt; num:\n  if num%div == 0:\n    print(div, \"es divisor de \",num)\n  div = div+1\n\n\nOtra opción es usar un bucle for (se pueden almacenar los divisores en una lista usando append)\nnum = int(input(\"ingrese un número entero: \"))\ndivisores = []\n\nfor i in range(num):\n  if num%(i+1) == 0: # uso i+1 porque range va de 0 a n-1. range(4) = 0,1,2,3\n    print(i+1, \"es divisor de \",num)\n    divisores.append(i+1)\nif len(divisores) == 2: # si la lista de divsores tiene dos elementos, el número es primo\n  print (num, \"es primo\")\nelse:\n  print(num, \"no es primo\")\nprint(\"divores de \",num, \": \" ,divisoresf()",
     "crumbs": [
       "trabajos practicos",
-      "TP 01"
+      "TP 02"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 01.html#dígitos-de-un-número",
-    "href": "trabajos practicos/TP 01.html#dígitos-de-un-número",
-    "title": "TP 01",
+    "objectID": "trabajos practicos/TP 02.html#números-primos",
+    "href": "trabajos practicos/TP 02.html#números-primos",
+    "title": "TP 02",
     "section": "",
-    "text": "PlanteoPista\n\n\nDesarrollar un programa en el que se ingrese un número de 5 dígitos y que como salida se muestre:\n\ncada dígito separado por un guión\nla suma de todos los dígitos\n\n\n\nUna forma de encontrar el primer dígito de un número es dividirlo por \\(10^n\\) donde n es el orden de magnitud del número y quedarse con la parte entera. Por ejemplo: Si tenemos el número 1450 y lo dividimos por 1000 el primer dígito es la parte entera del resultado de la división, usando la operación división entera // y módulo % podemos obtener los elementos necesarios para resolver este problema. Para el resto de los dígitos, usando el operador módulo en potencias de diez decrecientes, obtenemos los “restos” usamos para reiterar el proceso de obtener el primer dígito.\nprint(1450//1000)\n\nprint(1450%1000)\n\n450//100\n\n450%100\nOtra forma es tratar al número como texto y acceder a cada elmento por separado. Para los cálculos habría que convertir nuevamente el dato a número para operar.",
+    "text": "PlanteoPista\n\n\nElaborar un programa que solicite al usuario que ingrese un número entero y determine si el mismo es un número primo. Un número primo es un número que solo es divisible por 1 y por sí mismo.\n\n\nLa solución del problema anterior tiene las pistas para poder hacerl",
     "crumbs": [
       "trabajos practicos",
-      "TP 01"
+      "TP 02"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 01.html#perímetro-de-un-triángulo",
-    "href": "trabajos practicos/TP 01.html#perímetro-de-un-triángulo",
-    "title": "TP 01",
+    "objectID": "trabajos practicos/TP 02.html#cifras-con-condiciones",
+    "href": "trabajos practicos/TP 02.html#cifras-con-condiciones",
+    "title": "TP 02",
     "section": "",
-    "text": "PlanteoPista\n\n\nHacer un programa en el que se ingrese la medida de los catetos de un triángulo rectángulo y que se calcule y muestre el perímetro de dicho triángulo. Incluir math a fin de utilizar la función sqrt(expresión) que calcula la raíz cuadrada de un número.\nPara usar la función, tenemos que importarla desde el módulo math. Para ello hacemos\nimport math\no\nimport math.sqrt as sqrt\nLa diferencia es qe en el primer caso tendremos que llamarla usando el nombre completo math.sqrt(num) mientras que en el segundo caso no. Como opción, también se puede prescindir de la raíz cuadrada y elevar a \\(\\frac{1}{2}\\).\n\n\nUsar pitágoras para conocer el lado restante.",
+    "text": "PlanteoPista\n\n\nHacer un programa que encuentre e imprima un listado con todos los números de 4 cifras que cumplan la condición de que la suma de las cifras de orden impar es igual a la suma de las cifras de orden par. Por ejemplo, el número \\(7821\\) cumple esta condición ya que \\(7 + 2 = 8 + 1\\).\n\n\nMás adelante veremos como se puede resolver este mismo problema mucho más fácil si se trata al número como un string y se acceden a las posiciones decimales de forma sistemática.\nif una suma == otra suma:\n  print( num, 'cumple con la condición')\nPodemos volver a usar el operador módulo para recuperar las cifras y usar una condicion para evaluar lo que se pide. Como debemos conseguir todos los números de cuatro cifras, nuestra condición deberá ser recorrida en un bucle while o for",
     "crumbs": [
       "trabajos practicos",
-      "TP 01"
+      "TP 02"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 01.html#conversiones-de-tiempo",
-    "href": "trabajos practicos/TP 01.html#conversiones-de-tiempo",
-    "title": "TP 01",
+    "objectID": "trabajos practicos/TP 02.html#números-perfectos",
+    "href": "trabajos practicos/TP 02.html#números-perfectos",
+    "title": "TP 02",
     "section": "",
-    "text": "PlanteoPista\n\n\nElaborar un programa en el que se ingrese una cantidad expresada en segundos y luego la exprese en días, horas, minutos y segundos.\nEjemplo: Ingrese tiempo en segundos: 93714.\n1 dia(s), 2 hora(s), 1 minuto(s), 54 segundo(s)\n\n\nSimilar al problema de los dígitos, solo que el resto no resulta de dividir por potencias de diez, sino de 60.",
+    "text": "PlanteoPista\n\n\nEscribir un programa que encuentre los primeros 4 números perfectos. Un número perfecto es un entero positivo, que es igual a la suma de todos los enteros positivos (excluido él mismo) que son divisores del número. Por ejemplo, el primer número perfecto es \\(6\\), ya que los divisores de \\(6\\) son $1, 2, 3 , $ y \\(1 + 2 + 3 = 6\\).\n\n\nEs muy similar al problema anterior, sólo que tenemos que agregar un contador que al llegar a 4 detenga la ejecución del bucle.",
     "crumbs": [
       "trabajos practicos",
-      "TP 01"
+      "TP 02"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 01.html#tiro-vertical",
-    "href": "trabajos practicos/TP 01.html#tiro-vertical",
-    "title": "TP 01",
+    "objectID": "trabajos practicos/TP 02.html#bucle-con-condición",
+    "href": "trabajos practicos/TP 02.html#bucle-con-condición",
+    "title": "TP 02",
     "section": "",
-    "text": "PlanteoPista\n\n\n\nEl usuario ingresa un instante de tiempo (t) y el programa calcula e imprime la posición de un móvil arrojado a 20 m/s hacia arriba en el planeta tierra para ese instante de tiempo.\nCree otra versión en donde el usuario también ingresa la velocidad inicial.\n\n\n\nEscribir una ecuación para la la posición en función del tiempo con los datos del problema y crear la variable t como dato de entrada.",
+    "text": "PlanteoPista\n\n\nEscribir un programa que reciba una cantidad indefinida de números enteros positivos hasta que se ingresa el 0. A continuación el programa debe indicar cuál fue el mayor y cuál el menor.\n\n\nDebemos tener dos variables, una que registre el número mínimo y otra para guardar el máximo. Este bucle se ejecuta hasta que el usuario ingresa el cero, y luego nos devuelve los dos resultados almacenados en nusestras variables. Una pista\nmenor = 0\nmayor = 0\nwhile n !=0:\n  if n&gt;mayor:\n    mayor = n\n  if n&lt;menor:\n    menor = n",
     "crumbs": [
       "trabajos practicos",
-      "TP 01"
+      "TP 02"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 01.html#comparación-de-números",
-    "href": "trabajos practicos/TP 01.html#comparación-de-números",
-    "title": "TP 01",
+    "objectID": "trabajos practicos/TP 02.html#serie-armónica",
+    "href": "trabajos practicos/TP 02.html#serie-armónica",
+    "title": "TP 02",
     "section": "",
-    "text": "PlanteoPista\n\n\nRealizar un programa en el que se ingresen dos números enteros positivos. Luego deberá restar el mayor del menor e indicar si dicha diferencia es un valor que está entre ambos números (es decir, es mayor que el más chico y menor que el más grande de los ingresados).\n\n\nSe almacenan los dos números a comparar, se efectúan los cálculos, se devuelve el resultado condicionalmente usando if para cada caso.",
+    "text": "PlanteoPistaPista 2\n\n\nRealizar un programa que aproxime el cálculo de una serie armónica calculando e imprimiendo los primeros N términos y su sumatoria donde N es un valor ingresado por teclado. La serie armónica es:\n\\[\n\\sum_{n=1}^{∞} \\frac{1}{x}\n\\]\nPruebe también con la serie\n\\[\n\\sum_{n=1}^{∞} \\frac{1}{x^2}\n\\]\n¿Qué diferencia se observa?\n[wikipedia de la serie armónica](https://es.wikipedia.org/wiki/Serie_arm%C3%B3nica_(matem%C3%A1tica)\n\n\nUn enfoque sería acumular el resultado iterativamente, es decir, que el término siguiente se suma al anterior y el próximo se suma a lo que uno ya tiene calculado y así sucesivamente.\nn1 = 1\nn2 = n1+1/2\nn3 = n2 + 1/3\nSe puede incluir la variable en el cálculo. Un paso intermedio útil puede ser generar una variable que se incremente y nos dé los términos \\(\\frac{1}{n}\\) en un bucle\nn=1\nwhile n &lt; 5:\n  term = 1/n\n  print(term)\n  n=n+1\nOtra opción es usar un bucle for con range().\n\n\nnterm = 3 #@param {type:\"integer\"}\nsuma = 0\nn = 1 # contador comienza en uno (conviene en este caso para evitar dividir por cero)\nwhile n &lt;= nterm:\n  term = 1/n\n  suma = suma + term\n  print(f\"termino: {n}: {term}\")\n  print(f\"suma: {suma}\")\n  n=n+1",
     "crumbs": [
       "trabajos practicos",
-      "TP 01"
+      "TP 02"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 01.html#aprobación-con-condiciones",
-    "href": "trabajos practicos/TP 01.html#aprobación-con-condiciones",
-    "title": "TP 01",
+    "objectID": "trabajos practicos/TP 02.html#sucesión-de-fibonacci",
+    "href": "trabajos practicos/TP 02.html#sucesión-de-fibonacci",
+    "title": "TP 02",
     "section": "",
-    "text": "PlanteoPistaOtra pista\n\n\nRealizar un programa que solicite 3 notas de parciales obtenidas por un alumno. A continuación se mostrará por pantalla un mensaje que indique la situación del alumno:\n\nSi el alumno aprobó los 3 parciales (nota 6 o más) y su promedio es mayor o igual a 8, promociona la materia con la nota promedio.\nSi el alumno aprobó los 3 parciales pero su promedio no supera los 8 puntos, debe rendir examen final.\nSi el alumno no aprobó uno o más parciales, se solicitará que se ingrese la nota de un recuperatorio. Si éste hubiera sido aprobado, se informará el promedio general (3 parciales + el recuperatorio) y su condición de aprobado (aún cuando el promedio no supere los 6 puntos).\nSi no hubiera aprobado el recuperatorio se informará que el alumno fue aplazado.\n\n\n\nEste código no resuelve todo el problema pero presenta algunas herramientas útiles, como limitar los dígitos que se muestran al imprimir una variable o el uso de la funcion suma sobre los elementos de una lista. Lea atentamente cada línea y asegúrese de que comprende qué hace en cada caso. El problema requiere evaluar los escenarios posibles por lo que quizás le resulte útil hacer un bosquejo en papel sobre los posibles casos para luego pasarlos a código.\n\n\ndef calif(n=3):\n  \"\"\"\n  Función que hace lo que se pide\n  \"\"\"\n  notas = []\n  for i in range(n):\n    print(f\"ingrese la {i+1} nota\")\n    nota = float(input())\n    notas.append(nota)\n\n  prom = (sum(notas))/n\n  return f\"{prom:.2f}\"",
+    "text": "PlanteoPistaOtra pista\n\n\nRealizar un programa que imprima los primeros N términos de una sucesión de fibonacci, la que empieza con 0 y 1, y cada término que sigue a estos valores es la suma de los dos valores anteriores. Imprimir la razón entre un número y su número anterior).\n\n\nUna aproximación poco eficiente es calcular todo el árbol cada vez que se nos pide un término: si se nos pide el término “n” se calcular todos los anteriores para luego hacer la suma y obtener el que se nos pide. Esto implica que vamos “Bajando” por un proceso en donde a fin de cuentas sólo calcularemos muchas veces \\(f(0)\\) y \\(f(1)\\)\nmatemáticamente tenemos que:\n\\[\\begin{align}\nf_0 &= 0 \\\\\nf_1 &= 1 \\\\\nf_n &= f_{n-1} + f_{n-2} \\\\\nf_2 &= f_{2-1} + f_{2-2} \\\\\nf_2 &= f_{1} + f_{0} \\\\\nf_2 &= 1 + 0 = 1 \\\\\n\\end{align}\\]\nCalcular \\(f(3)\\) implica calcular \\(f(2)\\) (que incluye a los términos anteriores) y así sucesivamente.\n\n\nn = 2 \ncontador = 0 # el contador controla el bucle\n\n# definimos los valores iniciales\n\nf0 = 0  # valor fijo al comienzo de la secuencia\nf1 = 1  # valor fijo al comienzo de la secuencia\nfn = f0+f1  # termino n de la secuencia\n\nwhile contador &lt;= n:\n  if n &lt;=2:\n    if n == 0:\n      print(f0)\n    if n == 1:\n      print(f0,f1)\n    if n == 2:\n      print(f0,f1,fn)\n    break\n  else:\n    f0 = f1\n    f1 = fn\n    fn = f0+f1\n    contador = contador+1\n    print(fn)",
     "crumbs": [
       "trabajos practicos",
-      "TP 01"
+      "TP 02"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 03.html",
-    "href": "trabajos practicos/TP 03.html",
-    "title": "TP 03",
+    "objectID": "trabajos practicos/TP 02.html#fibonacci-y-la-proporción-aurea",
+    "href": "trabajos practicos/TP 02.html#fibonacci-y-la-proporción-aurea",
+    "title": "TP 02",
     "section": "",
-    "text": "PlanteoPista\n\n\nEscribir un programa que tome un array de longitud desconocida e imprima la sumatoria de todos sus valores y el promedio. Use las funciones intergadas de Numpy.\n\n\n\nUsar un bucle for para recorrer los elementos del array o lista\nUsar las funciones mean() y sum()\nEncerrar todo en una función\n\n\n\n\n\n\n\n\nPlanteoPista\n\n\nElaborar una función que tome como parámetros de entrada un número entero y un array o lista y que devuelva el elemento del array que se encuentra en la posición indicada. En caso de que se ingrese un índice fuera de rango, devolver un mensaje de error.\n\n\nUsar el indexado A[n] y combinarlo con if, elif, else\n\n\n\n\n\n\n\nPlanteoPista\n\n\nRealizar un programa que solicite el ingreso de números enteros hasta que se ingrese el cero. A continuación debe imprimir el máximo, el promedio y la suma de todos los números ingresados. Intente usar las funciones de numpy para ahorrase trabajo (y resolvimos estre problema anteriormente)\n\n\nInvestigue las funciones estadísticas de Numpy. Puede usar un bucle while para interrumpir la entrada de datos.\n\n\n\n\n\n\n\nPlanteoPista\n\n\nRealizar un programa que genere un vector tiempo con números del 0 al 3 con un paso de 0.1 segundos. A continuación se debe llenar un vector posiciones que calcule las posiciones correspondientes a un tiro vertical de 3 segundos de duración que comience con velocidad inicial 30 m/s, y una altura inicial de 45 m. Encuentre la altura máxima alcanzada. Si ambos vectores tienen el mismo tamaño, agregando:\nimport matplotlib.pyplot as plt\nal principio del código, se pueden graficar ambos vectores mediante el comando plt.plot(t,y)\n\n\n\nEl vector t se puede crear usando linspace o arrange\nLa expresión \\(y(t)\\) será tratada automáticamente como un array de numpy",
+    "text": "PlanteoPista\n\n\nRealizar un programa que imprima términos de la sucesión de fibonacci hasta que la razón entre un número y su número anterior de como resultado, con una incerteza de una diez millonésima parte, el número áureo.\n\n\nUsando lo que vimos sobre funciones y listas, la clave está en como detener el bucle que usen para controlar la ejecución: el programa debería detenerse cuando: \\[\n\\left|\\frac{1+\\sqrt{5}}{2}-\\frac{f(n+1)}{f(n)}\\right|&lt;1\\cdot 10^{-7}\n\\]",
     "crumbs": [
       "trabajos practicos",
-      "TP 03"
+      "TP 02"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 03.html#suma-y-promedio",
-    "href": "trabajos practicos/TP 03.html#suma-y-promedio",
-    "title": "TP 03",
+    "objectID": "trabajos practicos/TP 02.html#apéndice",
+    "href": "trabajos practicos/TP 02.html#apéndice",
+    "title": "TP 02",
     "section": "",
-    "text": "PlanteoPista\n\n\nEscribir un programa que tome un array de longitud desconocida e imprima la sumatoria de todos sus valores y el promedio. Use las funciones intergadas de Numpy.\n\n\n\nUsar un bucle for para recorrer los elementos del array o lista\nUsar las funciones mean() y sum()\nEncerrar todo en una función",
+    "text": "División entera\n\n\n123//100\n\n\n\n\nMódulo y división entera\n\n\n(123%100)//10\n\n\n\n\nUso de if, `else y elif\n\n\nn = 8 #@param {type:\"integer\"}\nif n == 8:\n  print('ocho')\nelif n ==9:\n  print('nueve')\nelse:\n  print('no es ni ocho ni nueve')",
     "crumbs": [
       "trabajos practicos",
-      "TP 03"
+      "TP 02"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 03.html#encuentra-el-elemento",
-    "href": "trabajos practicos/TP 03.html#encuentra-el-elemento",
-    "title": "TP 03",
+    "objectID": "trabajos practicos/TP 02.html#entrega",
+    "href": "trabajos practicos/TP 02.html#entrega",
+    "title": "TP 02",
     "section": "",
-    "text": "PlanteoPista\n\n\nElaborar una función que tome como parámetros de entrada un número entero y un array o lista y que devuelva el elemento del array que se encuentra en la posición indicada. En caso de que se ingrese un índice fuera de rango, devolver un mensaje de error.\n\n\nUsar el indexado A[n] y combinarlo con if, elif, else",
+    "text": "Vía campus virtual en la sección trabajos prácticos. Un archivo .py con todos los ejercicios juntos, pueden estar separados por el comando de celda #%% o por comentarios, que pueden usar también para explicar sus desarrollos.",
     "crumbs": [
       "trabajos practicos",
-      "TP 03"
+      "TP 02"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 03.html#encontrar-el-máximo",
-    "href": "trabajos practicos/TP 03.html#encontrar-el-máximo",
-    "title": "TP 03",
+    "objectID": "trabajos practicos/TP 04.html",
+    "href": "trabajos practicos/TP 04.html",
+    "title": "TP 04",
     "section": "",
-    "text": "PlanteoPista\n\n\nRealizar un programa que solicite el ingreso de números enteros hasta que se ingrese el cero. A continuación debe imprimir el máximo, el promedio y la suma de todos los números ingresados. Intente usar las funciones de numpy para ahorrase trabajo (y resolvimos estre problema anteriormente)\n\n\nInvestigue las funciones estadísticas de Numpy. Puede usar un bucle while para interrumpir la entrada de datos.",
+    "text": "Crear un programa que grafique la familia de funciones cuadráticas de la forma \\(y=a\\cdot x^2\\) para \\(-5&lt;a&lt;5\\) en un mismo par de ejes cartesianos.\n\nAgregar nombre a los ejes (horizontal y vertical)\nAgregar un título para la gráfica\nMostrar la leyenda",
     "crumbs": [
       "trabajos practicos",
-      "TP 03"
+      "TP 04"
     ]
   },
   {
-    "objectID": "trabajos practicos/TP 03.html#graficando-con-matplotlib-spolier",
-    "href": "trabajos practicos/TP 03.html#graficando-con-matplotlib-spolier",
-    "title": "TP 03",
+    "objectID": "trabajos practicos/TP 04.html#familia-de-funciones",
+    "href": "trabajos practicos/TP 04.html#familia-de-funciones",
+    "title": "TP 04",
     "section": "",
-    "text": "PlanteoPista\n\n\nRealizar un programa que genere un vector tiempo con números del 0 al 3 con un paso de 0.1 segundos. A continuación se debe llenar un vector posiciones que calcule las posiciones correspondientes a un tiro vertical de 3 segundos de duración que comience con velocidad inicial 30 m/s, y una altura inicial de 45 m. Encuentre la altura máxima alcanzada. Si ambos vectores tienen el mismo tamaño, agregando:\nimport matplotlib.pyplot as plt\nal principio del código, se pueden graficar ambos vectores mediante el comando plt.plot(t,y)\n\n\n\nEl vector t se puede crear usando linspace o arrange\nLa expresión \\(y(t)\\) será tratada automáticamente como un array de numpy",
+    "text": "Crear un programa que grafique la familia de funciones cuadráticas de la forma \\(y=a\\cdot x^2\\) para \\(-5&lt;a&lt;5\\) en un mismo par de ejes cartesianos.\n\nAgregar nombre a los ejes (horizontal y vertical)\nAgregar un título para la gráfica\nMostrar la leyenda",
     "crumbs": [
       "trabajos practicos",
-      "TP 03"
+      "TP 04"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/TP 04.html#at-vt-y-xt-en-un-lienzo",
+    "href": "trabajos practicos/TP 04.html#at-vt-y-xt-en-un-lienzo",
+    "title": "TP 04",
+    "section": "2 \\(a(t)\\), \\(v(t)\\) y \\(x(t)\\) en un lienzo",
+    "text": "2 \\(a(t)\\), \\(v(t)\\) y \\(x(t)\\) en un lienzo\nDado un movimiento en caída libre en una dimensión con condiciones iniciales arbitrarias crear en un sólo lienzo gráficas de posición, velocidad y aceleración en función del tiempo.",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 04"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/TP 04.html#m.a.s",
+    "href": "trabajos practicos/TP 04.html#m.a.s",
+    "title": "TP 04",
+    "section": "3 M.A.S",
+    "text": "3 M.A.S\nDado un movimiento armónico simple en una dimensión (con condiciones iniciales arbitrarias) crear en un sólo lienzo las gráficas de posición, velocidad y aceleración en función del tiempo",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 04"
+    ]
+  },
+  {
+    "objectID": "trabajos practicos/TP 04.html#reorganización-del-lienzo-x2",
+    "href": "trabajos practicos/TP 04.html#reorganización-del-lienzo-x2",
+    "title": "TP 04",
+    "section": "4 Reorganización del lienzo x2",
+    "text": "4 Reorganización del lienzo x2\nModificar las gráficas de los dos puntos anteriores para que el lienzo muestre \\(x(t)\\) ocupando la primera fila extendiéndose a dos columnas, mientras que a \\(v(t)\\) y \\(a(t)\\) ocupando una columna de la segunda fila.",
+    "crumbs": [
+      "trabajos practicos",
+      "TP 04"
     ]
   }
 ]
