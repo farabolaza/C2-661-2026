@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>test – C2-661 2026</title>
+<title>Arduino 01 – C2-661 2026</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -108,8 +108,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="C2-661 2026">
-<meta property="og:description" content="">
+<meta property="og:title" content="Arduino 01 – C2-661 2026">
+<meta property="og:description" content="Introducción">
+<meta property="og:image" content="https://farabolaza.github.io/C2-661-2026/assets/arduino.webp">
 <meta property="og:site_name" content="C2-661 2026">
 </head>
 
@@ -122,7 +123,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/Clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/Clase-10.html">Arduino 01</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -191,13 +192,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="px-0"><hr class="sidebar-divider hi "></li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Clases</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../clases/Clase-01.html" class="sidebar-item-text sidebar-link">
@@ -254,7 +255,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../clases/Clase-10.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/Clase-10.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Arduino 01</span></a>
   </div>
 </li>
@@ -306,90 +307,284 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#ojbetivos-de-la-clase" id="toc-ojbetivos-de-la-clase" class="nav-link active" data-scroll-target="#ojbetivos-de-la-clase">Ojbetivos de la clase</a></li>
+  <li><a href="#la-placa-arduino" id="toc-la-placa-arduino" class="nav-link" data-scroll-target="#la-placa-arduino">La placa Arduino</a></li>
+  <li><a href="#los-entornos-de-trabajo" id="toc-los-entornos-de-trabajo" class="nav-link" data-scroll-target="#los-entornos-de-trabajo">Los entornos de trabajo</a>
+  <ul class="collapse">
+  <li><a href="#arduino-ide" id="toc-arduino-ide" class="nav-link" data-scroll-target="#arduino-ide">Arduino IDE</a></li>
+  <li><a href="#tinkercad" id="toc-tinkercad" class="nav-link" data-scroll-target="#tinkercad">Tinkercad</a></li>
+  </ul></li>
+  <li><a href="#el-lenguaje-de-programación-de-arduino" id="toc-el-lenguaje-de-programación-de-arduino" class="nav-link" data-scroll-target="#el-lenguaje-de-programación-de-arduino">El lenguaje de programación de Arduino</a>
+  <ul class="collapse">
+  <li><a href="#referencia-en-línea-del-lenguaje-arduino" id="toc-referencia-en-línea-del-lenguaje-arduino" class="nav-link" data-scroll-target="#referencia-en-línea-del-lenguaje-arduino">Referencia en línea del lenguaje arduino</a></li>
+  <li><a href="#ejemplo" id="toc-ejemplo" class="nav-link" data-scroll-target="#ejemplo">Ejemplo</a></li>
+  <li><a href="#entradas-y-salidas" id="toc-entradas-y-salidas" class="nav-link" data-scroll-target="#entradas-y-salidas">Entradas y salidas</a></li>
+  </ul></li>
+  <li><a href="#actividad-primeros-pasos-en-arduino" id="toc-actividad-primeros-pasos-en-arduino" class="nav-link" data-scroll-target="#actividad-primeros-pasos-en-arduino">Actividad: Primeros pasos en Arduino</a>
+  <ul class="collapse">
+  <li><a href="#conexión-de-un-led" id="toc-conexión-de-un-led" class="nav-link" data-scroll-target="#conexión-de-un-led">Conexión de un led</a></li>
+  <li><a href="#simuladores-de-circuitos" id="toc-simuladores-de-circuitos" class="nav-link" data-scroll-target="#simuladores-de-circuitos">Simuladores de circuitos</a></li>
+  <li><a href="#la-conexión-real" id="toc-la-conexión-real" class="nav-link" data-scroll-target="#la-conexión-real">La conexión real</a>
+  <ul class="collapse">
+  <li><a href="#cambiando-el-código" id="toc-cambiando-el-código" class="nav-link" data-scroll-target="#cambiando-el-código">Cambiando el código</a></li>
+  </ul></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/Clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/Clase-10.html">Arduino 01</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Arduino 01</h1>
+<p class="subtitle lead">Introducción</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<p>¡Claro! Aquí tienes la explicación al estilo Feynman sobre la deducción de la aceleración centrípeta convertida a formato Markdown:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Deducir la aceleración centrípeta al estilo Feynman</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>¡Ja! Bueno, me pongo las zapatillas de Richard Feynman, me ajusto la camisa desabotonada y vamos a divertirnos un poco con esto, como si estuviéramos garabateando en una pizarra en Caltech. Querés saber cómo llegamos a la fórmula de la **aceleración centrípeta** en un **movimiento circular uniforme**, ¿eh? Vamos a deducirla paso a paso, con un poco de intuición y sin enredarnos demasiado, porque, como siempre digo, *si no lo entendés de manera simple, no lo entendés del todo*.</span>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="ojbetivos-de-la-clase" class="level1">
+<h1>Ojbetivos de la clase</h1>
+<ul class="task-list">
+<li><label><input type="checkbox">Placa arduino</label>
+<ul class="task-list">
+<li><label><input type="checkbox">Pines Entradas analógicas</label></li>
+<li><label><input type="checkbox">Pines digitales</label>
+<ul class="task-list">
+<li><label><input type="checkbox">Entradas digitales</label></li>
+<li><label><input type="checkbox">Salida digitales</label></li>
+</ul></li>
+</ul></li>
+<li><label><input type="checkbox">Arduino IDE</label></li>
+<li><label><input type="checkbox">Lenguaje arduino</label>
+<ul class="task-list">
+<li><label><input type="checkbox">Variables, estructuras, funciones y comentarios</label></li>
+</ul></li>
+<li><label><input type="checkbox">Modulación PWM</label></li>
+<li><label><input type="checkbox">Uso del led integrado</label></li>
+<li><label><input type="checkbox">Conexión de un LED</label>
+<ul class="task-list">
+<li><label><input type="checkbox">pwm</label></li>
+</ul></li>
+</ul>
+</section>
+<section id="la-placa-arduino" class="level1">
+<h1>La placa Arduino</h1>
+<p>La placa Arduino permite la interacción entre el mundo físico y el digital mediante el uso de componentes electrónicos y sensores. No se trata de una única placa sino una familia de placas de software y hardware libre. De ésta familia utilizaremos la más usual, Arduino Uno (y sus clones).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/arduino.webp" class="img-fluid figure-img" width="500"></p>
+<figcaption>placa arduino uno</figcaption>
+</figure>
+</div>
+</section>
+<section id="los-entornos-de-trabajo" class="level1">
+<h1>Los entornos de trabajo</h1>
+<section id="arduino-ide" class="level2">
+<h2 class="anchored" data-anchor-id="arduino-ide">Arduino IDE</h2>
+<p>El software arduino IDE es el software que permite escribir el código y subirlo a la placa para su ejecución</p>
+</section>
+<section id="tinkercad" class="level2">
+<h2 class="anchored" data-anchor-id="tinkercad">Tinkercad</h2>
+<p>El sitio Tinkercad ofrece la posibilidad de escribir en el lenguaje Arduino y simular componente a componente un circuito entero, lo que es de mucha utilidad para practicar cuando se está comenzando o testeando un nuevo diseño.</p>
+</section>
+</section>
+<section id="el-lenguaje-de-programación-de-arduino" class="level1">
+<h1>El lenguaje de programación de Arduino</h1>
+<p>Arduino tiene su propio lenguaje de programación que está inspirado y replica en parte al lenguaje C++. Nosotros nos centraremos las estructuras de control más sencillas (que ya vimos para python) que resultan ser ligeramente diferentes en Arduino en cuanto a su sintaxis pero que hacen efectivamente lo mismo que sus parientes Pythonicas. Por su parte, el funcionamiento de la placa requiere de ciertas estructuras que se encuentran siempre presentes y son escenciales para su funcionamiento.</p>
+<section id="referencia-en-línea-del-lenguaje-arduino" class="level2">
+<h2 class="anchored" data-anchor-id="referencia-en-línea-del-lenguaje-arduino">Referencia en línea del lenguaje arduino</h2>
+<p>En <a href="https://docs.arduino.cc/language-reference/">ésta página</a> tenemos acceso las funciones, estructurales y variables mas usuales de Arduino con su sintaxis y descripción.</p>
+</section>
+<section id="ejemplo" class="level2">
+<h2 class="anchored" data-anchor-id="ejemplo">Ejemplo</h2>
+<p>Veamos un esqueleto de código de Arudino</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">(){</span> <span class="co">// los bloque encerrados entre llaves</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>pinMode<span class="op">(</span><span class="dv">13</span><span class="op">;</span>OUTPUT<span class="op">);</span> <span class="co">// los comentarios van precedidos por doble barra</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Imaginemos una partícula dando vueltas en un círculo, como un auto en una pista redonda, a velocidad constante. "Uniforme" significa que el *módulo* de la velocidad no cambia, pero ojo, la *dirección* sí cambia, porque siempre está girando hacia el centro del círculo. Y si la velocidad cambia de dirección, hay **aceleración**, ¿no? Eso es lo primero que tenemos que tener claro: la aceleración centrípeta no se trata de ir más rápido o más lento, sino de *cambiar la dirección* de la velocidad.</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Ahora, vamos a ponernos un poquito matemáticos, pero tranqui, lo vamos a hacer con estilo. Supongamos que la partícula se mueve en un círculo de radio <span class="sc">\(</span> r <span class="sc">\)</span>, y su velocidad tangencial es <span class="sc">\(</span> v <span class="sc">\)</span>. En un movimiento circular uniforme, la partícula recorre el círculo con una rapidez constante, así que en un tiempo <span class="sc">\(</span> t <span class="sc">\)</span>, el ángulo que barre es <span class="sc">\(</span> \theta = \omega t <span class="sc">\)</span>, donde <span class="sc">\(</span> \omega <span class="sc">\)</span> es la velocidad angular, y sabemos que <span class="sc">\(</span> v = \omega r <span class="sc">\)</span>. Pero no nos adelantemos, vamos al grano: queremos la aceleración.</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">## Paso 1: ¿Qué es la aceleración?</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>La aceleración es la tasa de cambio de la velocidad, o sea, <span class="sc">\(</span> \vec{a} = \frac{d\vec{v}}{dt} <span class="sc">\)</span>. En el movimiento circular, la velocidad <span class="sc">\(</span> \vec{v} <span class="sc">\)</span> es un vector que siempre es tangente al círculo, y su magnitud es constante (<span class="sc">\(</span> v <span class="sc">\)</span>), pero su dirección gira. Para entender cómo cambia, pensemos en el vector velocidad en dos instantes cercanos.</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>Imagina la partícula en un punto del círculo en el tiempo <span class="sc">\(</span> t <span class="sc">\)</span>, con velocidad <span class="sc">\(</span> \vec{v}_1 <span class="sc">\)</span>. Un poquito después, en el tiempo <span class="sc">\(</span> t + \Delta t <span class="sc">\)</span>, está en otro punto, con velocidad <span class="sc">\(</span> \vec{v}_2 <span class="sc">\)</span>. Ambas velocidades tienen la misma magnitud (<span class="sc">\(</span> v <span class="sc">\)</span>), pero están en direcciones diferentes, separadas por un pequeño ángulo <span class="sc">\(</span> \Delta \theta <span class="sc">\)</span>. Queremos saber cómo cambia <span class="sc">\(</span> \vec{v} <span class="sc">\)</span> en ese pequeño intervalo <span class="sc">\(</span> \Delta t <span class="sc">\)</span>.</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Paso 2: El cambio en la velocidad</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Para encontrar la aceleración, necesitamos el cambio en el vector velocidad: <span class="sc">\(</span> \Delta \vec{v} = \vec{v}_2 - \vec{v}_1 <span class="sc">\)</span>. Dibujemos esto en nuestra mente (o en una pizarra imaginaria). Los vectores <span class="sc">\(</span> \vec{v}_1 <span class="sc">\)</span> y <span class="sc">\(</span> \vec{v}_2 <span class="sc">\)</span> tienen longitud <span class="sc">\(</span> v <span class="sc">\)</span>, y están separados por un ángulo <span class="sc">\(</span> \Delta \theta <span class="sc">\)</span>. Si <span class="sc">\(</span> \Delta \theta <span class="sc">\)</span> es pequeño, el vector <span class="sc">\(</span> \Delta \vec{v} <span class="sc">\)</span> (la diferencia) forma un arco de una "circunferencia" cuya longitud depende de <span class="sc">\(</span> v <span class="sc">\)</span> y <span class="sc">\(</span> \Delta \theta <span class="sc">\)</span>.</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Aquí viene un truco geométrico que me encanta. La longitud del arco <span class="sc">\(</span> \Delta \vec{v} <span class="sc">\)</span> (el cambio en la velocidad) es parecida a la longitud de un arco en el círculo del movimiento. Para un ángulo pequeño <span class="sc">\(</span> \Delta \theta <span class="sc">\)</span>, la longitud del arco que barre la velocidad es aproximadamente:</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="sc">\[</span> |\Delta \vec{v}| \approx v \Delta \theta, <span class="sc">\]</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>porque el vector velocidad está trazando un círculo en el "espacio de velocidades", y el radio de ese círculo es <span class="sc">\(</span> v <span class="sc">\)</span>. Ahora, la aceleración es:</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="sc">\[</span> \vec{a} = \lim_{\Delta t \to 0} \frac{\Delta \vec{v}}{\Delta t}. <span class="sc">\]</span></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>Entonces, necesitamos saber cómo es <span class="sc">\(</span> \Delta \theta / \Delta t <span class="sc">\)</span>. En el movimiento circular uniforme, el ángulo <span class="sc">\(</span> \theta <span class="sc">\)</span> cambia a una tasa constante, y esa tasa es la velocidad angular <span class="sc">\(</span> \omega <span class="sc">\)</span>:</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="sc">\[</span> \omega = \frac{\Delta \theta}{\Delta t}. <span class="sc">\]</span></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>Por lo tanto:</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="sc">\[</span> |\Delta \vec{v}| \approx v \Delta \theta, <span class="sc">\]</span></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>y dividiendo por <span class="sc">\(</span> \Delta t <span class="sc">\)</span>:</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="sc">\[</span> \frac{|\Delta \vec{v}|}{\Delta t} \approx v \frac{\Delta \theta}{\Delta t} = v \omega. <span class="sc">\]</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>En el límite, la magnitud de la aceleración es:</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="sc">\[</span> a = v \omega. <span class="sc">\]</span></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="fu">## Paso 3: Relacionemos con el radio</span></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>Sabemos que en el movimiento circular, la velocidad tangencial <span class="sc">\(</span> v <span class="sc">\)</span>, la velocidad angular <span class="sc">\(</span> \omega <span class="sc">\)</span>, y el radio <span class="sc">\(</span> r <span class="sc">\)</span> están relacionados por:</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="sc">\[</span> v = \omega r. <span class="sc">\]</span></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>Si sustituimos <span class="sc">\(</span> \omega = \frac{v}{r} <span class="sc">\)</span> en la expresión de la aceleración:</span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="sc">\[</span> a = v \cdot \frac{v}{r} = \frac{v^2}{r}. <span class="sc">\]</span></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>¡Y ahí lo tenés! La magnitud de la **aceleración centrípeta** es:</span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="sc">\[</span> a_c = \frac{v^2}{r}. <span class="sc">\]</span></span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="fu">## Paso 4: La dirección</span></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>Pero espera, también tenemos que hablar de la dirección. La aceleración centrípeta **siempre apunta hacia el centro del círculo**, porque el cambio en la velocidad <span class="sc">\(</span> \Delta \vec{v} <span class="sc">\)</span> está en la dirección radial hacia el centro. ¿Por qué? Porque el vector <span class="sc">\(</span> \Delta \vec{v} <span class="sc">\)</span> es perpendicular a las velocidades <span class="sc">\(</span> \vec{v}_1 <span class="sc">\)</span> y <span class="sc">\(</span> \vec{v}_2 <span class="sc">\)</span> cuando <span class="sc">\(</span> \Delta \theta <span class="sc">\)</span> es pequeño, y esa dirección es hacia el centro del círculo.</span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="fu">## Intuición final</span></span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>Pensá en esto como un juego de tirar de una cuerda. Si estás girando una piedra atada a una cuerda, tenés que jalar constantemente hacia el centro para que la piedra no salga volando en línea recta. Esa "jalada" es la aceleración centrípeta, y su magnitud depende de qué tan rápido va la piedra (<span class="sc">\(</span> v <span class="sc">\)</span>) y de qué tan apretado es el círculo (<span class="sc">\(</span> r <span class="sc">\)</span>). Si vas más rápido, necesitas jalar más fuerte; si el círculo es más pequeño, también.</span>
-<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>Entonces, la fórmula <span class="sc">\(</span> a_c = \frac{v^2}{r} <span class="sc">\)</span> nos dice cuánto tenés que "jalar" para mantener la partícula en su órbita circular. Simple, elegante, y describe el universo en un garabato.</span>
-<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>---</span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>¿Te quedó claro o querés que le demos otra vuelta? *guiño* ¡Esto es como tocar el bongó, hay que encontrarle el ritmo!</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Espero que te sea útil este formato. ¿Querés que ajuste algo más?</p>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">(){</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="op">(</span>alguna condición<span class="op">)</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">{</span> </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">// ejecuta esto; </span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">// cada instrucción se finaliza con un punto y coma </span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="co">// esto otro; </span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">// esto otro; }</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span> <span class="cf">if</span> <span class="op">(</span>otra condicion<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">// haga esto otro;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span> <span class="op">{</span> <span class="co">// ejecuta esta otra cosa; }</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="op">}}}</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="entradas-y-salidas" class="level2">
+<h2 class="anchored" data-anchor-id="entradas-y-salidas">Entradas y salidas</h2>
+<p>La placa consta de entradas analógicas (allí donde conectaremos la mayoría de los sensores y componentes electrónicos) y pines digitales. Los pines digitales pueden actuar tanto como entrada o como salida. Para especificarlo se usa la función <code>pinMode(PIN,OUTPUT/INPUT)</code>. La salida que estos pines pueden dar es binaria: 0V o 5V para poder emular una salida analógica algunos pines cuentan con un proceso llamado PWM (modulación por ancho de pulso) que en pocas palabras lo que hace es emitir como salida trenes de pulsos de una duración muy breve a intervalos regulares. El promedio del tiempo que se encuentre en 0V o 5V emulará un voltaje real. Por ejemplo, si en el ciclo entero está la mitad de tiempo en 0V y la otra mitad en 5V el voltaje “emulado” será de 2,5V. Para identificar que pines pueden hacer esto, se los señala con el acento circunflejo, virgüilla, más conocido como el “cosito de la eñe”, es decir “~”.</p>
+</section>
+</section>
+<section id="actividad-primeros-pasos-en-arduino" class="level1">
+<h1>Actividad: Primeros pasos en Arduino</h1>
+<p>Vamos a seguir bastante la guía presente en <a href="https://youtube.com/playlist?list=PLkjnQ3NFTPnY1eNyLDGi547gkVui1vyn2&amp;si=M6fYpbgP-rITZw1M">esta lista de Youtube</a> por lo que si se pierden alguna clase o se olvidan de algo pueden volver a verlo.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/Arduino-UNO-Parts-Marking.jpg" class="img-fluid figure-img"></p>
+<figcaption>Detalle de entradas y salidas</figcaption>
+</figure>
+</div>
+<section id="conexión-de-un-led" class="level2">
+<h2 class="anchored" data-anchor-id="conexión-de-un-led">Conexión de un led</h2>
+<p>Un diodo LED es un tipo especial de diodo. Los diodos son componentes electrónicos en cuyos detalles se profundizará en la materia <strong>electrónica</strong>. Por el momento sólo necesitamos saber que el diodo tiene polaridad: si lo conectamos al revés, no funciona. Tiene un lado positivo o ánodo, y uno negativo, o cátodo. El esquemático mas usual es como se ve aquí abajo.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcursos.mcielectronics.cl%2Fwp-content%2Fuploads%2F2014%2F07%2Fdiodo.png&amp;f=1&amp;nofb=1&amp;ipt=d459c863b44139e0ca9af10e3da3121618bd5ad54c0a3c962aa8605dd49456ef&amp;ipo=images" class="img-fluid figure-img"></p>
+<figcaption>iu (598×402) (duckduckgo.com)</figcaption>
+</figure>
+</div>
+<p>En la vida real, podemos ver la polaridad de un LED como se muestra debajo. El cátodo es la patita corta y el lado plano. En ocasiones las patitas son cortadas o no están visibles, por lo que:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.geekfactory.mx%2Fwp-content%2Fuploads%2F2020%2F04%2Fled-con-arduino-como-determinar-polaridad.jpg&amp;f=1&amp;nofb=1&amp;ipt=6db7be7c736b3ab2ff5f755987c0239c3914991c3020f68d55a72556c4da61c8&amp;ipo=images" class="img-fluid figure-img"></p>
+<figcaption>un diodo</figcaption>
+</figure>
+</div>
+<p>Versión esquemática de la placa con la conexión actual</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/blink-schematic.png" class="img-fluid figure-img" width="600"></p>
+<figcaption>BLINK-SCHEMATIC</figcaption>
+</figure>
+</div>
+<p>Versión fotográfica de la misma conexión</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/blink-circuit.png" class="img-fluid figure-img" width="600"></p>
+<figcaption>BLINK-FOTO</figcaption>
+</figure>
+</div>
+</section>
+<section id="simuladores-de-circuitos" class="level2">
+<h2 class="anchored" data-anchor-id="simuladores-de-circuitos">Simuladores de circuitos</h2>
+<p>Algo que nos puede prevenir dolores de cabeza, además de dormir ocho horas y alimentarse bien, es usar algún simulador de circuitos para prototipar nuestro trabajo. Especialmente quienes no sean expertos en electrónica, sacarán provecho de poder previsualizar su trabajo y observar el comportamiento esperado de conexiones que quienes saben de la materia pueden imaginar con facilidad, pero a nosotros simples mortales que quizás no fuimos a una escuela ténica nos parece magia negra.</p>
+<p>Existen opciones en línea, comerciales, de código cerrado y de código abierto.</p>
+<ul>
+<li>Tinkercad: Muy popular, cerrado. Perteneciente a la empresa Autodesk</li>
+<li>Velxio: También popular, sin necesidad de registrarse y de código abierto (basado en Wokwi)</li>
+<li>Wokwi: En línea y de código abierto (licencia MIT). Con fuciones de pago</li>
+<li>SimulIDE: De escritorio y de código abierto (GPLv3) que permite prototipado offline</li>
+<li>AVR8js: Es el motor base de Wokwi</li>
+<li>UNOArduSim: Enfocado en depuración de código para Arduino Uno</li>
+<li>ArduinoSimulator: proyecto web en JavaScript</li>
+</ul>
+<p>Este año probaremos trabajar con <a href="https://velxio.dev/es/editor">Velxio</a> ya que no requiere de iniciar sesión ni tener cuenta para comenzar a tarbajar, (aunquel es conviene hacerse una cuenta) reduciendo la fricción de los primeros pasos.</p>
+<p>Ingresen al link y agreguen una placa Arduino Uno, verán que en la parte izquierda tienen ya el código de prueba que usaremos como primera práctica.</p>
+</section>
+<section id="la-conexión-real" class="level2">
+<h2 class="anchored" data-anchor-id="la-conexión-real">La conexión real</h2>
+<p>Abrimos arduino IDE, que es el software que interactúa y permite cargar código a la placa.</p>
+<ol type="1">
+<li>Conectar la placa</li>
+<li>Instalar drivers (si fuera necesario)</li>
+<li>Conectar el cable usb a la placa y a la pc</li>
+<li>En Arduino IDE, ir a Heramientas &gt; Placa y elegir el modelo conectado (Arduino Uno).</li>
+<li>Luego, ir a Herramientas &gt; Puertos y seleccionar el puerto en el que la placa está conectada.</li>
+</ol>
+<p>En windows a veces es necseario chequear que la placa fue correctamente reconocida,</p>
+<ul>
+<li>Ir a Heramientas &gt; Administrador de dispositivos y verificar que la placa haya sido reconocida.</li>
+</ul>
+<p>Las placas “clones” a veces pueden dar algún problema en esta primera conexión. internet es una buena fuente de información sobre cómo solucionarlo, pero en general, los pasos pueden incluir un reseteo de la placa, reinstalar drivers, etc.</p>
+<p>Copien y peguen <a href="https://docs.arduino.cc/tutorials/uno-rev3/Blink/">el codigo de abajo</a> en el IDE (o tómenlo del menú de ejemplos)</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">  Blink</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">  Turns an LED on for one second, then off for one second, repeatedly.</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">  Most Arduinos have an on-board LED you can control. On the UNO, MEGA and ZERO</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">  it is attached to digital pin 13, on MKR1000 on pin 6. LED_BUILTIN is set to</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">  the correct LED pin independent of which board is used.</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">  If you want to know what pin the on-board LED is connected to on your Arduino</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">  model, check the Technical Specs of your board at:</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">  https://docs.arduino.cc/hardware/</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">  modified 8 May 2014</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">  by Scott Fitzgerald</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">  modified 2 Sep 2016</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co">  by Arturo Guadalupi</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co">  modified 8 Sep 2016</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="co">  by Colby Newman</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co">  This example code is in the public domain.</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="co">  https://docs.arduino.cc/built-in-examples/basics/Blink/</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="co">*/</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="co">// the setup function runs once when you press reset or power the board</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">()</span> <span class="op">{</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="co">// initialize digital pin LED_BUILTIN as an output.</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>  pinMode<span class="op">(</span>LED_BUILTIN<span class="op">,</span> OUTPUT<span class="op">);</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="co">// the loop function runs over and over again forever</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">()</span> <span class="op">{</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  digitalWrite<span class="op">(</span>LED_BUILTIN<span class="op">,</span> HIGH<span class="op">);</span>  <span class="co">// change state of the LED by setting the pin to the HIGH voltage level</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  delay<span class="op">(</span><span class="dv">1000</span><span class="op">);</span>                      <span class="co">// wait for a second</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  digitalWrite<span class="op">(</span>LED_BUILTIN<span class="op">,</span> LOW<span class="op">);</span>   <span class="co">// change state of the LED by setting the pin to the LOW voltage level</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  delay<span class="op">(</span><span class="dv">1000</span><span class="op">);</span>                      <span class="co">// wait for a second</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Luego le darán a <em>compilar/verifica</em> (tilde) y <em>subir</em> (flecha hacia la derecha). Si todo funciona bien, verán un mensaje de éxito en la parte inferior del IDE.</p>
+<section id="cambiando-el-código" class="level3">
+<h3 class="anchored" data-anchor-id="cambiando-el-código">Cambiando el código</h3>
+<p>Pueden probar este código con la conexión anterior (atención usar pin PWM):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> pinPWM <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">(){</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    pinMode<span class="op">(</span>pinPWM<span class="op">,</span>OUTPUT<span class="op">);</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">(){</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span><span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span>i<span class="op">&lt;=</span><span class="dv">255</span><span class="op">;</span>i<span class="op">++){</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>pinPWM<span class="op">,</span>i<span class="op">);</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    delay<span class="op">(</span><span class="dv">1000</span><span class="op">);</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p>¿Qué se podría cambiar en el código para que la iluminación progresiva sea “ida y vuelta”, es decir, de apagado a prendido y de prendido a apagado.</p>
+</section>
+</section>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<ul>
+<li><a href="https://www.arduino.cc/en/hardware">Arduino Hardware Arduino</a></li>
+<li><a href="https://www.arduino.cc/reference/en/">Arduino Reference - Arduino Reference</a></li>
+<li><a href="https://youtube.com/playlist?list=PLkjnQ3NFTPnY1eNyLDGi547gkVui1vyn2&amp;si=4VGzMiUyuoBzNvuT">Curso de arduino</a></li>
+<li><a href="https://youtube.com/playlist?list=PLEzmH7aN82FEh2JjYuNCvFu6wFolHai32&amp;si=103_cDcPluovnGBo">Curso de arduino 2</a></li>
+<li><a href="https://docs.arduino.cc/built-in-examples/basics/Fade">Fading a LED | Arduino Documentation</a></li>
+<li><a href="https://www.tinkercad.com/classrooms/3MFQhBZ2UnU/activities">TinkerCad de esta clase</a></li>
+<li><a href="https://www.tinkercad.com/projects/Basics-of-Arduino-TINKERCAD">Intro a Arduino de TinkerCad</a></li>
+<li><a href="https://www.etechnophiles.com/arduino-uno-pinout-pin-diagram-specifications/">Intro a arduino</a></li>
+<li><a href="https://docs.arduino.cc/tutorials/uno-rev3/Blink/">Arduino Blik (nueva página)</a></li>
+<li><a href="https://github.com/himalayanelixir/arduino-usb-drivers">Drivers para Placas alternativas</a></li>
+<li><a href="https://www.wch-ic.com/downloads/CH341SER_ZIP.html">Drivers para Placas alternativas 2</a></li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
