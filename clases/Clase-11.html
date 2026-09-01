@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Arduino 01 – C2-661 2026</title>
+<title>Arduino 02 – C2-661 2026</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -106,15 +106,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Arduino 01 – C2-661 2026">
-<meta property="og:description" content="Introducción">
-<meta property="og:image" content="https://farabolaza.github.io/C2-661-2026/assets/arduino.webp">
+<meta property="og:title" content="Arduino 02 – C2-661 2026">
+<meta property="og:description" content="Sensor de distancia HCSR-04">
+<meta property="og:image" content="https://farabolaza.github.io/C2-661-2026/assets/sensor-ultrasonico.jpg">
 <meta property="og:site_name" content="C2-661 2026">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -123,7 +152,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/Clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/Clase-10.html">Arduino 01</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/Clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/Clase-11.html">Arduino 02</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -255,13 +284,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../clases/Clase-10.html" class="sidebar-item-text sidebar-link active">
+  <a href="../clases/Clase-10.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Arduino 01</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../clases/Clase-11.html" class="sidebar-item-text sidebar-link">
+  <a href="../clases/Clase-11.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Arduino 02</span></a>
   </div>
 </li>
@@ -318,39 +347,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">En esta página</h2>
    
   <ul>
-  <li><a href="#ojbetivos-de-la-clase" id="toc-ojbetivos-de-la-clase" class="nav-link active" data-scroll-target="#ojbetivos-de-la-clase">Ojbetivos de la clase</a></li>
-  <li><a href="#la-placa-arduino" id="toc-la-placa-arduino" class="nav-link" data-scroll-target="#la-placa-arduino">La placa Arduino</a></li>
-  <li><a href="#los-entornos-de-trabajo" id="toc-los-entornos-de-trabajo" class="nav-link" data-scroll-target="#los-entornos-de-trabajo">Los entornos de trabajo</a>
+  <li><a href="#objetivos" id="toc-objetivos" class="nav-link active" data-scroll-target="#objetivos">Objetivos</a></li>
+  <li><a href="#conexión-de-un-sensor-ultrasónico-de-distancia" id="toc-conexión-de-un-sensor-ultrasónico-de-distancia" class="nav-link" data-scroll-target="#conexión-de-un-sensor-ultrasónico-de-distancia">Conexión de un sensor ultrasónico de distancia</a>
   <ul class="collapse">
-  <li><a href="#arduino-ide" id="toc-arduino-ide" class="nav-link" data-scroll-target="#arduino-ide">Arduino IDE</a></li>
-  <li><a href="#tinkercad" id="toc-tinkercad" class="nav-link" data-scroll-target="#tinkercad">Tinkercad</a></li>
+  <li><a href="#principio-de-funcionamiento" id="toc-principio-de-funcionamiento" class="nav-link" data-scroll-target="#principio-de-funcionamiento">Principio de funcionamiento</a>
+  <ul class="collapse">
+  <li><a href="#verificando" id="toc-verificando" class="nav-link" data-scroll-target="#verificando">Verificando</a></li>
   </ul></li>
-  <li><a href="#el-lenguaje-de-programación-de-arduino" id="toc-el-lenguaje-de-programación-de-arduino" class="nav-link" data-scroll-target="#el-lenguaje-de-programación-de-arduino">El lenguaje de programación de Arduino</a>
-  <ul class="collapse">
-  <li><a href="#referencia-en-línea-del-lenguaje-arduino" id="toc-referencia-en-línea-del-lenguaje-arduino" class="nav-link" data-scroll-target="#referencia-en-línea-del-lenguaje-arduino">Referencia en línea del lenguaje arduino</a></li>
-  <li><a href="#ejemplo" id="toc-ejemplo" class="nav-link" data-scroll-target="#ejemplo">Ejemplo</a></li>
-  <li><a href="#entradas-y-salidas" id="toc-entradas-y-salidas" class="nav-link" data-scroll-target="#entradas-y-salidas">Entradas y salidas</a></li>
+  <li><a href="#esquema-de-conexión" id="toc-esquema-de-conexión" class="nav-link" data-scroll-target="#esquema-de-conexión">Esquema de conexión</a></li>
+  <li><a href="#código" id="toc-código" class="nav-link" data-scroll-target="#código">Código</a></li>
   </ul></li>
-  <li><a href="#actividad-primeros-pasos-en-arduino" id="toc-actividad-primeros-pasos-en-arduino" class="nav-link" data-scroll-target="#actividad-primeros-pasos-en-arduino">Actividad: Primeros pasos en Arduino</a>
+  <li><a href="#monitor-serie-de-arduino" id="toc-monitor-serie-de-arduino" class="nav-link" data-scroll-target="#monitor-serie-de-arduino">Monitor serie de Arduino</a>
   <ul class="collapse">
-  <li><a href="#conexión-de-un-led" id="toc-conexión-de-un-led" class="nav-link" data-scroll-target="#conexión-de-un-led">Conexión de un led</a></li>
-  <li><a href="#simuladores-de-circuitos" id="toc-simuladores-de-circuitos" class="nav-link" data-scroll-target="#simuladores-de-circuitos">Simuladores de circuitos</a></li>
-  <li><a href="#la-conexión-real" id="toc-la-conexión-real" class="nav-link" data-scroll-target="#la-conexión-real">La conexión real</a>
+  <li><a href="#código-de-ejemplo" id="toc-código-de-ejemplo" class="nav-link" data-scroll-target="#código-de-ejemplo">Código de ejemplo</a>
   <ul class="collapse">
-  <li><a href="#cambiando-el-código" id="toc-cambiando-el-código" class="nav-link" data-scroll-target="#cambiando-el-código">Cambiando el código</a></li>
+  <li><a href="#errores-comunes-y-personalización" id="toc-errores-comunes-y-personalización" class="nav-link" data-scroll-target="#errores-comunes-y-personalización">Errores comunes y personalización</a></li>
   </ul></li>
+  </ul></li>
+  <li><a href="#actividad" id="toc-actividad" class="nav-link" data-scroll-target="#actividad">Actividad</a></li>
   <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias</a></li>
-  </ul></li>
+  <li><a href="#video-sobre-el-hcsr-04" id="toc-video-sobre-el-hcsr-04" class="nav-link" data-scroll-target="#video-sobre-el-hcsr-04">Video sobre el HCSR-04</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/Clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/Clase-10.html">Arduino 01</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../clases/Clase-01.html">Clases</a></li><li class="breadcrumb-item"><a href="../clases/Clase-11.html">Arduino 02</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Arduino 01</h1>
-<p class="subtitle lead">Introducción</p>
+<h1 class="title">Arduino 02</h1>
+<p class="subtitle lead">Sensor de distancia HCSR-04</p>
 </div>
 
 
@@ -367,229 +393,250 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="ojbetivos-de-la-clase" class="level1">
-<h1>Ojbetivos de la clase</h1>
+<section id="objetivos" class="level1">
+<h1>Objetivos</h1>
 <ul class="task-list">
-<li><label><input type="checkbox">Placa arduino</label>
-<ul class="task-list">
-<li><label><input type="checkbox">Pines Entradas analógicas</label></li>
-<li><label><input type="checkbox">Pines digitales</label>
-<ul class="task-list">
-<li><label><input type="checkbox">Entradas digitales</label></li>
-<li><label><input type="checkbox">Salida digitales</label></li>
-</ul></li>
-</ul></li>
-<li><label><input type="checkbox">Arduino IDE</label></li>
-<li><label><input type="checkbox">Lenguaje arduino</label>
-<ul class="task-list">
-<li><label><input type="checkbox">Variables, estructuras, funciones y comentarios</label></li>
-</ul></li>
-<li><label><input type="checkbox">Modulación PWM</label></li>
-<li><label><input type="checkbox">Uso del led integrado</label></li>
-<li><label><input type="checkbox">Conexión de un LED</label>
-<ul class="task-list">
-<li><label><input type="checkbox">pwm</label></li>
-</ul></li>
+<li><label><input type="checkbox">Utilizar el sensor HC-SR04.</label></li>
+<li><label><input type="checkbox">Utilizar funciones del lenguaje Arduino</label></li>
+<li><label><input type="checkbox">Utilizar el monitor serie del IDE de Arduino.</label></li>
 </ul>
 </section>
-<section id="la-placa-arduino" class="level1">
-<h1>La placa Arduino</h1>
-<p>La placa Arduino permite la interacción entre el mundo físico y el digital mediante el uso de componentes electrónicos y sensores. No se trata de una única placa sino una familia de placas de software y hardware libre. De ésta familia utilizaremos la más usual, Arduino Uno (y sus clones).</p>
+<section id="conexión-de-un-sensor-ultrasónico-de-distancia" class="level1 page-columns page-full">
+<h1>Conexión de un sensor ultrasónico de distancia</h1>
+<section id="principio-de-funcionamiento" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="principio-de-funcionamiento">Principio de funcionamiento</h2>
+<p>El sensor emite pulsos de 40 khz de frecuencia a intervalos de 10 <span class="math inline">\(\mu s\)</span> enviando un tren de pulsos HIGH a través del pin trigger y espera a recibirlo en el pin Echo. Cuando los pulsos emitidos llegan a un obstáculo, se reflejan, y son luego recibidos por el receptor, el cual generará un pulso alto (HIGH) en la salida (pin Echo) de igual duración que el tiempo transcurrido entre la emisión y la recepción del pulso. Esta duración expresada en microsegundos será accesible através de la función <code>pulseIn(PIN,ESTADO)</code> especificando el PIN y el estado <code>HIGH</code>. En el lado del controlador, la señal recibida debe será convertida a distancia al dividir ese tiempo por 58.2, para obtener los datos en centímetros. Este dato que parece arbitrario se puede calcular sin más que hacer un par de conversiones de unidades al revisar la hoja de datos del componente.</p>
+<section id="verificando" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="verificando">Verificando</h3>
+<p>Si asumimos la velocidad del sonido en condiciones ambientales normales como 340 m/s, y sabemos que el tiempo registrado por el sensor (en microsegundos) es el que corresponde a el doble de la distancia al obstáculo tenemos que:</p>
+<p><span class="math display">\[
+2\cdot d = c\cdot t
+\]</span></p>
+<p><strong>Propuesta</strong> Verifiquen si es correcto el número 58,2 usado como factor de conversión,<br>
+que algunas hojas de datos y tutoriales de internet nos dan.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div id="fig-sensor1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sensor1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/sensor-ultrasonico.jpg" class="img-fluid figure-img" width="300">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sensor1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: sensor ultrasónico
+</figcaption>
+</figure>
+</div>
+</div></div></section>
+</section>
+<section id="esquema-de-conexión" class="level2">
+<h2 class="anchored" data-anchor-id="esquema-de-conexión">Esquema de conexión</h2>
+<p>La conexión será como se muestra en la imagen</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../assets/arduino.webp" class="img-fluid figure-img" width="500"></p>
-<figcaption>placa arduino uno</figcaption>
+<p><img src="../assets/sensor-ultra-conexion.png" class="img-fluid figure-img" width="600"></p>
+<figcaption>conexion</figcaption>
+</figure>
+</div>
+<p>El mismo circuito pero en la vista tradicional se vería asi</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/sensor-ultra-conexion-circ.png" class="img-fluid figure-img" width="600"></p>
+<figcaption>conexionc</figcaption>
+</figure>
+</div>
+<p>En ocasiones se conecta una resistencia como se muestra en la siguiente imagen</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/sensor-ultrasonico2.jpg" class="img-fluid figure-img" width="600"></p>
+<figcaption>conexionr</figcaption>
 </figure>
 </div>
 </section>
-<section id="los-entornos-de-trabajo" class="level1">
-<h1>Los entornos de trabajo</h1>
-<section id="arduino-ide" class="level2">
-<h2 class="anchored" data-anchor-id="arduino-ide">Arduino IDE</h2>
-<p>El software arduino IDE es el software que permite escribir el código y subirlo a la placa para su ejecución</p>
-</section>
-<section id="tinkercad" class="level2">
-<h2 class="anchored" data-anchor-id="tinkercad">Tinkercad</h2>
-<p>El sitio Tinkercad ofrece la posibilidad de escribir en el lenguaje Arduino y simular componente a componente un circuito entero, lo que es de mucha utilidad para practicar cuando se está comenzando o testeando un nuevo diseño.</p>
-</section>
-</section>
-<section id="el-lenguaje-de-programación-de-arduino" class="level1">
-<h1>El lenguaje de programación de Arduino</h1>
-<p>Arduino tiene su propio lenguaje de programación que está inspirado y replica en parte al lenguaje C++. Nosotros nos centraremos las estructuras de control más sencillas (que ya vimos para python) que resultan ser ligeramente diferentes en Arduino en cuanto a su sintaxis pero que hacen efectivamente lo mismo que sus parientes Pythonicas. Por su parte, el funcionamiento de la placa requiere de ciertas estructuras que se encuentran siempre presentes y son escenciales para su funcionamiento.</p>
-<section id="referencia-en-línea-del-lenguaje-arduino" class="level2">
-<h2 class="anchored" data-anchor-id="referencia-en-línea-del-lenguaje-arduino">Referencia en línea del lenguaje arduino</h2>
-<p>En <a href="https://docs.arduino.cc/language-reference/">ésta página</a> tenemos acceso las funciones, estructurales y variables mas usuales de Arduino con su sintaxis y descripción.</p>
-</section>
-<section id="ejemplo" class="level2">
-<h2 class="anchored" data-anchor-id="ejemplo">Ejemplo</h2>
-<p>Veamos un esqueleto de código de Arudino</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">(){</span> <span class="co">// los bloque encerrados entre llaves</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>pinMode<span class="op">(</span><span class="dv">13</span><span class="op">;</span>OUTPUT<span class="op">);</span> <span class="co">// los comentarios van precedidos por doble barra</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<section id="código" class="level2">
+<h2 class="anchored" data-anchor-id="código">Código</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode c++ code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">CONEXIÓN DE SENSOR ULTRASÓNICO</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">*/</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">(){</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="op">(</span>alguna condición<span class="op">)</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">{</span> </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">// ejecuta esto; </span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">// cada instrucción se finaliza con un punto y coma </span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="co">// esto otro; </span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">// esto otro; }</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span> <span class="cf">if</span> <span class="op">(</span>otra condicion<span class="op">)</span> <span class="op">{</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">// haga esto otro;</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span> <span class="op">{</span> <span class="co">// ejecuta esta otra cosa; }</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="op">}}}</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> TRIG <span class="op">=</span> <span class="dv">10</span><span class="op">;</span> <span class="co">// TRIGGER EN PIN 10</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> ECO <span class="op">=</span> <span class="dv">9</span><span class="op">;</span> <span class="co">// ECO EN PIN 9</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> LED <span class="op">=</span> <span class="dv">13</span><span class="op">;</span> <span class="co">// LED INTEGRADO O PIN DEL LED</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> DURACION<span class="op">;</span> </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> DISTANCIA<span class="op">;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">()</span> <span class="op">{</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>&nbsp; pinMode<span class="op">(</span>LED<span class="op">,</span> OUTPUT<span class="op">);</span> <span class="co">// DEFINICION COMO SALIDA PIN LED</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>&nbsp; pinMode<span class="op">(</span>ECO<span class="op">,</span> INPUT<span class="op">);</span> <span class="co">// DEFINICION COMO ENTRADA PIN ECHO</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>&nbsp; pinMode<span class="op">(</span>TRIG<span class="op">,</span> OUTPUT<span class="op">);</span> <span class="co">// DEFINICION COMO SALIDA PIN TRIGGER</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>&nbsp; Serial<span class="op">.</span>begin<span class="op">(</span><span class="dv">9600</span><span class="op">);</span> <span class="co">// INCIALIZACIÓN DEL MONITOR SERIE</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">()</span> <span class="op">{</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>&nbsp; digitalWrite<span class="op">(</span>TRIG<span class="op">,</span> HIGH<span class="op">);</span> <span class="co">// ARRANCAMOS EL SENSOR</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>&nbsp; delay<span class="op">(</span><span class="dv">1</span><span class="op">);</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>&nbsp; digitalWrite<span class="op">(</span>TRIG<span class="op">,</span> LOW<span class="op">);</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>&nbsp; DURACION <span class="op">=</span> pulseIn<span class="op">(</span>ECO<span class="op">,</span> HIGH<span class="op">);</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>&nbsp; DISTANCIA <span class="op">=</span> DURACION <span class="op">/</span> <span class="fl">58.2</span><span class="op">;</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co">// esto esta especificado por el fabricante del sensor</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>&nbsp; <span class="cf">if</span><span class="op">(</span>DISTANCIA <span class="op">&lt;=</span><span class="dv">20</span> <span class="op">&amp;&amp;</span> DISTANCIA <span class="op">&gt;=</span><span class="dv">0</span><span class="op">){</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; digitalWrite<span class="op">(</span>LED<span class="op">,</span>HIGH<span class="op">);</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; delay<span class="op">(</span>DISTANCIA<span class="op">*</span><span class="dv">10</span><span class="op">);</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>&nbsp; &nbsp; digitalWrite<span class="op">(</span>LED<span class="op">,</span> LOW<span class="op">);</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>&nbsp; <span class="op">}</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  Serial<span class="op">.</span>println<span class="op">(</span>DISTANCIA<span class="op">);</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>  delay<span class="op">(</span><span class="dv">200</span><span class="op">);</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="entradas-y-salidas" class="level2">
-<h2 class="anchored" data-anchor-id="entradas-y-salidas">Entradas y salidas</h2>
-<p>La placa consta de entradas analógicas (allí donde conectaremos la mayoría de los sensores y componentes electrónicos) y pines digitales. Los pines digitales pueden actuar tanto como entrada o como salida. Para especificarlo se usa la función <code>pinMode(PIN,OUTPUT/INPUT)</code>. La salida que estos pines pueden dar es binaria: 0V o 5V para poder emular una salida analógica algunos pines cuentan con un proceso llamado PWM (modulación por ancho de pulso) que en pocas palabras lo que hace es emitir como salida trenes de pulsos de una duración muy breve a intervalos regulares. El promedio del tiempo que se encuentre en 0V o 5V emulará un voltaje real. Por ejemplo, si en el ciclo entero está la mitad de tiempo en 0V y la otra mitad en 5V el voltaje “emulado” será de 2,5V. Para identificar que pines pueden hacer esto, se los señala con el acento circunflejo, virgüilla, más conocido como el “cosito de la eñe”, es decir “~”.</p>
 </section>
-</section>
-<section id="actividad-primeros-pasos-en-arduino" class="level1">
-<h1>Actividad: Primeros pasos en Arduino</h1>
-<p>Vamos a seguir bastante la guía presente en <a href="https://youtube.com/playlist?list=PLkjnQ3NFTPnY1eNyLDGi547gkVui1vyn2&amp;si=M6fYpbgP-rITZw1M">esta lista de Youtube</a> por lo que si se pierden alguna clase o se olvidan de algo pueden volver a verlo.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../assets/Arduino-UNO-Parts-Marking.jpg" class="img-fluid figure-img"></p>
-<figcaption>Detalle de entradas y salidas</figcaption>
-</figure>
-</div>
-<section id="conexión-de-un-led" class="level2">
-<h2 class="anchored" data-anchor-id="conexión-de-un-led">Conexión de un led</h2>
-<p>Un diodo LED es un tipo especial de diodo. Los diodos son componentes electrónicos en cuyos detalles se profundizará en la materia <strong>electrónica</strong>. Por el momento sólo necesitamos saber que el diodo tiene polaridad: si lo conectamos al revés, no funciona. Tiene un lado positivo o ánodo, y uno negativo, o cátodo. El esquemático mas usual es como se ve aquí abajo.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcursos.mcielectronics.cl%2Fwp-content%2Fuploads%2F2014%2F07%2Fdiodo.png&amp;f=1&amp;nofb=1&amp;ipt=d459c863b44139e0ca9af10e3da3121618bd5ad54c0a3c962aa8605dd49456ef&amp;ipo=images" class="img-fluid figure-img"></p>
-<figcaption>iu (598×402) (duckduckgo.com)</figcaption>
-</figure>
-</div>
-<p>En la vida real, podemos ver la polaridad de un LED como se muestra debajo. El cátodo es la patita corta y el lado plano. En ocasiones las patitas son cortadas o no están visibles, por lo que:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.geekfactory.mx%2Fwp-content%2Fuploads%2F2020%2F04%2Fled-con-arduino-como-determinar-polaridad.jpg&amp;f=1&amp;nofb=1&amp;ipt=6db7be7c736b3ab2ff5f755987c0239c3914991c3020f68d55a72556c4da61c8&amp;ipo=images" class="img-fluid figure-img"></p>
-<figcaption>un diodo</figcaption>
-</figure>
-</div>
-<p>Versión esquemática de la placa con la conexión actual</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../assets/blink-schematic.png" class="img-fluid figure-img" width="600"></p>
-<figcaption>BLINK-SCHEMATIC</figcaption>
-</figure>
-</div>
-<p>Versión fotográfica de la misma conexión</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../assets/blink-circuit.png" class="img-fluid figure-img" width="600"></p>
-<figcaption>BLINK-FOTO</figcaption>
-</figure>
-</div>
-</section>
-<section id="simuladores-de-circuitos" class="level2">
-<h2 class="anchored" data-anchor-id="simuladores-de-circuitos">Simuladores de circuitos</h2>
-<p>Algo que nos puede prevenir dolores de cabeza, además de dormir ocho horas y alimentarse bien, es usar algún simulador de circuitos para prototipar nuestro trabajo. Especialmente quienes no sean expertos en electrónica, sacarán provecho de poder previsualizar su trabajo y observar el comportamiento esperado de conexiones que quienes saben de la materia pueden imaginar con facilidad, pero a nosotros simples mortales que quizás no fuimos a una escuela ténica nos parece magia negra.</p>
-<p>Existen opciones en línea, comerciales, de código cerrado y de código abierto.</p>
+<section id="monitor-serie-de-arduino" class="level1">
+<h1>Monitor serie de Arduino</h1>
+<p>Para abrir el monitor serie hacemos <code>herramientas &gt; monitor serie</code> o <code>Ctrl+Shift+M</code></p>
+<p>El puerto serie permite comunicación bidireccional entre Arduino y una computadora:</p>
 <ul>
-<li>Tinkercad: Muy popular, cerrado. Perteneciente a la empresa Autodesk</li>
-<li>Velxio: También popular, sin necesidad de registrarse y de código abierto (basado en Wokwi)</li>
-<li>Wokwi: En línea y de código abierto (licencia MIT). Con fuciones de pago</li>
-<li>SimulIDE: De escritorio y de código abierto (GPLv3) que permite prototipado offline</li>
-<li>AVR8js: Es el motor base de Wokwi</li>
-<li>UNOArduSim: Enfocado en depuración de código para Arduino Uno</li>
-<li>ArduinoSimulator: proyecto web en JavaScript</li>
+<li><strong>Funciones básicas:</strong></li>
 </ul>
-<p>Este año probaremos trabajar con <a href="https://velxio.dev/es/editor">Velxio</a> ya que no requiere de iniciar sesión ni tener cuenta para comenzar a tarbajar, (aunquel es conviene hacerse una cuenta) reduciendo la fricción de los primeros pasos.</p>
-<p>Ingresen al link y agreguen una placa Arduino Uno, verán que en la parte izquierda tienen ya el código de prueba que usaremos como primera práctica.</p>
-</section>
-<section id="la-conexión-real" class="level2">
-<h2 class="anchored" data-anchor-id="la-conexión-real">La conexión real</h2>
-<p>Abrimos arduino IDE, que es el software que interactúa y permite cargar código a la placa.</p>
-<ol type="1">
-<li>Conectar la placa</li>
-<li>Instalar drivers (si fuera necesario)</li>
-<li>Conectar el cable usb a la placa y a la pc</li>
-<li>En Arduino IDE, ir a Heramientas &gt; Placa y elegir el modelo conectado (Arduino Uno).</li>
-<li>Luego, ir a Herramientas &gt; Puertos y seleccionar el puerto en el que la placa está conectada.</li>
-</ol>
-<p>En windows a veces es necseario chequear que la placa fue correctamente reconocida,</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Serial<span class="op">.</span>begin<span class="op">(</span>baudrate<span class="op">);</span>   <span class="co">// Inicia comunicación (ej: 9600, 115200)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Serial<span class="op">.</span>print<span class="op">(</span>dato<span class="op">);</span>        <span class="co">// Envía datos sin salto de línea</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>Serial<span class="op">.</span>println<span class="op">(</span>dato<span class="op">);</span>      <span class="co">// Envía datos con salto de línea</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
-<li>Ir a Heramientas &gt; Administrador de dispositivos y verificar que la placa haya sido reconocida.</li>
+<li><strong>Baud rate:</strong> Velocidad de transmisión (bits/segundo). Se puede usar <strong>9600</strong>, <strong>115200</strong>, etc. para elegir la velocidad de conexión</li>
 </ul>
-<p>Las placas “clones” a veces pueden dar algún problema en esta primera conexión. internet es una buena fuente de información sobre cómo solucionarlo, pero en general, los pasos pueden incluir un reseteo de la placa, reinstalar drivers, etc.</p>
-<p>Copien y peguen <a href="https://docs.arduino.cc/tutorials/uno-rev3/Blink/">el codigo de abajo</a> en el IDE (o tómenlo del menú de ejemplos)</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">  Blink</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">  Turns an LED on for one second, then off for one second, repeatedly.</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">  Most Arduinos have an on-board LED you can control. On the UNO, MEGA and ZERO</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">  it is attached to digital pin 13, on MKR1000 on pin 6. LED_BUILTIN is set to</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">  the correct LED pin independent of which board is used.</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">  If you want to know what pin the on-board LED is connected to on your Arduino</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">  model, check the Technical Specs of your board at:</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">  https://docs.arduino.cc/hardware/</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">  modified 8 May 2014</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">  by Scott Fitzgerald</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">  modified 2 Sep 2016</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co">  by Arturo Guadalupi</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co">  modified 8 Sep 2016</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="co">  by Colby Newman</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="co">  This example code is in the public domain.</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="co">  https://docs.arduino.cc/built-in-examples/basics/Blink/</span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="co">*/</span></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="co">// the setup function runs once when you press reset or power the board</span></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">()</span> <span class="op">{</span></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="co">// initialize digital pin LED_BUILTIN as an output.</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>  pinMode<span class="op">(</span>LED_BUILTIN<span class="op">,</span> OUTPUT<span class="op">);</span></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="co">// the loop function runs over and over again forever</span></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">()</span> <span class="op">{</span></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  digitalWrite<span class="op">(</span>LED_BUILTIN<span class="op">,</span> HIGH<span class="op">);</span>  <span class="co">// change state of the LED by setting the pin to the HIGH voltage level</span></span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  delay<span class="op">(</span><span class="dv">1000</span><span class="op">);</span>                      <span class="co">// wait for a second</span></span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  digitalWrite<span class="op">(</span>LED_BUILTIN<span class="op">,</span> LOW<span class="op">);</span>   <span class="co">// change state of the LED by setting the pin to the LOW voltage level</span></span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  delay<span class="op">(</span><span class="dv">1000</span><span class="op">);</span>                      <span class="co">// wait for a second</span></span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Luego le darán a <em>compilar/verifica</em> (tilde) y <em>subir</em> (flecha hacia la derecha). Si todo funciona bien, verán un mensaje de éxito en la parte inferior del IDE.</p>
-<section id="cambiando-el-código" class="level3">
-<h3 class="anchored" data-anchor-id="cambiando-el-código">Cambiando el código</h3>
-<p>Pueden probar este código con la conexión anterior (atención usar pin PWM):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> pinPWM <span class="op">=</span> <span class="dv">10</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">(){</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    pinMode<span class="op">(</span>pinPWM<span class="op">,</span>OUTPUT<span class="op">);</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">(){</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span><span class="op">(</span>i<span class="op">=</span><span class="dv">0</span><span class="op">;</span>i<span class="op">&lt;=</span><span class="dv">255</span><span class="op">;</span>i<span class="op">++){</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>pinPWM<span class="op">,</span>i<span class="op">);</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    delay<span class="op">(</span><span class="dv">1000</span><span class="op">);</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<p>¿Qué se podría cambiar en el código para que la iluminación progresiva sea “ida y vuelta”, es decir, de apagado a prendido y de prendido a apagado.</p>
-</section>
-</section>
-<section id="referencias" class="level2">
-<h2 class="anchored" data-anchor-id="referencias">Referencias</h2>
+<p>Para que nuestros datos se “vean” como un csv debemos hacer por ejemplo</p>
 <ul>
-<li><a href="https://www.arduino.cc/en/hardware">Arduino Hardware Arduino</a></li>
-<li><a href="https://www.arduino.cc/reference/en/">Arduino Reference - Arduino Reference</a></li>
-<li><a href="https://youtube.com/playlist?list=PLkjnQ3NFTPnY1eNyLDGi547gkVui1vyn2&amp;si=4VGzMiUyuoBzNvuT">Curso de arduino</a></li>
-<li><a href="https://youtube.com/playlist?list=PLEzmH7aN82FEh2JjYuNCvFu6wFolHai32&amp;si=103_cDcPluovnGBo">Curso de arduino 2</a></li>
-<li><a href="https://docs.arduino.cc/built-in-examples/basics/Fade">Fading a LED | Arduino Documentation</a></li>
-<li><a href="https://www.tinkercad.com/classrooms/3MFQhBZ2UnU/activities">TinkerCad de esta clase</a></li>
-<li><a href="https://www.tinkercad.com/projects/Basics-of-Arduino-TINKERCAD">Intro a Arduino de TinkerCad</a></li>
-<li><a href="https://www.etechnophiles.com/arduino-uno-pinout-pin-diagram-specifications/">Intro a arduino</a></li>
-<li><a href="https://docs.arduino.cc/tutorials/uno-rev3/Blink/">Arduino Blik (nueva página)</a></li>
-<li><a href="https://github.com/himalayanelixir/arduino-usb-drivers">Drivers para Placas alternativas</a></li>
-<li><a href="https://www.wch-ic.com/downloads/CH341SER_ZIP.html">Drivers para Placas alternativas 2</a></li>
+<li>Cada línea = una muestra de temporal del sensor</li>
+<li>Columnas separadas por comas (o punto y coma)</li>
+<li>Primera línea como encabezado (opcional)</li>
 </ul>
+<p><strong>Ejemplo de estructura:</strong></p>
+<pre><code>tiempo_ms,distancia_cm,temperatura_c
+0,15.2,25.3
+15,15.1,25.4
+30,14.8,25.3</code></pre>
+<section id="código-de-ejemplo" class="level2">
+<h2 class="anchored" data-anchor-id="código-de-ejemplo">Código de ejemplo</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">()</span> <span class="op">{</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  Serial<span class="op">.</span>begin<span class="op">(</span><span class="dv">115200</span><span class="op">);</span>  <span class="co">// Alta velocidad para más muestras</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Encabezados CSV (opcional)</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  Serial<span class="op">.</span>println<span class="op">(</span><span class="st">"tiempo_ms,distancia_cm,temperatura_c"</span><span class="op">);</span> </span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">()</span> <span class="op">{</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="co">// 1. Leer sensores</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="dt">unsigned</span> <span class="dt">long</span> tiempo <span class="op">=</span> millis<span class="op">();</span> <span class="co">// unsigned elimina el signo  del numero y nos da un bit mas</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="dt">float</span> distancia <span class="op">=</span> leerSensorDistancia<span class="op">();</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="dt">float</span> temperatura <span class="op">=</span> leerSensorTemperatura<span class="op">();</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="co">// 2. Imprimir en formato CSV</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  Serial<span class="op">.</span>print<span class="op">(</span>tiempo<span class="op">);</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  Serial<span class="op">.</span>print<span class="op">(</span><span class="st">","</span><span class="op">);</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  Serial<span class="op">.</span>print<span class="op">(</span>distancia<span class="op">);</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  Serial<span class="op">.</span>print<span class="op">(</span><span class="st">","</span><span class="op">);</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  Serial<span class="op">.</span>println<span class="op">(</span>temperatura<span class="op">);</span>  <span class="co">// println pasa a la siguiente línea luego de esto</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>  delay<span class="op">(</span><span class="dv">10</span><span class="op">);</span>  <span class="co">// Intervalo entre muestras</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="errores-comunes-y-personalización" class="level3">
+<h3 class="anchored" data-anchor-id="errores-comunes-y-personalización">Errores comunes y personalización</h3>
+<p><strong>Manejo de errores de formato:</strong></p>
+<p>Se puede usar <code>isnan()</code> para “atajar” valores nulos</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Verificar valores inválidos</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="op">(</span>isnan<span class="op">(</span>distancia<span class="op">))</span> <span class="op">{</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  Serial<span class="op">.</span>print<span class="op">(</span>tiempo<span class="op">);</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  Serial<span class="op">.</span>println<span class="op">(</span><span class="st">",NaN,"</span><span class="op">);</span>  <span class="co">// Mantener estructura de columnas</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Impresión normal</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Controlar la precisión decimal</strong></p>
+<p>El segundo parámetro de print es la cantidad de decimales</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>Serial<span class="op">.</span>print<span class="op">(</span>distancia<span class="op">,</span> <span class="dv">2</span><span class="op">);</span>  <span class="co">// 2 decimales</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Marca temporal</strong></p>
+<p>La función <code>millis()</code> indica los milisegundo desde que la plcaca fue encendida. Es útil para extraer una marca temporal para los valores de nuestros sensores. Una vez que tenemos los datos, con restar a todos el primer valor los “ajustamos a cero” y obtenemos una seriel temporal limpia. Este ajuste puede hacerse directamente en arduino o posteriormente en python</p>
+<p>Consejo: Cuanto menos hagamos trabajar al arduino, mejor.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="at">static</span> <span class="dt">unsigned</span> <span class="dt">long</span> inicio <span class="op">=</span> millis<span class="op">();</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>Serial<span class="op">.</span>print<span class="op">(</span>millis<span class="op">()</span> <span class="op">-</span> inicio<span class="op">);</span>  <span class="co">// Tiempo relativo al experimento</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Buenas Prácticas y Solución de Problemas</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 46%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problema Común</th>
+<th>Solución</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Datos incompletos/truncados</td>
+<td>Aumentar baud rate (115200)</td>
+</tr>
+<tr class="even">
+<td>Valores corruptos</td>
+<td>Agregar <code>Serial.flush()</code> tras <code>println</code></td>
+</tr>
+<tr class="odd">
+<td>Pérdida de primeras muestras</td>
+<td>Incluir retardo inicial en <code>setup()</code></td>
+</tr>
+<tr class="even">
+<td>Desbordamiento del buffer</td>
+<td>Reducir frecuencia de muestreo</td>
+</tr>
+<tr class="odd">
+<td>Inconsistencias en columnas</td>
+<td>Usar siempre mismo orden en <code>print</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="actividad" class="level1">
+<h1>Actividad</h1>
+<p><strong>Objetivo</strong>: Entender funcionamiento de <code>pulseIn()</code></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">()</span> <span class="op">{</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  Serial<span class="op">.</span>begin<span class="op">(</span><span class="dv">9600</span><span class="op">);</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  pinMode<span class="op">(</span><span class="dv">9</span><span class="op">,</span> OUTPUT<span class="op">);</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  pinMode<span class="op">(</span><span class="dv">10</span><span class="op">,</span> INPUT<span class="op">);</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">()</span> <span class="op">{</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  digitalWrite<span class="op">(</span><span class="dv">9</span><span class="op">,</span> LOW<span class="op">);</span> <span class="co">// Apagar pin </span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  delayMicroseconds<span class="op">(</span><span class="dv">4</span><span class="op">);</span> <span class="co">// Delay precautorio</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>  digitalWrite<span class="op">(</span><span class="dv">9</span><span class="op">,</span> HIGH<span class="op">);</span> <span class="co">// Prender el pin: Envío de pulso</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  delayMicroseconds<span class="op">(</span><span class="dv">10</span><span class="op">);</span> <span class="co">// Delay especificado por el fabricante</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  digitalWrite<span class="op">(</span><span class="dv">9</span><span class="op">,</span> LOW<span class="op">);</span> <span class="co">// Aapagar el pin</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>  <span class="dt">long</span> t <span class="op">=</span> pulseIn<span class="op">(</span><span class="dv">10</span><span class="op">,</span> HIGH<span class="op">);</span> <span class="co">// Obtener el tiempo de viaje</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>  <span class="dt">float</span> d_cm <span class="op">=</span> t <span class="op">*</span> <span class="fl">0.034</span> <span class="op">/</span> <span class="dv">2</span><span class="op">;</span> <span class="co">// Calcular la distancia</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>  Serial<span class="op">.</span>print<span class="op">(</span><span class="st">"Distancia: "</span><span class="op">);</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>  Serial<span class="op">.</span>print<span class="op">(</span>d_cm<span class="op">);</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>  Serial<span class="op">.</span>println<span class="op">(</span><span class="st">" cm"</span><span class="op">);</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>  delay<span class="op">(</span><span class="dv">300</span><span class="op">);</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Ejercicios</strong>:<br>
+1. Medir distancia a diferentes objetos<br>
+2. Calcular velocidad de objeto móvil: <span class="math inline">\(v \approx \frac{\Delta d}{\Delta t}\)</span></p>
+</section>
+<section id="referencias" class="level1">
+<h1>Referencias</h1>
+<ul>
+<li><a href="https://www.hwlibre.com/hc-sr04/#Pinout_y_datasheets">Info sobre el sensor ultrasónico</a></li>
+<li><a href="https://pdf1.alldatasheet.com/datasheet-pdf/view/1132203/ETC2/HC-SR04.html">Hoja de datos</a></li>
+<li><a href="https://proyectosconarduino.com/sensores/sensor-de-distancia-hc-sr04/?expand_article=1">Proyectos usando el sensor ultrasónico</a></li>
+</ul>
+</section>
+<section id="video-sobre-el-hcsr-04" class="level1">
+<h1>Video sobre el HCSR-04</h1>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/mlw3APOUt8U" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
